@@ -4,7 +4,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: url('/img/pozadina4.jpg');
+    background: url('../img/pozadina4.jpg');
     font-family: 'Poppins', sans-serif;
 }
 .contmain{
@@ -19,7 +19,7 @@ input.transparent-input{
 #nav-section {
     height: 90vh;
     width: 100%;
-    background: url('/img/pozadina4.jpg') no-repeat center;
+    background: url('../img/pozadina4.jpg') no-repeat center;
     background-size: cover; 
 }
 .navbar-brand, .nav-link{
@@ -55,7 +55,7 @@ input.transparent-input{
 }
 /*Fixed bg 1 css*/
 #fixed1 {
-   background: url('/img/valeriy-khan-0sUe24rw_Fg-unsplash.jpg') no-repeat center fixed;
+   background: url('../img/valeriy-khan-0sUe24rw_Fg-unsplash.jpg') no-repeat center fixed;
    height: 400px;
    background-size:cover;
    
@@ -67,7 +67,7 @@ input.transparent-input{
 }
 /*Fixed bg 2 css*/
 #fixed2 {
-    background: url('/img/alvaro-reyes-fSWOVc3e06w-unsplash.jpg') no-repeat center fixed;
+    background: url('../img/alvaro-reyes-fSWOVc3e06w-unsplash.jpg') no-repeat center fixed;
     height: 400px;
     background-size:cover;
     

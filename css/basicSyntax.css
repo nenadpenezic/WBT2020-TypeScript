@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url('../img/pozadina4.jpg');
+    font-family: 'Poppins', sans-serif;
+}
+.contmain{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+/*Navbar css*/
+input.transparent-input{
+    background-color:rgba(0,0,0,0) !important;
+    border:none !important;
+ }
+#nav-section {
+    height: 90vh;
+    width: 100%;
+    background: url('../img/pozadina4.jpg') no-repeat center;
+    background-size: cover;
+}
+.navbar-brand, .nav-link{
+    color: white !important;
+}
+.inner-nav{
+    list-style: none;
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    display: none;
+}
+.inner-nav a{
+    padding: .5rem 1.5rem;
+    color: white;
+}
+.basic-syntax:hover~.inner-nav{
+    display: block;
+}
+.inner-nav:hover{
+    display: block;
+}
+.navbar-nav .dropdown-menu{
+    background-color: transparent !important;
+    border: none;
+}
+.dropdown-item{
+    color: white;
+}
+#text{
+    color: white;
+    font-size: 30px;
+    margin-top: 280px;
+    font-weight: 700;
+    text-align: center;
+}
+#introductionofsyntax{
+    background-color:rgb(249, 249, 249);
+}
+/*OnScroll text fade in css*/
+.reveal{
+    position: relative;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+#text1{
+    color: #212529;
+    font-size: 30px;
+    font-family: 'Poppins' sans-serif;
+    text-align: center;
+}
+#fixed {
+    background: url('../img/stefan-gall-sF4RV2lDtW0-unsplash.jpg') no-repeat center fixed;
+    height: 400px;
+    background-size:cover;
+}
+#syntaxpt1typescript{
+    margin-top: -20px;
+    background-color:rgb(249, 249, 249);
+}
+#fixed1 {
+    background: url('../img/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg') no-repeat center fixed;
+    height: 400px;
+    background-size: cover;
+}
+#syntaxpt2typescript{
+    margin-top: -20px;
+    background-color:rgb(249, 249, 249);
+}
+#footersection{
+    background-color: rgb(9, 10, 4) !important;
+    
+}
+.s1{
+    font-weight: bold !important;
+}
+.iconsfooter{
+    text-decoration: none !important;
+}
+.iconsfooter a{
+    color: white;
+}
+#syntaxpt3typescript{
+    background-color:rgb(249, 249, 249);
+}
+.card-body:hover{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+/*49,120,198*/
