@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background: url('../img/pozadina4.jpg');
+  font-family: 'Poppins', sans-serif;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+}
+/*------------------------------------*/
+input.transparent-input{
+    background-color:rgba(0,0,0,0) !important;
+    border:none !important;
+  }
+  #nav-section {
+    width: 100%;
+    background-size: cover; 
+    overflow: hidden;
+    /*background-color: rgb(14, 168, 78);*/
+  }
+  ul li a{
+    font-size: 1.1rem;
+    text-decoration:  none;
+    color: white;
+  }
+  ul{
+   margin: 0%;
+   padding: 0%;
+    list-style: none;
+  }
+  #navigation{
+    display: none;
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 0;
+  }
+  .nav-menu{
+    display: flex;
+  }
+  .nav-menu .nav-li{
+    padding: 0rem 2rem;
+  }
+  #sub-menu{
+    display: none;
+    position: absolute;
+    margin: 0;
+    width: 220px;
+    background-color: rgb(87, 83, 83);
+  }
+  #sub-sub-menu{
+    width: 150px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 220px;
+    background-color: rgb(87, 83, 83);
+  }
+  .submenu-li{
+   padding: .2rem 2rem;
+  }
+  #docs{
+    position: relative;
+  }
+  #docs:hover #sub-menu{
+    display: block;
+  }
+  #basic-syntax:hover #sub-sub-menu{
+    display: block;
+  }
+  /*------------------------------------*/
+  .banner{
+      width: 100%;
+      background-image: url('../img/array.png');
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  .banner-color{
+      background-color: rgba(35, 37, 39, 0.6);
+      height: 500px;
+      transition-duration: 400ms;
+  }
+  .title-wrapper{
+    height: 436px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-wrapper h1{
+      color: white;
+      font-size: 100px;
+      padding-bottom: 55px;
+      text-align: center;
+  }
+  .banner:hover .banner-color{
+    background-color: rgba(35, 37, 39,1);
+      transition-duration: 400ms;
+  }
+  /*------------------------------------*/
+  @media only screen and (max-width: 758px) {
+    nav{
+        display: block;
+        padding-top: 0%;
+      }
+      .nav-menu{
+        display: none;
+      }
+      .links{
+        justify-content: center;
+      }
+      .nav-form form{ 
+        width: 100%;
+        justify-content: center;
+      }
+      #navigation{
+        display: block;
+        font-size: 45px;
+        color: white;
+        margin-left: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+       
+      .display-nav{
+        display: block;
+      }
+      .hidde-nav{
+        display: none;
+      }
+      #sub-menu{
+        height: 200px;
+        overflow-y: scroll;
+        position: relative;
+        left: 50px;
+        background-color: unset;
+        }
+      #sub-sub-menu{
+        width: auto;
+        position: relative;
+        top: 0;
+        left:50px;
+        background-color: unset;
+        }
+        .title-wrapper h1{
+            color: white;
+            font-size: 70px;
+            padding-bottom: 55px;
+            text-align: center;
+        }
+  }
