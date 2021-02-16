@@ -1,0 +1,422 @@
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/types.css">
+    <script src="script/typesJS.js"></script>
+    <title>Types</title>
+  </head>
+  <body>
+      <div class="container contmain">
+          <section id="nav-section">
+            <div class="row p-3 d-flex justify-content-center" style="border-bottom: 1px solid grey;">
+                <div class="col-lg-2 d-flex align-items-center text-white">
+                    <i class="fab fa-facebook-f fa-lg p-1"></i>
+                    <i class="fab fa-twitter fa-lg p-1"></i>
+                    <i class="fab fa-instagram fa-lg p-1"></i>
+                    <i class="fab fa-pinterest fa-lg p-1"></i>
+                </div>
+                <div class="col-lg-8 text-center">
+                    <h1 style="color: white;">TypeScript.</h1>
+                </div>
+                <div class="col-lg-2 d-flex align-items-center text-white">
+                    <form class="form-inline">
+                        <input class="form-control transparent-input" style="width: 55%;" type="search" placeholder="Search" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                      </form>
+                </div>
+            </div>
+            <div class="row m-0 d-flex justify-content-center">
+                <nav class="navbar navbar-expand-lg navbar-light text-light bg-transparent">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon text-light"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Overview</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Documentation
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item basic-syntax" href="#">Basic Syntax<i class="fa fa-caret-right"></i></a>
+                              <ul  class="inner-nav">
+                                  <li class="nav-item inner-nav-a"><a href="" class="dropdown-item">Types</a></li>
+                                  <li class="nav-item inner-nav-a"><a href="" class="dropdown-item">Variables</a></li>
+                                  <li class="nav-item inner-nav-a"><a href="" class="dropdown-item">Operators</a></li>
+                                  <li class="nav-item inner-nav-a"><a href="" class="dropdown-item">Loops</a></li>
+                                  <li class="nav-item inner-nav-a"><a href="" class="dropdown-item">Numbers</a></li>
+                                  <li class="nav-item inner-nav-a"><a href="" class="dropdown-item">Strings</a></li>
+                                  <li class="nav-item inner-nav-a"><a href="" class="dropdown-item">Arrays</a></li>
+                              </ul>
+                          </li>
+                            <li><a class="dropdown-item" href="#">Interfaces</a></li>
+                            <li><a class="dropdown-item" href="#">Functions</a></li>
+                            <li><a class="dropdown-item" href="#">Unions and Intersection Types</a></li>
+                            <li><a class="dropdown-item" href="#">Classes</a></li>
+                            <li><a class="dropdown-item" href="#">Objects</a></li>
+                            <li><a class="dropdown-item" href="#">Namespaces</a></li>
+                            <li><a class="dropdown-item" href="#">Modules & Ambients</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+            <div id="text" class="display-4 d-none d-sm-block pt-5 pb-3"> Types
+
+            </div>
+            <div class="col-md-12 d-flex text-center intro">
+                <h3 class="lead d-none d-sm-block lett">Let</h3>
+                 <h3 class="lead d-none d-sm-block typing">hi</h3>
+            </div>
+            
+          </section>
+           <section id="introductionoftypes" class=" p-5">
+            <div class="row">
+                <div class="col-12 text-center  reveal">
+                    <h1 class="pt-4">Type System</h1>
+                </div>
+                <div class="col-md-12 mt-4 typescriptdef">
+                    <p class="lead text-center  reveal">The Type System represents the different types of values supported by the language. The Type System checks the validity of the supplied values, before they are stored or manipulated by the program. This ensures that the code behaves as expected. The Type System further allows for richer code hinting and automated documentation too.
+                        <br>
+                        <br>
+                    For programs to be useful, we need to be able to work with some of the simplest units of data: numbers, strings, structures, boolean values, and the like. In TypeScript, we support the same types as you would expect in JavaScript, with an extra enumeration type thrown in to help things along.
+
+                   </p>
+                   <p class="lead text-left pt-5 font-weight-bold reveal">
+                    TypeScript provides data types as a part of its optional Type System. The data type classification is as given below −
+                   </p>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8 text-center reveal">
+                    <img src="img/typescript_different_data_types.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-2">
+                    
+                </div>
+                <div class="col-md-12 pt-5 reveal">
+                  <p class="lead text-left font-weight-bold">
+                    Typescript Any Type
+                  </p>
+                  <p class="lead text-left reveal">
+                    In some situations, not all type information is available or its declaration would take
+                    an inappropriate amount of effort. These may occur for values from code that has been written
+                    without TypeScript or a 3rd party library. In these cases, we might want to opt-out of type
+                    checking. To do so, we label these values with the 'any' type:
+                  </p>
+                </div>
+                <div class="col-md-8 text-center reveal">
+                  <img src="img/typescriptexample6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+
+                </div>
+                <p class="lead text-left col-md-12 pt-3 reveal">
+                  The any type is a powerful way to work with existing JavaScript,
+                  allowing you to gradually opt-in and opt-out of type checking during compilation.
+                </p>
+                <div class="col-md-12">
+                  <p class="lead text-left font-weight-bold reveal">
+                    Primitive (Built-in) Types
+                  </p>
+                  <p class="lead text-left reveal">
+                    The following table illustrates all the built-in types in TypeScript −
+                  </p>
+                </div>
+                <div class="col-md-1 reveal">
+                  
+                </div>
+                <div class="col-md-10 reveal table-responsive">
+                  <table class="table table-dark text-center table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Data Type</th>
+                        <th scope="col">Keyword</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Boolean</td>
+                        <td>boolean</td>
+                        <td>Used on function return types to represent non-returning functions</td>
+                      </tr>
+                      <tr>
+                        <td>Number</td>
+                        <td>number</td>
+                        <td>Double precision 64-bit floating point values. It can be used to represent both, integers and fractions</td>
+                      </tr>
+                      <tr>
+                        <td>String</td>
+                        <td>string</td>
+                        <td>Represents a sequence of Unicode characters</td>
+                      </tr>
+                      <tr>
+                        <td>Null</td>
+                        <td>null</td>
+                        <td>Represents an intentional absence of an object value</td>
+                      </tr>
+                      <tr>
+                        <td>Undefined</td>
+                        <td>undefined</td>
+                        <td>Denotes value given to all uninitialized variables</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="lead text-center col-md-12 reveal">
+                  You can learn a lot more about those types and many others in the text and examples that are given below!
+                </p>
+                <div class="col-md-1 reveal">
+                  
+                </div>
+                <p class="lead text-left col-md-12 pt-3 reveal">
+                  <b class="font-weight-bold">Important</b> − In TypeScript and JavaScript there is no Integer type.
+                </p>
+                <div class="col-md-12 pt-3 reveal">
+                  <p class="lead text-left font-weight-bold">
+                    User-defined Types
+                  </p>
+                  <p class="lead text-left reveal">
+                    User-defined types include Enumerations (enums), classes, interfaces, arrays, and tuple. 
+                    These are discussed in detail in the later chapters.
+                  </p>
+                </div>
+                
+            
+                
+              </div>  
+           </section>
+           <section class="fixedbg1">
+            <figure>
+                <div class="fixed-wrap">
+                    <div id="fixed1">
+                        
+                    </div>
+                </div>
+            </figure>
+           </section>
+           <section id="typesmainpart" >
+             <div class="row p-5">
+              <div class="col-12 text-center  reveal">
+                <h1 class="py-4">Definition and Use of Types</h1>
+            </div>
+              <div class="col-md-12 reveal">
+                <p class="lead text-left font-weight-bold">
+                  Boolean
+                </p>
+              </div>
+              <p class="lead col-md-12 text-left reveal">
+                The most basic datatype is the simple true/false value, which JavaScript and TypeScript call a boolean value.
+              </p>
+              <div class="col-md-8 reveal">
+                <img src="img/typescriptexample7.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-12 reveal">
+                <p class="lead text-left font-weight-bold pt-5">
+                  Number
+                </p>
+              </div>
+              <p class="lead col-md-12 text-left reveal">
+                As in JavaScript, all numbers in TypeScript are either floating point values or BigIntegers. 
+                These floating point numbers get the type number, while BigIntegers get the type bigint. 
+                In addition to hexadecimal and decimal literals, TypeScript also supports binary and octal literals introduced in ECMAScript 2015.
+              </p>
+              <div class="col-md-8 reveal">
+                <img src="img/typescriptexample8.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+
+              </div> 
+              <div class="col-md-12 reveal">
+                <p class="lead text-left font-weight-bold pt-5">
+                  String
+                </p>
+              </div>
+              <p class="lead col-md-12 text-left reveal">
+                Another fundamental part of creating programs in JavaScript for webpages and servers alike is working with textual data.
+                 As in other languages, we use the type string to refer to these textual datatypes. Just like JavaScript, TypeScript also uses
+                 double quotes (") or single quotes (') to surround string data.
+              </p>
+              <div class="col-md-8 reveal">
+                <img src="img/typescriptexample9.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-12 reveal">
+                <p class="lead text-left font-weight-bold pt-5">
+                  Null and Undefined
+                </p>
+              </div>
+              <p class="lead col-md-12 text-left reveal">
+                The null and the undefined datatypes are often a source of confusion. The null and undefined cannot be used to reference the data
+                type of a variable. They can only be assigned as values to a variable.
+                However, null and undefined are not the same. A variable initialized with undefined means that the variable has no value or object
+                assigned to it while null means that the variable has been set to an object whose value is undefined.
+              </p>
+              <div class="col-md-8 reveal">
+                <img src="img/typescriptexample10.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-12 reveal">
+                <p class="lead text-left font-weight-bold pt-5">
+                  Void
+                </p>
+              </div>
+              <p class="lead col-md-12 text-left reveal">
+                <b class="font-weight-bold">void</b> is a little like the opposite of any: the absence of having any type at all. 
+                You may commonly see this as the return type of functions that do not return a value:
+              </p>
+              <div class="col-md-8 reveal">
+                <img src="img/typescriptexample11.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-12 reveal">
+                <p class="lead text-left font-weight-bold pt-5">
+                  Never
+                </p>
+              </div>
+              <p class="lead col-md-12 text-left reveal">
+                The never type represents the type of values that never occur. 
+                For instance, never is the return type for a function expression or an arrow function expression that always throws
+                an exception or one that never returns. Variables also acquire the type never when narrowed by any type guards that can never be true.
+                The never type is a subtype of, and assignable to, every type; however, no type is a subtype of, or assignable to, never
+                (except never itself). Even any isn’t assignable to never.
+              </p>
+              <div class="col-md-8 reveal">
+                <img src="img/typescriptexample12.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-12 reveal">
+                <p class="lead text-left font-weight-bold pt-5">
+                  Array
+                </p>
+              </div>
+              <p class="lead col-md-12 text-left reveal">
+                TypeScript, like JavaScript, allows you to work with arrays of values. Array types can be written in one of two ways. 
+                In the first, you use the type of the elements followed by [] to denote an array of that element type. The second way 
+                uses a generic array type, Array <(elementType)>:
+              </p>
+              <div class="col-md-8 reveal">
+                <img src="img/typescriptexample13.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-12 reveal">
+                <p class="lead text-left font-weight-bold pt-5">
+                  Enum
+                </p>
+              </div>
+              <p class="lead col-md-12 text-left reveal">
+                A helpful addition to the standard set of datatypes from JavaScript is the enum. 
+                As in languages like C#, an enum is a way of giving more friendly names to sets of numeric values 
+                (<b class="font-weight-bold">Example#1</b>). <br>
+                By default, enums begin numbering their members starting at 0. You can change this by manually setting 
+                the value of one of its members. For example, we can start the previous example at 1 instead of 0 
+                (<b class="font-weight-bold">Example#2</b>). <br>
+                Or, even manually set all the values in the enum (<b class="font-weight-bold">Example#3</b>).
+              </p>
+              <div class="col-md-8 reveal">
+                <img src="img/typescriptexample14.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="col-md-12 reveal">
+                <p class="lead text-left font-weight-bold pt-5">
+                  Tuple
+                </p>
+              </div>
+              <p class="lead col-md-12 text-left reveal">
+                Tuple types allow you to express an array with a fixed number of elements whose types are known, but need not be the same. 
+                For example, you may want to represent a value as a pair of a string and a number:
+              </p>
+              <div class="col-md-8 reveal">
+                <img src="img/typescriptexample15.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+
+              </div>
+              <div class="lead col-md-12 text-center reveal pt-5">
+                <p>
+                  A lot of other material and details about those types is contained on other pages of this website, go check them out! And yeah
+                   '<i> Keep Calm And Do Coding! ;) </i>' 
+                </p>
+              </div>
+              
+                    
+             </div>  
+           </section>
+           <section id="footersection">
+            <footer class="text-light">
+                <div class="row p-5">
+                    <div class="col-md-4">
+                      <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="lead text-center">Quick Links</h5>
+                        <div class="row iconsfooter text-center">
+                            <div class="col-md-6">
+                                <a href=""><i class="fas fa-home"> Home</i></a>
+                                <a href=""><i class="fas fa-eye"> Overview</i></a>
+                                <a href=""><i class="fas fa-file"> Documentation</i></a>
+                                <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
+                                <a href=""><i class="fab fa-invision"> Interfaces</i></a>
+                                <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <a href=""><i class="far fa-circle"> U&I Types</i></a>
+                                <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                                <a href=""><i class="fas fa-object-group"> Objects</i></a>
+                                <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
+                                <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                                <a href=""><i class="fas fa-address-card"> About</i></a>
+                            </div>
+                            
+                        </div>     
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="lead text-center">Choose Your Language!</h5>
+                        <div id="google_translate_element" class="text-center"></div>
+                    </div>
+                </div>
+                <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+               
+            </footer>
+        </section>
+
+        </div>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
