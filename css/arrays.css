@@ -113,6 +113,14 @@ input.transparent-input{
  .title-padding{
      padding: 2rem 0;
  }
+ .declaration-example img{
+    width: 50%;
+ }
+ .type-title{
+     font-size: 50px;
+     padding: 3rem 0;
+     font-weight: bold;
+ }
   @media only screen and (max-width: 758px) {
     nav{
         display: block;
