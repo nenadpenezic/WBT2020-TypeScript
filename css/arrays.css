@@ -9,15 +9,16 @@ body{
   overflow-x: hidden;
 }
 /*------------------------------------*/
+
 input.transparent-input{
     background-color:rgba(0,0,0,0) !important;
     border:none !important;
   }
-  #nav-section {
-    width: 100%;
-    background-size: cover; 
-    overflow: hidden;
-    /*background-color: rgb(14, 168, 78);*/
+  .header-common{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   ul li a{
     font-size: 1.1rem;
@@ -70,6 +71,11 @@ input.transparent-input{
   }
   #basic-syntax:hover #sub-sub-menu{
     display: block;
+  }
+  .row-wrapper{
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid white;
   }
   /*------------------------------------*/
   .banner{
@@ -158,9 +164,6 @@ input.transparent-input{
       .nav-menu{
         display: none;
       }
-      .links{
-        justify-content: center;
-      }
       .nav-form form{ 
         width: 100%;
         justify-content: center;
@@ -193,6 +196,9 @@ input.transparent-input{
         top: 0;
         left:50px;
         background-color: unset;
+        }
+        .row-wrapper{
+          flex-direction: column;
         }
         .title-wrapper h1{
             color: white;
