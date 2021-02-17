@@ -36,6 +36,7 @@ input.transparent-input{
     display: flex;
     justify-content: center;
     padding: 1.2rem 0;
+    background-color: rgba(14, 11, 11, 0.609);
   }
   .nav-menu{
     display: flex;
@@ -75,8 +76,7 @@ input.transparent-input{
       width: 100%;
       background-image: url('../img/array.png');
       background-size: 100% 100%;
-      display: flex;
-      flex-direction: column;
+      overflow: hidden;
   }
   .banner-color{
       background-color: rgba(35, 37, 39, 0.6);
@@ -100,10 +100,24 @@ input.transparent-input{
       transition-duration: 400ms;
   }
   /*------------------------------------*/
+  .common-styles{
+    text-align: center;
+    color: black;
+    background-color:white;
+  }
+ .features ul{
+     margin:auto;
+     width: 70%;
+     text-align: left;
+ }
+ .title-padding{
+     padding: 2rem 0;
+ }
   @media only screen and (max-width: 758px) {
     nav{
         display: block;
-        padding-top: 0%;
+        padding: .5rem 0;
+       
       }
       .nav-menu{
         display: none;
@@ -149,5 +163,11 @@ input.transparent-input{
             font-size: 70px;
             padding-bottom: 55px;
             text-align: center;
+        }
+        .what-is-array img{
+            width: 60%;
+        }
+        .features ul{
+            width: 90%;
         }
   }
