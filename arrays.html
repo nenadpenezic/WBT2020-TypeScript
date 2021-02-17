@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="./css/arrays.css">
 </head>
 <body>
-    <div class="container contmain">
+    <div class="container">
         <section id="nav-section">
-          <div class="row p-3 d-flex justify-content-center" style="border-bottom: 1px solid grey;">
+          <div class="row p-3 d-flex justify-content-center" style="border-bottom: 1px solid grey;padding: 0%;">
               <div class="col-lg-2 d-flex align-items-center text-white links">
                   <i class="fab fa-facebook-f fa-lg p-1"></i>
                   <i class="fab fa-twitter fa-lg p-1"></i>
@@ -34,9 +34,7 @@
                       <i class="fas fa-search"></i>
                     </form>
               </div>
-          </div>
-        
-         
+</div>
             
           <div class="banner">
             <div class="banner-color">
@@ -79,10 +77,10 @@
             </div>
         </div>
       </section>
-        </div>
+    </div>
 
         <div class="container common-styles">
-            <div class="row">
+            <div class="row row-borders">
                 <div class="col-12 what-is-array">
                     <h2 class="title-padding">What is Array</h2>
                     <p>An array is a special type of data type which can store multiple values of different data types sequentially using a special syntax.
@@ -92,7 +90,7 @@
                     <img src="./img/ts-array.PNG" alt="">
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-borders">
                 <div class="col-12 features">
                     <h2 class="title-padding">Features of an Array</h2>
                     <ul>
@@ -106,14 +104,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-borders">
                 <div class="col-12">
                     <h2 class="title-padding">Limitations</h2>
                     <p>Variables are scalar in nature. In other words, a variable declaration can only contain a single at a time. This means that to store n values in a program n variable declarations will be needed. Hence, the use of variables is not feasible when one needs to store a larger collection of values.</p>
                     <p>Variables in a program are allocated memory in random order, thereby making it difficult to retrieve/read the values in the order of their declaration.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-borders">
                 <div class="col-12">
                     <h2 class="title-padding">Types of the array in TypeScript</h2>
                 </div>
@@ -128,7 +126,7 @@
                     <img src="./img/typescript-arrays-types.png" alt="" width="100%">
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-borders">
                    <div class="col-12"> <h2 class="title-padding">Declaring and Initializing Arrays</h2></div>
                     <div class="col-md-4 col-sm-12">
                         <h3>Syntax</h3>
@@ -145,8 +143,8 @@
                         
                     </div>
             </div>
-            <div class="row">
-                <div class="col-12">
+            <div class="row row-borders">
+                <div class="col-12 accessing-array">
                     <h2 class="title-padding">Accessing Array Elements</h2>
                     <p>The array name followed by the subscript is used refer to an array element.</p>
                     <h3>Syntax</h3>
@@ -156,18 +154,70 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row row-borders">
                 <div class="col-12">
                     <h2 class="title-padding">Multi-Dimensional Array</h2>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <p>A multi-dimensional array is an array which contains one or more arrays. In the multi-dimensional array, data is stored in a row and column-based index (also known as matrix form). A two-dimensional array (2-D array) is the simplest form of a multi-dimensional array.</p>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6 md-array">
                     <img src="./img/typescript-arrays2.png" alt="">
                 </div>
+                <div class="col-12">
+                    <h3>
+                        Syntax:
+                    </h3>
+                    <p>let arr_name:datatype[][] = [ [a1,a2,a3], [b1,b2,b3] ];  </p>
+                    <h3>
+                        Initialization
+                    </h3>
+                    <p>let arr_name:datatype[initial_array_index][referenced_array_index] = [ [val1,val2,val 3], [v1,v2,v3]];  </p>
+                </div>
             </div>
-
+            <div class="row">
+                <div class="col-12" style="padding: 0%;">
+                    <section id="footersection">
+                        <footer class="text-light">
+                            <div class="row p-5">
+                                <div class="col-md-4">
+                                  <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="lead text-center">Quick Links</h5>
+                                    <div class="row iconsfooter text-center">
+                                        <div class="col-md-6">
+                                            <a href=""><i class="fas fa-home"> Home</i></a>
+                                            <a href=""><i class="fas fa-eye"> Overview</i></a>
+                                            <a href=""><i class="fas fa-file"> Documentation</i></a>
+                                            <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
+                                            <a href=""><i class="fab fa-invision"> Interfaces</i></a>
+                                            <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                                            
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href=""><i class="far fa-circle"> U&I Types</i></a>
+                                            <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                                            <a href=""><i class="fas fa-object-group"> Objects</i></a>
+                                            <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
+                                            <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                                            <a href=""><i class="fas fa-address-card"> About</i></a>
+                                        </div>
+                                        
+                                    </div>     
+                                    
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="lead text-center">Choose Your Language!</h5>
+                                    <div id="google_translate_element" class="text-center"></div>
+                                </div>
+                            </div>
+                            <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+                           
+                        </footer>
+                    </section>
+                </div>
+            </div>
         </div>
 
 
