@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/Numbers.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="row-wrapper">
+              <div class="col-lg-2 p-3 header-common">
+                  <i class="fab fa-facebook-f fa-lg p-1"></i>
+                  <i class="fab fa-twitter fa-lg p-1"></i>
+                  <i class="fab fa-instagram fa-lg p-1"></i>
+                  <i class="fab fa-pinterest fa-lg p-1"></i>
+              </div>
+              <div class="col-lg-8  text-center">
+                  <h1 style="color: white;">TypeScript.</h1>
+              </div>
+              <div class="col-lg-2 header-common nav-form">
+                  <form class="form-inline">
+                      <input class="form-control w-75 transparent-input"  type="search" placeholder="Search" aria-label="Search">
+                      <i class="fas fa-search"></i>
+                    </form>
+              </div>
+            </div>
+        <div class="col-12" style="padding: 0%;">
+          <div class="banner">
+            <div class="banner-color">
+                        
+        <nav>
+          <div id="navigation">
+            <i class="fas fa-bars"></i>
+        </div>
+            <ul id="" class="nav-menu hide-nav">
+                <li class="nav-li"><a href="">Home</a> </li>
+                <li class="nav-li"><a href="">Overview</a></li>
+                <li id="docs" class="nav-li"><a href="">Documentation <i class="fas fa-arrow-down"></i></a>
+                    <ul id="sub-menu">
+                        <li id="basic-syntax" class="submenu-li"><a href="">Basic Syntax <i class="fas fa-arrow-right"></i></a>
+                        <ul id="sub-sub-menu">
+                            <li><a href="">Types</a></li>
+                            <li><a href="">Variables</a></li>
+                            <li><a href="">Operators</a></li>
+                            <li><a href="">Loops</a></li>
+                            <li><a href="">Numbers</a></li>
+                            <li><a href="">Strins</a></li>
+                            <li><a href="">Arrays</a></li>
+                        </ul>
+                        </li>
+                        <li class="submenu-li"><a href="">Interfaces</a></li>
+                        <li class="submenu-li"><a href="">Functions</a></li>
+                        <li class="submenu-li"><a href="">Union and Intersection Types</a></li>
+                        <li class="submenu-li"><a href="">Classes</a></li>
+                        <li class="submenu-li"><a href="">Objects</a></li>
+                        <li class="submenu-li"><a href="">Namespaces</a></li>
+                        <li class="submenu-li"><a href="">Modules & Ambients</a></li>
+                    </ul>
+                    <li class="nav-li"><a href="">About</a></li>
+                </li>
+            </ul>
+        </nav>
+        <div class="title-wrapper">
+            <h1>Typescript's <br>Numbers</h1>
+        </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+<div class="container common-styles">
+    <div class="row blue-background">
+        <div class="col-12 ">
+            <h2 class="title-padding">TypeScript Number Data Type</h2>
+            <p>In TypeScript, the number data type is useful to define variables to accept only numbers. The TypeScript will support all numeric values same as JavaScript and it will store all the numbers as floating-point numbers.</p>
+            <p>The number data type in typescript is useful to represent integers as well as floating-point values. The typescript numbers also support decimal, hexadecimal, binary and octal literals.</p>
+
+            <h3 class="title-padding">Syntax</h3>
+           
+                <p>[<span class="keyword">Keyword</span>] [<span class="var-name">Variable Name</span>]: [<span class="number">number</span>] = [<span class="value">Value</span>];
+                    <br>
+                    [<span class="keyword">Keyword</span>] [<span class="var-name">Variable Name</span>]: [<span class="number">number</span>];</p>
+            
+            <ul class="syntax-dec-list">
+                <li>[<span class="keyword">Keyword</span>] – It’s a keyword of the variable either var, let or const to define the scope and usage of variables.</li>
+                <li>[<span class="var-name">Variable Name</span>] - Its name of the variable to hold the values in our application.</li>
+                <li>[<span class="number">number</span>] - It’s a number type of data the variable can hold.</li>
+                <li>[<span class="value">Value</span>] – Assigning a required value to the variable.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row white-background" >
+        <div class="col-12" >
+            <h3 class="title-padding">The number type</h3>
+            <p>As in JavaScript, TypeScript supports the number literals for decimal, hexadecimal, binary, and octal literals:</p>
+        </div>
+        <div class="col-md-6">
+            <h4 class="sub-title-h4">Decimal numbers</h4>
+            <p>The following shows some decimal numbers:</p>
+            <img src="./img/decimal.PNG" alt="" class="w-100">
+        </div>
+        <div class="col-md-6">
+            <h4 class="sub-title-h4">Binary Numbers</h4>
+            <p>The binary number uses a leading zero followed by a lowercase or uppercase letter “B” e.g., 0b or 0B, digit after 0b or 0B must be 0 or 1.</p>
+            <img src="./img/binary.PNG" alt="" class="w-100">
+        </div>
+        <div class="col-md-6" >
+            <h4 class="sub-title-h4">Octal Numbers</h4>
+            <p>An octal number uses a leading zero followed the letter o (since ES2015) 0o. The digits after 0o are numbers in the range 0 through 7:</p>
+            <img src="./img/octal.PNG" alt="" class="w-100">
+        </div>
+        <div class="col-md-6" >
+            <h4 class="sub-title-h4">Hexadecimal numbers</h4>
+            <p>The big integers represent the whole numbers larger than 253 – 1. A Big integer literal has the n character at the end of an integer literal like this:</p>
+            <img src="./img/hd.PNG" alt="" class="w-100">
+        </div>
+    </div>
+    <div class="row  blue-background">
+        <div class="col-12">
+            <h2 class="title-padding">Number Object</h2>
+            <p>Like JavaScript, all the numbers in TypeScript are stored as floating-point values. These numeric values are treated like a number data type. The number is used to represents both integers as well as floating-point values. The number type converts the numeric literal to an instance of the number class. The number class acts as a wrapper and manipulate the numeric literals as they were objects. </p>
+            <h3>Syntax: </h3> <p><span class="keyword">var</span> <span class="var-name">var_name</span> = <span class="number">new</span> <span class="value">Number(value)</span></p>
+        </div>
+    </div>
+
+    <div class="row">   
+        <div class="col-12 white-background">
+            <h3 class="title-padding">Propertys</h3>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Number</th>
+                    <th scope="col">Property</th>
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>MAX_VALUE</td>
+                    <td>The largest possible value a number in JavaScript can have 1.7976931348623157E+308.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>	
+                        MIN_VALUE</td>
+                    <td>The smallest possible value a number in JavaScript can have 5E-324.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>NaN</td>
+                    <td>Equal to a value that is not a number.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>NEGATIVE_INFINITY</td>
+                    <td>A value that is less than MIN_VALUE.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>POSITIVE_INFINITY</td>
+                    <td>A value that is greater than MAX_VALUE.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>prototype</td>
+                    <td>A static property of the Number object. Use the prototype property to assign new properties and methods to the Number object in the current document.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>constructor</td>
+                    <td>Returns the function that created this object's instance. By default, this is the Number object.</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+        <div class="row blue-background">
+        <div class="col-12">
+            <h3 class="title-padding">Number Methods</h3>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">toExponential()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toExponential([fractionDigits])</p>
+                  <p class="card-text" style="color: black;">This function takes in one argument, an optional integer specifying the number of digits after the decimal point. It returns the exponential representation of the number in a string format.</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">toFixed()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toFixed([digits])</p>
+                  <p class="card-text" style="color: black;">This function has one optional argument, an integer specifying the number of digits after the decimal point. It returns a string representation of the formatted number.</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">toLocaleString()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toLocaleString([locales [, options]])</p>
+                  <p class="card-text" style="color: black;">This function takes in two arguments: the locale, and an optional options argument representing the locale to which you would like to get the equivalent number representation.</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">toPrecision()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toPrecision([precision])</p>
+                  <p class="card-text" style="color: black;">This function takes in one optional argument, a number representing the precision i.e. the number of significant digits. It returns a string representation to the specified precision.</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">toString()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toString([radix])</p>
+                  <p class="card-text" style="color: black;">This function takes in one optional argument, a radix number representing the base for which a string representation is to be returned.</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">valueOf()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.valueOf()</p>
+                  <p class="card-text" style="color: black;">This function returns the primitive value of the Object being called on.</p>
+
+                </div>
+              </div>
+        </div>
+        </div>
+
+<div class="row">
+    <section id="footersection">
+        <footer class="text-light">
+            <div class="row p-5">
+                <div class="col-md-4">
+                  <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="lead text-center">Quick Links</h5>
+                    <div class="row iconsfooter text-center">
+                        <div class="col-md-6">
+                            <a href=""><i class="fas fa-home"> Home</i></a>
+                            <a href=""><i class="fas fa-eye"> Overview</i></a>
+                            <a href=""><i class="fas fa-file"> Documentation</i></a>
+                            <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
+                            <a href=""><i class="fab fa-invision"> Interfaces</i></a>
+                            <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <a href=""><i class="far fa-circle"> U&I Types</i></a>
+                            <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                            <a href=""><i class="fas fa-object-group"> Objects</i></a>
+                            <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
+                            <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                            <a href=""><i class="fas fa-address-card"> About</i></a>
+                        </div>
+                        
+                    </div>     
+                    
+                </div>
+                <div class="col-md-4">
+                    <h5 class="lead text-center">Choose Your Language!</h5>
+                    <div id="google_translate_element" class="text-center"></div>
+                </div>
+            </div>
+            <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+           
+        </footer>
+    </section>
+</div>
+</div>
+</div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+
+    const menuButton=document.getElementById('navigation');
+      const menu=document.getElementsByClassName('nav-menu')[0];
+      
+      let isMenuOpen=true;
+
+      menuButton.addEventListener('click',()=>{
+        if(isMenuOpen){
+          menu.classList.add('display-nav');
+          menu.classList.remove('hide-nav');
+          isMenuOpen=false;
+        }
+        else{
+          menu.classList.add('hide-nav');
+          menu.classList.remove('display-nav');
+          isMenuOpen=true;
+        }
+      })
+    </script>
+</body>
+</html>
