@@ -82,19 +82,18 @@
 </div>
 
 <div class="container common-styles">
-    <div class="row">
-        <div class="col-12">
+    <div class="row blue-background">
+        <div class="col-12 ">
             <h2 class="title-padding">TypeScript Number Data Type</h2>
             <p>In TypeScript, the number data type is useful to define variables to accept only numbers. The TypeScript will support all numeric values same as JavaScript and it will store all the numbers as floating-point numbers.</p>
             <p>The number data type in typescript is useful to represent integers as well as floating-point values. The typescript numbers also support decimal, hexadecimal, binary and octal literals.</p>
-        </div>
-        <div class="col-md-12">
-            <h3>Syntax</h3>
-            <div class="syntax-wrapper">
+
+            <h3 class="title-padding">Syntax</h3>
+           
                 <p>[<span class="keyword">Keyword</span>] [<span class="var-name">Variable Name</span>]: [<span class="number">number</span>] = [<span class="value">Value</span>];
                     <br>
                     [<span class="keyword">Keyword</span>] [<span class="var-name">Variable Name</span>]: [<span class="number">number</span>];</p>
-            </div>
+            
             <ul class="syntax-dec-list">
                 <li>[<span class="keyword">Keyword</span>] – It’s a keyword of the variable either var, let or const to define the scope and usage of variables.</li>
                 <li>[<span class="var-name">Variable Name</span>] - Its name of the variable to hold the values in our application.</li>
@@ -102,41 +101,43 @@
                 <li>[<span class="value">Value</span>] – Assigning a required value to the variable.</li>
             </ul>
         </div>
-        <div class="col-12">
+    </div>
+    <div class="row white-background" >
+        <div class="col-12" >
             <h3 class="title-padding">The number type</h3>
             <p>As in JavaScript, TypeScript supports the number literals for decimal, hexadecimal, binary, and octal literals:</p>
         </div>
         <div class="col-md-6">
             <h4 class="sub-title-h4">Decimal numbers</h4>
             <p>The following shows some decimal numbers:</p>
-            <img src="./img/decimal.PNG" alt="" style="width: 100%;">
+            <img src="./img/decimal.PNG" alt="" class="w-100">
         </div>
         <div class="col-md-6">
             <h4 class="sub-title-h4">Binary Numbers</h4>
             <p>The binary number uses a leading zero followed by a lowercase or uppercase letter “B” e.g., 0b or 0B, digit after 0b or 0B must be 0 or 1.</p>
-            <img src="./img/binary.PNG" alt="" style="width: 100%;">
+            <img src="./img/binary.PNG" alt="" class="w-100">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" >
             <h4 class="sub-title-h4">Octal Numbers</h4>
             <p>An octal number uses a leading zero followed the letter o (since ES2015) 0o. The digits after 0o are numbers in the range 0 through 7:</p>
-            <img src="./img/octal.PNG" alt="" style="width: 100%;">
+            <img src="./img/octal.PNG" alt="" class="w-100">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" >
             <h4 class="sub-title-h4">Hexadecimal numbers</h4>
             <p>The big integers represent the whole numbers larger than 253 – 1. A Big integer literal has the n character at the end of an integer literal like this:</p>
-            <img src="./img/hd.PNG" alt="" style="width: 100%;">
+            <img src="./img/hd.PNG" alt="" class="w-100">
         </div>
     </div>
-    <div class="row">
+    <div class="row  blue-background">
         <div class="col-12">
             <h2 class="title-padding">Number Object</h2>
             <p>Like JavaScript, all the numbers in TypeScript are stored as floating-point values. These numeric values are treated like a number data type. The number is used to represents both integers as well as floating-point values. The number type converts the numeric literal to an instance of the number class. The number class acts as a wrapper and manipulate the numeric literals as they were objects. </p>
-        </div>
-        <div class="col-12">
-            <div class="syntax-wrapper">
             <h3>Syntax: </h3> <p><span class="keyword">var</span> <span class="var-name">var_name</span> = <span class="number">new</span> <span class="value">Number(value)</span></p>
         </div>
-        <div class="col-12">
+    </div>
+
+    <div class="row">   
+        <div class="col-12 white-background">
             <h3 class="title-padding">Propertys</h3>
             <table class="table table-striped">
                 <thead>
@@ -186,96 +187,116 @@
                 </tbody>
               </table>
         </div>
-        </div>
+    </div>
+        <div class="row blue-background">
         <div class="col-12">
             <h3 class="title-padding">Number Methods</h3>
         </div>
-        <div class="col-md-4 card-wrapper">
-            <div class="card">
-                <div class="card-title">
-                    <h3>toExponential()</h3>
-                </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
                 <div class="card-body">
-                    <p>This function takes in one argument, an optional integer specifying the number of digits after the decimal point. It returns the exponential representation of the number in a string format.</p>
-                </div>
-                <div class="card-sinature">
-                   <h5>Signature</h5>
-                   <p>numObj.toExponential([fractionDigits])</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 card-wrapper">
-            <div class="card">
-                <div class="card-title">
-                    <h3>toFixed()</h3>
-                </div>
-                <div class="card-body">
-                    <p>This function has one optional argument, an integer specifying the number of digits after the decimal point. It returns a string representation of the formatted number.</p>
-                </div>
-                <div class="card-sinature">
-                   <h5>Signature</h5>
-                   <p>numObj.toFixed([digits])</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 card-wrapper">
-            <div class="card">
-                <div class="card-title">
-                    <h3>toLocaleString()</h3>
-                </div>
-                <div class="card-body">
-                    <p>This function takes in two arguments: the locale, and an optional options argument representing the locale to which you would like to get the equivalent number representation.</p>
-                </div>
-                <div class="card-sinature">
-                   <h5>Signature</h5>
-                   <p>numObj.toLocaleString([locales [, options]])</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 card-wrapper">
-            <div class="card">
-                <div class="card-title">
-                    <h3>toPrecision()</h3>
-                </div>
-                <div class="card-body">
-                    <p>This function takes in one optional argument, a number representing the precision i.e. the number of significant digits. It returns a string representation to the specified precision.</p>
-                </div>
-                <div class="card-sinature">
-                   <h5>Signature</h5>
-                   <p>numObj.toPrecision([precision])</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 card-wrapper">
-            <div class="card">
-            <div class="card-title">
-                <h3>toString()</h3>
-            </div>
-            <div class="card-body">
-                <p>This function takes in one optional argument, a radix number representing the base for which a string representation is to be returned.</p>
-            </div>
-            <div class="card-sinature">
-               <h5>Signature</h5>
-               <p>numObj.toString([radix])</p>
-            </div>
-        </div></div>
-        <div class="col-md-4 card-wrapper">
-            <div class="card">
-                <div class="card-title">
-                    <h3>valueOf()</h3>
-                </div>
-                <div class="card-body">
-                    <p>This function returns the primitive value of the Object being called on.</p>
-                </div>
-                <div class="card-sinature">
-                   <h5>Signature</h5>
-                   <p>numObj.valueOf()</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                  <h5 class="card-title" style="color: black;">toExponential()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toExponential([fractionDigits])</p>
+                  <p class="card-text" style="color: black;">This function takes in one argument, an optional integer specifying the number of digits after the decimal point. It returns the exponential representation of the number in a string format.</p>
 
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">toFixed()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toFixed([digits])</p>
+                  <p class="card-text" style="color: black;">This function has one optional argument, an integer specifying the number of digits after the decimal point. It returns a string representation of the formatted number.</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">toLocaleString()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toLocaleString([locales [, options]])</p>
+                  <p class="card-text" style="color: black;">This function takes in two arguments: the locale, and an optional options argument representing the locale to which you would like to get the equivalent number representation.</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">toPrecision()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toPrecision([precision])</p>
+                  <p class="card-text" style="color: black;">This function takes in one optional argument, a number representing the precision i.e. the number of significant digits. It returns a string representation to the specified precision.</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">toString()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.toString([radix])</p>
+                  <p class="card-text" style="color: black;">This function takes in one optional argument, a radix number representing the base for which a string representation is to be returned.</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-settings">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black;">valueOf()</h5>
+                  <p style="color: black;font: .9em sans-serif;">numObj.valueOf()</p>
+                  <p class="card-text" style="color: black;">This function returns the primitive value of the Object being called on.</p>
+
+                </div>
+              </div>
+        </div>
+        </div>
+
+<div class="row">
+    <section id="footersection">
+        <footer class="text-light">
+            <div class="row p-5">
+                <div class="col-md-4">
+                  <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="lead text-center">Quick Links</h5>
+                    <div class="row iconsfooter text-center">
+                        <div class="col-md-6">
+                            <a href=""><i class="fas fa-home"> Home</i></a>
+                            <a href=""><i class="fas fa-eye"> Overview</i></a>
+                            <a href=""><i class="fas fa-file"> Documentation</i></a>
+                            <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
+                            <a href=""><i class="fab fa-invision"> Interfaces</i></a>
+                            <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <a href=""><i class="far fa-circle"> U&I Types</i></a>
+                            <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                            <a href=""><i class="fas fa-object-group"> Objects</i></a>
+                            <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
+                            <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                            <a href=""><i class="fas fa-address-card"> About</i></a>
+                        </div>
+                        
+                    </div>     
+                    
+                </div>
+                <div class="col-md-4">
+                    <h5 class="lead text-center">Choose Your Language!</h5>
+                    <div id="google_translate_element" class="text-center"></div>
+                </div>
+            </div>
+            <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+           
+        </footer>
+    </section>
+</div>
+</div>
+</div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
