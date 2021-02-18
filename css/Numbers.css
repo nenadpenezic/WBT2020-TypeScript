@@ -105,6 +105,7 @@ input.transparent-input{
     background-color: rgba(35, 37, 39,1);
       transition-duration: 400ms;
   }
+  /*------------------------------------------*/
   .title-padding{
     padding: 2rem 0;
 }
@@ -112,4 +113,29 @@ input.transparent-input{
     text-align: center;
     color: black;
     background-color:white;
+  }
+  /*-----------------------------------------*/
+  .syntax-wrapper{
+      background-color: rgb(133, 124, 124);
+      padding:2rem 0rem;
+      text-align: center;
+      margin: 2rem auto;
+  }
+  .syntax-wrapper p{
+      margin: 0%;
+      padding: 0%;
+  }
+  .keyword{
+      color: blue;
+  }
+  .number{
+      color: red;
+  }
+  .syntax-dec-list{
+      max-width: 900px;
+      margin: 0% auto;
+      text-align: left;
+  }
+  .sub-title-h4{
+      padding: 2rem 0;
   }
