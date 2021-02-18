@@ -1,0 +1,103 @@
+body{
+    background: url('../img/pozadina4.jpg') no-repeat center fixed;
+
+
+}
+
+input.transparent-input{
+    background-color:rgba(0,0,0,0) !important;
+    border:none !important;
+ }
+
+.d1{
+    background-image: url('../img/cont1.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+.d2{
+    background-image: url('../img/cont2.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    height: 25vh;
+}
+
+.d3{
+    background-image: url('../img/cont3.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    height: 25vh;
+}
+
+.c2{
+    color: white;
+    word-wrap: break-word;
+}
+.s1{
+    border: 3px outset rgb(13, 212, 196);
+    background-color:rgba(65, 162, 192, 0.2);
+    
+}
+
+.s2{
+    border: 2px outset rgb(13, 212, 39);
+
+}
+
+.s3{
+    border: 2px outset rgb(212, 13, 13);
+
+}
+
+.c3{
+    padding-left: 0;
+    padding-right: 0; 
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+.c4{
+    border-top: 10px ridge rgb(15, 159, 216);
+    border-bottom: 10px ridge rgb(15, 159, 216);
+}
+
+.c5{
+    background-color:rgb(183, 198, 202) !important;
+}
+.cf1{
+    background-color:rgb(183, 198, 202) !important;
+}
+
+.inner-nav{
+    list-style: none;
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    display: none;
+    border-radius: 10px;
+
+}
+.inner-nav a{
+    padding: .5rem 1.5rem;
+    background-color: white;
+}
+
+
+.basic-syntax:hover~.inner-nav{
+    display: block;
+}
+.inner-nav:hover{
+    display: block;
+}
+
+#footersection{
+    background-color: rgb(9, 10, 4) !important;
+    
+}
+
+.iconsfooter{
+    text-decoration: none !important;
+}
+.iconsfooter a{
+    color: white;
+}
