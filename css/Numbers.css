@@ -131,6 +131,12 @@ input.transparent-input{
   .number{
       color: red;
   }
+  .var-name{
+      color: green;
+  }
+  .value{
+      color: rgb(255, 81, 0);
+  }
   .syntax-dec-list{
       max-width: 900px;
       margin: 0% auto;
@@ -139,3 +145,64 @@ input.transparent-input{
   .sub-title-h4{
       padding: 2rem 0;
   }
+  .table{
+      text-align: left;
+  }
+  .card-wrapper{
+      margin-bottom: 2rem;
+  }
+  .card{
+      height: 400px;
+  }
+  @media only screen and (max-width: 758px) {
+    nav{
+        display: block;
+        padding: .5rem 0;
+       
+      }
+      .nav-menu{
+        display: none;
+      }
+      .nav-form form{ 
+        width: 100%;
+        justify-content: center;
+      }
+      #navigation{
+        display: block;
+        font-size: 45px;
+        color: white;
+        margin-left: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+       
+      .display-nav{
+        display: block;
+      }
+      .hidde-nav{
+        display: none;
+      }
+      #sub-menu{
+        height: 200px;
+        overflow-y: scroll;
+        position: relative;
+        left: 50px;
+        background-color: unset;
+        }
+      #sub-sub-menu{
+        width: auto;
+        position: relative;
+        top: 0;
+        left:50px;
+        background-color: unset;
+        }
+        .row-wrapper{
+            flex-direction: column;
+          }
+        .title-wrapper h1{
+        color: white;
+        font-size: 70px;
+        padding-bottom: 55px;
+        text-align: center;
+        }
+    }

@@ -91,15 +91,15 @@
         <div class="col-md-12">
             <h3>Syntax</h3>
             <div class="syntax-wrapper">
-                <p>[<span class="keyword">Keyword</span>] [Variable Name]: [<span class="number">number</span>] = [Value];
+                <p>[<span class="keyword">Keyword</span>] [<span class="var-name">Variable Name</span>]: [<span class="number">number</span>] = [<span class="value">Value</span>];
                     <br>
-                    [<span class="keyword">Keyword</span>] [Variable Name]: [<span class="number">number</span>];</p>
+                    [<span class="keyword">Keyword</span>] [<span class="var-name">Variable Name</span>]: [<span class="number">number</span>];</p>
             </div>
             <ul class="syntax-dec-list">
                 <li>[<span class="keyword">Keyword</span>] – It’s a keyword of the variable either var, let or const to define the scope and usage of variables.</li>
-                <li>[Variable Name] - Its name of the variable to hold the values in our application.</li>
+                <li>[<span class="var-name">Variable Name</span>] - Its name of the variable to hold the values in our application.</li>
                 <li>[<span class="number">number</span>] - It’s a number type of data the variable can hold.</li>
-                <li>[Value] – Assigning a required value to the variable.</li>
+                <li>[<span class="value">Value</span>] – Assigning a required value to the variable.</li>
             </ul>
         </div>
         <div class="col-12">
@@ -127,7 +127,153 @@
             <img src="./img/hd.PNG" alt="" style="width: 100%;">
         </div>
     </div>
-  
+    <div class="row">
+        <div class="col-12">
+            <h2 class="title-padding">Number Object</h2>
+            <p>Like JavaScript, all the numbers in TypeScript are stored as floating-point values. These numeric values are treated like a number data type. The number is used to represents both integers as well as floating-point values. The number type converts the numeric literal to an instance of the number class. The number class acts as a wrapper and manipulate the numeric literals as they were objects. </p>
+        </div>
+        <div class="col-12">
+            <div class="syntax-wrapper">
+            <h3>Syntax: </h3> <p><span class="keyword">var</span> <span class="var-name">var_name</span> = <span class="number">new</span> <span class="value">Number(value)</span></p>
+        </div>
+        <div class="col-12">
+            <h3 class="title-padding">Propertys</h3>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Number</th>
+                    <th scope="col">Property</th>
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>MAX_VALUE</td>
+                    <td>The largest possible value a number in JavaScript can have 1.7976931348623157E+308.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>	
+                        MIN_VALUE</td>
+                    <td>The smallest possible value a number in JavaScript can have 5E-324.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>NaN</td>
+                    <td>Equal to a value that is not a number.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>NEGATIVE_INFINITY</td>
+                    <td>A value that is less than MIN_VALUE.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>POSITIVE_INFINITY</td>
+                    <td>A value that is greater than MAX_VALUE.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>prototype</td>
+                    <td>A static property of the Number object. Use the prototype property to assign new properties and methods to the Number object in the current document.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>constructor</td>
+                    <td>Returns the function that created this object's instance. By default, this is the Number object.</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        </div>
+        <div class="col-12">
+            <h3 class="title-padding">Number Methods</h3>
+        </div>
+        <div class="col-md-4 card-wrapper">
+            <div class="card">
+                <div class="card-title">
+                    <h3>toExponential()</h3>
+                </div>
+                <div class="card-body">
+                    <p>This function takes in one argument, an optional integer specifying the number of digits after the decimal point. It returns the exponential representation of the number in a string format.</p>
+                </div>
+                <div class="card-sinature">
+                   <h5>Signature</h5>
+                   <p>numObj.toExponential([fractionDigits])</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+            <div class="card">
+                <div class="card-title">
+                    <h3>toFixed()</h3>
+                </div>
+                <div class="card-body">
+                    <p>This function has one optional argument, an integer specifying the number of digits after the decimal point. It returns a string representation of the formatted number.</p>
+                </div>
+                <div class="card-sinature">
+                   <h5>Signature</h5>
+                   <p>numObj.toFixed([digits])</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+            <div class="card">
+                <div class="card-title">
+                    <h3>toLocaleString()</h3>
+                </div>
+                <div class="card-body">
+                    <p>This function takes in two arguments: the locale, and an optional options argument representing the locale to which you would like to get the equivalent number representation.</p>
+                </div>
+                <div class="card-sinature">
+                   <h5>Signature</h5>
+                   <p>numObj.toLocaleString([locales [, options]])</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+            <div class="card">
+                <div class="card-title">
+                    <h3>toPrecision()</h3>
+                </div>
+                <div class="card-body">
+                    <p>This function takes in one optional argument, a number representing the precision i.e. the number of significant digits. It returns a string representation to the specified precision.</p>
+                </div>
+                <div class="card-sinature">
+                   <h5>Signature</h5>
+                   <p>numObj.toPrecision([precision])</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+            <div class="card">
+            <div class="card-title">
+                <h3>toString()</h3>
+            </div>
+            <div class="card-body">
+                <p>This function takes in one optional argument, a radix number representing the base for which a string representation is to be returned.</p>
+            </div>
+            <div class="card-sinature">
+               <h5>Signature</h5>
+               <p>numObj.toString([radix])</p>
+            </div>
+        </div></div>
+        <div class="col-md-4 card-wrapper">
+            <div class="card">
+                <div class="card-title">
+                    <h3>valueOf()</h3>
+                </div>
+                <div class="card-body">
+                    <p>This function returns the primitive value of the Object being called on.</p>
+                </div>
+                <div class="card-sinature">
+                   <h5>Signature</h5>
+                   <p>numObj.valueOf()</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
     <script
