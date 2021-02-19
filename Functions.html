@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/functions.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="row-wrapper">
+              <div class="col-lg-2 p-3 header-common">
+                  <i class="fab fa-facebook-f fa-lg p-1"></i>
+                  <i class="fab fa-twitter fa-lg p-1"></i>
+                  <i class="fab fa-instagram fa-lg p-1"></i>
+                  <i class="fab fa-pinterest fa-lg p-1"></i>
+              </div>
+              <div class="col-lg-8  text-center">
+                  <h1 style="color: white;">TypeScript.</h1>
+              </div>
+              <div class="col-lg-2 header-common nav-form">
+                  <form class="form-inline">
+                      <input class="form-control w-75 transparent-input"  type="search" placeholder="Search" aria-label="Search">
+                      <i class="fas fa-search"></i>
+                    </form>
+              </div>
+            </div>
+        <div class="col-12" style="padding: 0%;">
+          <div class="banner">
+            <div class="banner-color">
+                        
+        <nav>
+          <div id="navigation">
+            <i class="fas fa-bars"></i>
+        </div>
+            <ul id="" class="nav-menu hide-nav">
+                <li class="nav-li"><a href="">Home</a> </li>
+                <li class="nav-li"><a href="">Overview</a></li>
+                <li id="docs" class="nav-li"><a href="">Documentation <i class="fas fa-arrow-down"></i></a>
+                    <ul id="sub-menu">
+                        <li id="basic-syntax" class="submenu-li"><a href="">Basic Syntax <i class="fas fa-arrow-right"></i></a>
+                        <ul id="sub-sub-menu">
+                            <li><a href="">Types</a></li>
+                            <li><a href="">Variables</a></li>
+                            <li><a href="">Operators</a></li>
+                            <li><a href="">Loops</a></li>
+                            <li><a href="">Numbers</a></li>
+                            <li><a href="">Strins</a></li>
+                            <li><a href="">Arrays</a></li>
+                        </ul>
+                        </li>
+                        <li class="submenu-li"><a href="">Interfaces</a></li>
+                        <li class="submenu-li"><a href="">Functions</a></li>
+                        <li class="submenu-li"><a href="">Union and Intersection Types</a></li>
+                        <li class="submenu-li"><a href="">Classes</a></li>
+                        <li class="submenu-li"><a href="">Objects</a></li>
+                        <li class="submenu-li"><a href="">Namespaces</a></li>
+                        <li class="submenu-li"><a href="">Modules & Ambients</a></li>
+                    </ul>
+                    <li class="nav-li"><a href="">About</a></li>
+                </li>
+            </ul>
+        </nav>
+        <div class="title-wrapper">
+            <h1>Typescript's <br>Functions</h1>
+        </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+<div class="container common-styles">
+    <div class="row blue-background">
+        <div class="col-12">
+            <h2 class="title-padding">Functions</h2>
+        </div>
+        <div class="col-md-6">
+            Functions are the primary blocks of any program. In JavaScript, functions are the most important part since the JavaScript is a functional programming language. With functions, you can implement/mimic the concepts of object-oriented programming like classes, objects, polymorphism, and, abstraction.
+        </div>
+        <div class="col-md-6">
+            Functions ensure that the program is maintainable and reusable, and organized into readable blocks. While TypeScript provides the concept of classes and modules, functions still are an integral part of the language.
+        </div>
+        <div class="col-12 function-types">
+            <p>In TypeScript, functions can be of two types:</p>
+            <ul>
+                <li>named</li>
+                <li>anonymous</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row white-background">
+        <div class="col-12 named-functions" class="">
+            <h3 class="title-padding">Named Functions</h3>
+            <p>A named function is one where you declare and call a function by its given name.</p>
+            <p>Example:</p>
+            <img src="./img/named-f.PNG" alt="">
+            <p>An anonymous function can also include parameter types and return type.</p>
+            <p>Example:</p>
+            <img src="./img/s.PNG" alt="">
+        </div>
+
+    </div>
+    <div class="row  anonymous-function blue-background">
+        <div class="col-12">
+            <h3 class="title-padding">Anonymous Function</h3>
+            <p>An anonymous function is one which is defined as an expression. This expression is stored in a variable. So, the function itself does not have a name. These functions are invoked using the variable name that the function is stored in.
+                An anonymous function can include parameter types and return type.
+            </p>
+            
+        </div>
+        <div class="col-md-6">
+            <img src="./img/as.PNG" alt="">
+        </div>
+        <div class="col-md-6">
+            <img src="./img/as1.PNG" alt="">
+        </div>
+    </div>
+    <div class="row white-background">
+        <div class="col-12">
+            <h2 class="title-padding">Function Parameters</h2>
+        </div>
+        <div class="col-md-4 card-wrapper">
+            <div class="card-container">
+                <div class="card-title-1">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Optional Parameters</h3>
+                </div>
+                <div class="card-body-1">
+                    <p>Optional parameters can be used when arguments need not be compulsorily passed for a function’s execution. A parameter can be marked optional by appending a question mark to its name. The optional parameter should be set as the last argument in a function. <br>
+                    Syntax: <br>
+                    <span>function function_name (param1[:type], param2[:type], param3[:type])<span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+            <div class="card-container">
+                <div class="card-title-1">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Rest Parameters</h3>
+                </div>
+                <div class="card-body-1">
+                    <p>Rest parameters don’t restrict the number of values that you can pass to a function. However, the values passed must all be of the same type. In other words, rest parameters act as placeholders for multiple arguments of the same type.</p>
+                    <p>To declare a rest parameter, the parameter name is prefixed with three periods. Any nonrest parameter should come before the rest parameter.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 card-wrapper">
+            <div class="card-container">
+                <div class="card-title-1">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Default Parameters</h3>
+                </div>
+                <div class="card-body-1">
+                    <p>Function parameters can also be assigned values by default. However, such parameters can also be explicitly passed values. <br><br>
+                        <span>Syntax: <br> function function_name(param1[:type],param2[:type] = default_value) { 
+                        } </span>
+                       
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <h4 class="example-padding">Examples</h4>
+        </div>
+        <div class="col-md-4 img-container">
+            <h5>Optional Parameters</h5>
+            <img src="./img/p1.PNG" alt="">
+        </div>
+        <div class="col-md-4 img-container">
+            <h5>Rest Parameters</h5>
+            <img src="./img/p2.PNG" alt="">
+        </div>
+        <div class="col-md-4 img-container">
+            <h5>Default Parameters</h5>
+            <img src="./img/p3.PNG" alt="">
+        </div>
+    </div>
+    <div class="row blue-background">
+        <div class="col-12">
+            <h2 class="title-padding">Recursion and TypeScript Functions</h2>
+            <p>Recursion is a technique for iterating over an operation by having a function call to itself repeatedly until it arrives at a result. Recursion is best applied when you need to call the same function repeatedly with different parameters from within a loop.</p>
+        </div>
+        
+    </div>
+    <div class="row white-background">
+        <div class="col-12">
+            <h2 class="title-padding">Function Overloads</h2>
+            <p>Functions have the capability to operate differently on the basis of the input provided to them. In other words, a program can have multiple methods with the same name with different implementation. This mechanism is termed as Function Overloading. TypeScript provides support for function overloading.</p>
+            <p>Steps to overload function</p>
+            <ul>
+                <li> <p>Step 1 − Declare multiple functions with the same name but different function signature. Function signature includes the following.</p>
+                    <p><b>The data type of the parameter </b> <br>
+                                                      <br>
+                        function disp(string):void; <br> 
+                        function disp(number):void;
+
+                        <br>
+                        <br>
+                        <b>The number of parameters</b>
+
+                        <br>
+                        <br>
+                        function disp(n1:number):void;<br>
+                        function disp(x:number,y:number):void;
+
+                        <br>
+                        <br>
+                        <b>The sequence of parameters</b>
+
+
+                        <br>
+                        <br>
+                        function disp(n1:number,s1:string):void;<br>
+                        function disp(s:string,n:number):void;
+                    </p>
+
+                </li>
+                <li>Step 2 − The declaration must be followed by the function definition. The parameter types should be set to any if the parameter types differ during overload. Additionally, for case b explained above, you may consider marking one or more parameters as optional during the function definition.</li>
+                <li>Step 3 − Finally, you must invoke the function to make it functional.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row blue-background">
+        <div class="col-12">
+            <h2 class="title-padding">Videos for Learning</h2>
+        </div>
+        <div class="col-md-4">
+            <iframe width="560" height="315" class="video-link" src="https://www.youtube.com/embed/5fJ2nV3P0XI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <iframe width="560" height="315" class="video-link" src="https://www.youtube.com/embed/jXoSaX_yFh4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <iframe width="560" height="315" class="video-link" src="https://www.youtube.com/embed/qt60Yv7Jwyc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <section id="footersection">
+            <footer class="text-light">
+                <div class="row p-5">
+                    <div class="col-md-4">
+                      <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="lead text-center">Quick Links</h5>
+                        <div class="row iconsfooter text-center">
+                            <div class="col-md-6">
+                                <a href=""><i class="fas fa-home"> Home</i></a>
+                                <a href=""><i class="fas fa-eye"> Overview</i></a>
+                                <a href=""><i class="fas fa-file"> Documentation</i></a>
+                                <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
+                                <a href=""><i class="fab fa-invision"> Interfaces</i></a>
+                                <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <a href=""><i class="far fa-circle"> U&I Types</i></a>
+                                <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                                <a href=""><i class="fas fa-object-group"> Objects</i></a>
+                                <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
+                                <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                                <a href=""><i class="fas fa-address-card"> About</i></a>
+                            </div>
+                            
+                        </div>     
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="lead text-center">Choose Your Language!</h5>
+                        <div id="google_translate_element" class="text-center"></div>
+                    </div>
+                </div>
+                <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+               
+            </footer>
+        </section>
+    </div>
+</div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+
+    const menuButton=document.getElementById('navigation');
+      const menu=document.getElementsByClassName('nav-menu')[0];
+      
+      let isMenuOpen=true;
+
+      menuButton.addEventListener('click',()=>{
+        if(isMenuOpen){
+          menu.classList.add('display-nav');
+          menu.classList.remove('hide-nav');
+          isMenuOpen=false;
+        }
+        else{
+          menu.classList.add('hide-nav');
+          menu.classList.remove('display-nav');
+          isMenuOpen=true;
+        }
+      })
+    </script>
+</body>
+</html>
