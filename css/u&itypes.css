@@ -1,0 +1,156 @@
+body{
+    background: url('../img/pozadina4.jpg') no-repeat center fixed;
+
+
+}
+
+input.transparent-input{
+    background-color:rgba(0,0,0,0) !important;
+    border:none !important;
+ }
+
+.inner-nav{
+    list-style: none;
+    position: absolute;
+    left: 225px;
+    top: 10px;
+    display: none;
+    border-radius: 10px;
+
+}
+.inner-nav a{
+    background-color: white;
+    
+}
+
+.inner-nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.basic-syntax:hover~.inner-nav{
+    display: block;
+}
+.inner-nav:hover{
+    display: block;
+
+}
+
+.hov:hover{
+    background-color: black;
+    color: white;
+}
+
+.c1{
+    color: white;
+    background-color: rgba(100, 104, 105, 0.4);
+    border: 4px dashed white;
+}
+
+
+.c1 h1{
+    font-size: 50px;
+}
+
+
+.c2{
+    background-color:  rgba(216, 220, 221, 0.9);
+
+}
+#footersection{
+    background-color: rgb(4, 9, 10) !important;
+    
+}
+
+.p1{
+    font-size: 17px;
+}
+
+.img1{
+    border: 5px inset white;
+}
+
+.img2{
+    border: 5px outset white;
+}
+.blackWhite{
+    background-color: rgb(72, 72, 73);
+    color: white;
+}
+
+.b1{
+    border-top: 8px outset rgb(72, 72, 73);
+}
+.divider
+{
+	position: relative;
+	margin-top: 50px;
+	height: 1px;
+}
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: rgb(52, 162, 226);
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+
+}
+
+.div-dot1:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: rgb(216, 220, 221);
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+
+}
+
+.c3{
+    border-top: 5px inset rgb(52, 162, 226);
+    border-bottom: 5px outset rgb(52, 162, 226);
+    background-color: rgba(52, 162, 226, 0.9);
+}
+
+
+.t{
+    width: 100%;
+}
+.p2{
+    color: black;
+    font-size: 17px;
+}
+.iconsfooter{
+    text-decoration: none !important;
+}
+.iconsfooter a{
+    color: white;
+}
+
+.f{
+    padding-left: 0;
+    padding-right: 0;
+}
