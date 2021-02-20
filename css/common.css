@@ -1,0 +1,17 @@
+.title-padding{
+    padding-bottom: 2rem;
+}
+.common-styles{
+    text-align: center;
+    color: black;
+    background-color:white;
+    overflow: hidden;
+  }
+  .blue-background{
+    background-color: rgb(8, 147, 189);
+    color: white;
+    padding: 4rem 0;
+  }
+  .white-background{
+    padding: 4rem 0rem;
+  }

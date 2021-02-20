@@ -1,0 +1,58 @@
+@media only screen and (max-width: 758px) {
+    nav{
+        display: block;
+        padding: .5rem 0;
+       
+      }
+      .nav-menu{
+        display: none;
+      }
+      .nav-form form{ 
+        width: 100%;
+        justify-content: center;
+      }
+      #navigation{
+        display: block;
+        font-size: 45px;
+        color: white;
+        margin-left: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+       
+      .display-nav{
+        display: block;
+      }
+      .hidde-nav{
+        display: none;
+      }
+      #sub-menu{
+        height: 200px;
+        overflow-y: scroll;
+        position: relative;
+        left: 50px;
+        background-color: unset;
+        }
+      #sub-sub-menu{
+        width: auto;
+        position: relative;
+        top: 0;
+        left:50px;
+        background-color: unset;
+        }
+        .row-wrapper{
+          flex-direction: column;
+        }
+        .title-wrapper h1{
+            color: white;
+            font-size: 70px;
+            padding-bottom: 55px;
+            text-align: center;
+        }
+        .what-is-array img{
+            width: 60%;
+        }
+        .features ul{
+            width: 90%;
+        }
+  }
