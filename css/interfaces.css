@@ -1,0 +1,21 @@
+.example{
+    background-color: rgb(226, 23, 5);
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    color: white;
+}
+.example-title{
+    font-style: italic;
+    color: rgb(46, 45, 45);
+}
+.syntax span{
+    font-style: italic;
+    font-style: bold;
+    color:purple
+}
+.example-1{
+    background-color: rgb(156, 19, 19);
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    color: rgb(199, 194, 194);
+}
