@@ -126,9 +126,14 @@ input.transparent-input{
   .bt-string{
       margin-top:2rem ;
   }
-  .string-quoted-img{
+  .string-img{
       width: 100%;
   }
+  .code-container{
+      background-color: rgb(73, 62, 62);
+      padding: 1rem 0;
+  }
+
    /*-----------------------------------------*/
    .blue-background{
     background-color: rgb(8, 147, 189);
