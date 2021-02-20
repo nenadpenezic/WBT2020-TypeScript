@@ -98,11 +98,11 @@
                 <h5 class="example-title">Example:</h5>
                 <div class="example">
                     <p>
-                            interface IEmployee { <br>
-                            empCode: number;  <br>
-                            empName: string;  <br>
-                            getSalary: (number) => number; // arrow function <br>
-                            getManagerName(number): string; <br>
+                           <span>interface</span> IEmployee { <br>
+                            empCode: <span>number</span>;  <br>
+                            empName:<span>string</span> ;  <br>
+                            getSalary: (number) => <span>number</span>; // arrow function <br>
+                            getManagerName(number): <span>string</span>; <br>
                         }
                     </p>
                 </div>
@@ -114,20 +114,66 @@
                 <p>Interface in TypeScript can be used to define a type and also to implement it in the class.</p>
 
                 <div class="example-1">
-                    <p>interface KeyPair { <br>
-                        key: number; <br>
-                        value: string; <br>
+                    <p> <span>interface</span> KeyPair { <br>
+                        key: <span>number</span>; <br>
+                        value: <span>string</span> ; <br>
                     } <br>
                         <br>
-                    let kv1: KeyPair = { key:1, value:"Steve" }; <br>
+                    <span>let</span> kv1: KeyPair = { key:1, value:"Steve" }; <br>
                     
-                    let kv2: KeyPair = { key:1, val:"Steve" }; <br>
+                    <span>let</span> kv2: KeyPair = { key:1, val:"Steve" }; <br>
                     
-                    let kv3: KeyPair = { key:1, value:100 };</p>
+                    <span>let</span> kv3: KeyPair = { key:1, value:100 };</p>
                 </div>
+                <p class="example-1-paragraph">In the above example, an interface <span>KeyPair</span> includes two properties <span>key</span> and <span>value</span> . A variable <span>kv1</span> is declared as <span>KeyPair</span> type. 
+                    So, it must follow the same structure as <span> KeyPair</span>. It means only an object with 
+                    properties <span> key</span> of number type and <span> value</span> of string type can be assigned to a variable 
+                     <span>kv1</span>. The TypeScript compiler will show an error if there is any change in the name 
+                    of the properties or the data type is different than <span>KeyPair</span>. Another variable <span>kv2</span>
+                    is also declared as <span>KeyPair</span> type but the assigned value is val instead of value, so
+                     this will cause an error. In the same way, <span>kv3</span> assigns a number to the <span>value</span> property,
+                      so the compiler will show an error. Thus, TypeScript uses an interface to ensure the proper structure of an object.</p>
             </div>
         </div>
-       
+       <div class="row white-background">
+           <div class="col-12">
+                <h2 class="title-padding">Interface for Array Type</h2>
+                <p>An interface can also define the type of an array where you can define the type of index as well as values.</p>
+           </div>
+           <div class="col-md-6">
+            <div class="example-2">
+                interface NumList { <br>
+                    [index:number]:number <br>
+                } <br>
+                <br>
+                let numArr: NumList = [1, 2, 3];<br>
+                numArr[0];<br>
+                numArr[1];<br>
+                
+                interface IStringList {<br>
+                    [index:string]:string <br>
+                } <br>
+                <br>
+                let strArr : IStringList; <br>
+                strArr["TS"] = "TypeScript"; <br>
+                strArr["JS"] = "JavaScript"; <br>
+            </div>
+           </div>
+           <div class="col-md-6">
+            <p class="example-2-paragraph">In the above example, interface <span>NumList</span>  defines a type of array with index as number and value as number type. In the same way, <span>IStringList</span>  defines a string array with index as string and value as string.</p> 
+           </div>
+       </div>
+       <div class="row blue-background">
+        <div class="col-md-6">
+            <h2 class="title-padding">Optional Property</h2>
+            <p>Sometimes, we may declare an interface with excess properties but may not expect all objects to define all the given interface properties. We can have optional properties, marked with a "?". In such cases, objects of the interface may or may not define these properties.</p>
+
+        </div>
+        <div class="col-md-6">
+            <h2 class="title-padding">Read only Properties</h2>
+            <p>TypeScript provides a way to mark a property as read only. This means that once a property is assigned a value, it cannot be changed!</p>
+        </div>
+       </div>
     </div>
 
     <script
