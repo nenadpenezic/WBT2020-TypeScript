@@ -33,6 +33,11 @@ input.transparent-input{
     color: white;
     word-wrap: break-word;
 }
+
+.hov:hover{
+    background-color: black;
+    color: white;
+}
 .s1{
     border: 3px outset rgb(13, 212, 196);
     background-color:rgba(65, 162, 192, 0.2);
@@ -42,6 +47,11 @@ input.transparent-input{
 .s2{
     border: 2px outset rgb(13, 212, 39);
 
+}
+
+.inner-nav a:hover{
+    background-color: black;
+    color: white;
 }
 
 .s3{
@@ -100,4 +110,9 @@ input.transparent-input{
 }
 .iconsfooter a{
     color: white;
+}
+
+.f{
+    padding-left: 0;
+    padding-right: 0;
 }
