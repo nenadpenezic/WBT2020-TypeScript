@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/u&itypes.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
+    <script src="script/u&itypes.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row p-3 d-flex justify-content-center" style="border-bottom: 1px solid grey;">
+            <div class="col-lg-2 d-flex align-items-center text-white">
+                <i class="fab fa-facebook-f fa-lg p-1"></i>
+                <i class="fab fa-twitter fa-lg p-1"></i>
+                <i class="fab fa-instagram fa-lg p-1"></i>
+                <i class="fab fa-pinterest fa-lg p-1"></i>
+            </div>
+            <div class="col-lg-8 text-center">
+                <h1 style="color: white;">TypeScript.</h1>
+            </div>
+            <div class="col-lg-2 d-flex align-items-center text-white">
+                <form class="form-inline">
+                    <input class="form-control transparent-input" style="width: 55%;" type="search" placeholder="Search" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                  </form>
+            </div>
+        </div>
+        <div class="row p-3 d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Overview.html">Overview</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Documentation.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Documentation
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item basic-syntax hov" href="basicSyntax.html">Basic Syntax <i class="fa fa-caret-right"></i></a>
+                            <ul  class="inner-nav">
+                                <li class="nav-item inner-nav-a"><a href="Types.html" class="dropdown-item">Types</a></li>
+                                <li class="nav-item inner-nav-a"><a href="Variables.html" class="dropdown-item">Variables</a></li>
+                                <li class="nav-item inner-nav-a"><a href="Operators.html" class="dropdown-item">Operators</a></li>
+                                <li class="nav-item inner-nav-a"><a href="Loops.html" class="dropdown-item">Loops</a></li>
+                                <li class="nav-item inner-nav-a"><a href="Numbers.html" class="dropdown-item">Numbers</a></li>
+                                <li class="nav-item inner-nav-a"><a href="Strings.html" class="dropdown-item">Strings</a></li>
+                                <li class="nav-item inner-nav-a"><a href="arrays.html" class="dropdown-item">Arrays</a></li>
+                            </ul>
+                        </li>
+                          <li><a class="dropdown-item hov" href="#">Interfaces</a></li>
+                          <li><a class="dropdown-item hov" href="#">Functions</a></li>
+                          <li><a class="dropdown-item hov" href="u&itypes.html">Unions and Intersection Types</a></li>
+                          <li><a class="dropdown-item hov" href="#">Classes</a></li>
+                          <li><a class="dropdown-item hov" href="objects.html">Objects</a></li>
+                          <li><a class="dropdown-item hov" href="namespaces.html">Namespaces</a></li>
+                          <li><a class="dropdown-item hov" href="#">Modules & Ambients</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                  </ul>       
+                </div>
+              </nav>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 p-5 text-center c1">
+        <h1>Union and Intersection Types</h1>
+    </div>
+    
+    <div class="container mt-5 p-5 text-center c2 b1">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>-- Union Types --</h2>
+
+                <p class="mt-4 p1">Occasionally, you’ll run into a library that expects a parameter to be either a <span class="blackWhite p1">number</span> or a 
+                    <span class="blackWhite p1">string</span>. For instance, take the following function:</p>
+                <img class="img-fluid img1" src="img/uitypes1.JPG">
+
+                <p class="mt-4 p1">The problem with <span class="blackWhite p1">padLeft</span> in the above example is that its <span class="blackWhite p1">padding </span>
+                    parameter is typed as <span class="blackWhite p1">any</span>. That means that we can call it with an argument that’s 
+                    neither a <span class="blackWhite p1">number</span> nor a <span class="blackWhite p1">string</span>, but TypeScript will be okay with it.</p>
+                <img class="img-fluid img2" src="img/uitypes2.JPG">
+                
+                <p class="mt-4 p1">In traditional object-oriented code, we might abstract over the two types by creating a hierarchy of types. While this is much more explicit, 
+                    it’s also a little bit overkill. One of the nice things about the original version of <span class="blackWhite p1">padLeft</span> was that we were able to 
+                    just pass in primitives. That meant that usage was simple and concise. This new approach also wouldn’t help if we were just trying to use a function 
+                    that already exists elsewhere.
+
+                <br><br>Instead of <span class="blackWhite p1">any</span>, we can use a union type for the <span class="blackWhite p1">padding</span> parameter:</p>
+                <img class="img-fluid img1" src="img/uitypes2.JPG">
+
+                <p class="mt-4 p1">A union type describes a value that can be one of several types. We use the vertical bar (|) to separate each type, 
+                    so <br><span class="blackWhite p1">number | string | boolean</span>
+                    is the type of a value that can be a <span class="blackWhite p1">number</span>, a <span class="blackWhite p1">string</span>, or a 
+                    <span class="blackWhite p1">boolean</span>.</p>
+            </div>
+        </div>
+        
+
+
+        <div class="wrapper py-3">
+            <div class="divider div-transparent div-dot"></div>
+        </div>      
+    </div>
+
+    <div class="container p-5 text-center c3">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="mt-5">--- Unions with Common Fields ---</h2>
+
+                <p class="mt-4 p2">If we have a value that is a union type, we can only access members that are common to all types in the union.</p>
+                <img class="img-fluid img2" src="img/uitypes4.JPG">
+
+                <p class="mt-4 p2">
+                    Union types can be a bit tricky here, but it just takes a bit of intuition to get used to. If a value has the type <span class="blackWhite p1">A | B</span>, 
+                    we only know for certain that it has members that both <span class="blackWhite p1">A and B</span> have. In this example, <span class="blackWhite p1">Bird</span>
+                    has a member named <span class="blackWhite p1">fly</span>. We can’t be sure whether a variable 
+                    typed as <span class="blackWhite p1">Bird | Fish</span> has a <span class="blackWhite p1">fly</span> method. If the variable is really a 
+                    <span class="blackWhite p1">Fish</span> at runtime, then calling <span class="blackWhite p1">pet.fly()</span> will fail.
+                </p>
+            </div>
+        </div>
+
+        <div class="wrapper py-3">
+            <div class="divider div-transparent div-dot1"></div>
+        </div> 
+    </div>
+
+    <div class="container p-5 text-center c2">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="mt-5">--- Discriminating Unions ---</h2>
+                <p class="mt-4 p1">A common technique for working with unions is to have a single field which uses literal types which you can use to let TypeScript narrow 
+                    down the possible current type. For example, we’re going to create a union of three types which have a single shared field.
+                </p>
+                <img class="img-fluid img1" src="img/uitypes5.JPG">
+
+                <p class="mt-4 p1">All of the above types have a field named <span class="blackWhite p1">state</span>, and then they also have their own fields:</p>
+                
+                <div class="col-12">
+                    <table class="table bg-dark text-white">
+                        <thead>
+                          <tr>
+                            <th scope="col">Network Loading State</th>
+                            <th scope="col">Network Failed State</th>
+                            <th scope="col">Network Success State</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">state</th>
+                            <td>state</td>
+                            <td>state</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"> </th>
+                            <td>code</td>
+                            <td>response</td>         
+                          </tr>  
+                        </tbody>
+                      </table>
+                </div>
+           
+                <p class="mt-4 p1">
+                    Given the <span class="blackWhite p1">state</span> field is common in every type inside <span class="blackWhite p1">NetworkState</span> - it is safe for 
+                    your code to access without an existence check.
+
+                    <br><br>With <span class="blackWhite p1">state</span> as a literal type, you can compare the value of <span class="blackWhite p1">state</span> to the equivalent 
+                    string and TypeScript will know which type is currently being used.
+                </p>
+
+                <div class="col-12">
+                    <table class="table bg-dark text-white">
+                        <thead>
+                          <tr>
+                            <th scope="col">Network Loading State</th>
+                            <th scope="col">Network Failed State</th>
+                            <th scope="col">Network Success State</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">"loading"</th>
+                            <td>"failed"</td>
+                            <td>"success"</td>
+                          </tr>             
+                        </tbody>
+                      </table>
+                </div>
+
+                <p class="mt-4 p1">In this case, you can use a <span class="blackWhite p1">switch</span> statement to narrow down which type is represented at runtime:</p>
+                <img class="img-fluid img2" src="img/uitypes6.JPG">
+
+                <div class="wrapper py-3">
+                    <div class="divider div-transparent div-dot"></div>
+                </div> 
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container p-5 text-center c3">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>--- Union Exhaustiveness checking ---</h2>
+                <p class="mt-4 p2">We would like the compiler to tell us when we don’t cover all variants of the discriminated union. For example, if we add 
+                    <span class="blackWhite p1">NetworkFromCachedState</span> to <span class="blackWhite p1">NetworkState</span>, we need to update 
+                    <span class="blackWhite p1">logger</span> as well:
+                </p>
+                <img class="img-fluid img1" src="img/uitypes7.JPG">
+
+                <p class="mt-4 p2">There are two ways to do this. The first is to turn on <span class="blackWhite p1">--strictNullChecks</span> and specify a return type:</p>
+                <img class="img-fluid img2" src="img/uitypes8.JPG">
+
+                <p class="mt-4 p2">Because the <span class="blackWhite p1">switch</span> is no longer exhaustive, TypeScript is aware that the function could 
+                    sometimes return <span class="blackWhite p1">undefined</span>. If you have an explicit 
+                    return type <span class="blackWhite p1">string</span>, then you will get an error that the return type is actually 
+                    <span class="blackWhite p1">string | undefined</span>. However, 
+                    this method is quite subtle and, besides, 
+                    <br><span class="blackWhite p1">--strictNullChecks</span> does not always work with old code.
+
+                   <br><br>The second method uses the <span class="blackWhite p1">never</span> type that the compiler uses to check for exhaustiveness:
+                </p>
+                <img class="img-fluid img2" src="img/uitypes9.JPG">
+
+                <p class="mt-4 p2">Here, <span class="blackWhite p1">assertNever</span> checks that s is of type <span class="blackWhite p1">never</span> — the type that’s 
+                    left after all other cases have been removed. If you forget a case, 
+                    then s will have a real type and you will get a type error. This method requires you to define an extra function, but it’s much more obvious when you 
+                    forget it because the error message includes the missing type name.
+                </p>
+
+                <div class="wrapper py-3">
+                    <div class="divider div-transparent div-dot1"></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-5 text-center c2">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>-- Intersection Types --</h2>
+                <p class="mt-4 p1">
+                    Intersection types are closely related to union types, but they are used very differently. An intersection type combines multiple types into one. 
+                    This allows you to add together existing types to get a single type that has all the features you need. For example, 
+                    <span class="blackWhite p1">Person & Serializable & Loggable</span>
+                    is a type which is all of <span class="blackWhite p1">Person</span> and <span class="blackWhite p1">Serializable</span> and 
+                    <span class="blackWhite p1">Loggable</span>. That means an object of this type will have all members of all three types.
+
+                    <br><br>For example, if you had networking requests with consistent error handling then you could separate out the error handling into its own type which is 
+                    merged with types which correspond to a single response type.
+                </p>
+                <img class="img-fluid img1" src="img/uitypes10.JPG">
+            </div>
+        </div>
+    </div>
+
+    <div class="container f">
+        <section id="footersection">
+            <footer class="text-light">
+                <div class="row p-5">
+                    <div class="col-md-4">
+                      <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="lead text-center">Quick Links</h5>
+                        <div class="row iconsfooter text-center">
+                            <div class="col-md-6">
+                                <a href="home.html"><i class="fas fa-home"> Home</i></a>
+                                <a href="Overview.html"><i class="fas fa-eye"> Overview</i></a>
+                                <a href="Documentation.html"><i class="fas fa-file"> Documentation</i></a>
+                                <a href="basicSyntax.html"><i class="fas fa-code"> Basic Syntax</i></a>
+                                <a href=""><i class="fab fa-invision"> Interfaces</i></a>
+                                <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <a href="u&itypes.html"><i class="far fa-circle"> U&I Types</i></a>
+                                <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                                <a href="objects.html"><i class="fas fa-object-group"> Objects</i></a>
+                                <a href="namespaces.html"><i class="fas fa-file-signature"> Namespaces</i></a>
+                                <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                                <a href=""><i class="fas fa-address-card"> About</i></a>
+                            </div>
+                            
+                        </div>     
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="lead text-center">Choose Your Language!</h5>
+                        <div id="google_translate_element" class="text-center"></div>
+                    </div>
+                </div>
+                <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+               
+            </footer>
+        </section>
+    </div>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

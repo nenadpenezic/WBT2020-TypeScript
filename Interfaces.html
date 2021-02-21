@@ -287,5 +287,27 @@
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="./script/copy.js"></script>
+
+  <script>
+
+    const menuButton=document.getElementById('navigation');
+      const menu=document.getElementsByClassName('nav-menu')[0];
+      
+      let isMenuOpen=true;
+
+      menuButton.addEventListener('click',()=>{
+        if(isMenuOpen){
+          menu.classList.add('display-nav');
+          menu.classList.remove('hide-nav');
+          isMenuOpen=false;
+        }
+        else{
+          menu.classList.add('hide-nav');
+          menu.classList.remove('display-nav');
+          isMenuOpen=true;
+        }
+      })
+    </script>
+    
 </body>
 </html>
