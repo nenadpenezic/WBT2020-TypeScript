@@ -4,49 +4,92 @@ body{
     padding: 0px;
     background: url('../img/pozadina4.jpg');
     font-family: 'Poppins', sans-serif;
+    background-size: 100% 100%;
 }
 .contmain{
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
 /*Navbar css*/
-input.transparent-input{
-    background-color:rgba(0,0,0,0) !important;
-    border:none !important;
- }
 #nav-section {
     height: 90vh;
     width: 100%;
     background: url('../img/pozadina4.jpg') no-repeat center;
     background-size: cover;
+    background-size: 100% 100%;
+    overflow: hidden;
 }
-.navbar-brand, .nav-link{
-    color: white !important;
-}
-.inner-nav{
-    list-style: none;
-    position: absolute;
-    left: 250px;
-    top: 10px;
+input.transparent-input{
+    background-color:rgba(0,0,0,0) !important;
+    border:none !important;
+  }
+  .header-common{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul li a{
+    font-size: 1.1rem;
+    text-decoration:  none;
+    color: white;
+  }
+  ul{
+   margin: 0%;
+   padding: 0%;
+
+  }
+  #navigation{
     display: none;
-}
-.inner-nav a{
-    padding: .5rem 1.5rem;
-    color: white;
-}
-.basic-syntax:hover~.inner-nav{
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 0;
+    background-color: rgba(14, 11, 11, 0.609);
+    
+  }
+  .nav-menu{
+    display: flex;
+    list-style: none;
+  }
+  .nav-menu .nav-li{
+    padding: 0rem 2rem;
+  }
+  #sub-menu{
+    display: none;
+    position: absolute;
+    margin: 0;
+    width: 220px;
+    background-color: rgb(87, 83, 83);
+    list-style: none;
+  }
+  #sub-sub-menu{
+    width: 150px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 220px;
+    background-color: rgb(87, 83, 83);
+    list-style: none;
+  }
+  .submenu-li{
+   padding: .2rem 2rem;
+  }
+  #docs{
+    position: relative;
+  }
+  #docs:hover #sub-menu{
     display: block;
-}
-.inner-nav:hover{
+  }
+  #basic-syntax:hover #sub-sub-menu{
     display: block;
-}
-.navbar-nav .dropdown-menu{
-    background-color: transparent !important;
-    border: none;
-}
-.dropdown-item{
-    color: white;
-}
+  }
+  .row-wrapper{
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid white;
+  }
 #text{
     color: white;
     font-size: 30px;
