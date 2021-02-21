@@ -16,6 +16,8 @@ body{
     width: 100%;
     background: url('../img/pozadina4.jpg') no-repeat center;
     background-size: cover;
+    background-size: 100% 100%;
+    overflow: hidden;
 }
 input.transparent-input{
     background-color:rgba(0,0,0,0) !important;
