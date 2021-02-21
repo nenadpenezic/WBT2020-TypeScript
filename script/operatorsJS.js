@@ -13,34 +13,6 @@ function reveal(){
 
     }
 }
-$(document).ready(function(){
-    /*FUnction for text on main part of page*/
-    const texts= ['name:string = "Marko"', 'name:string;', 'name = "Sofija"'];
-    let count = 0;
-    let index = 0;
-    let currentText = '';
-    let letter = '';
-    
-    (function type(){
-        if(count === texts.length){
-            count = 0;
-        }
-        currentText = texts[count];
-        letter = currentText.slice(0, ++index);
-    
-        document.querySelector('.typing').textContent = letter;
-        if(letter.length == currentText.length){
-            count++;
-            index = 0;
-    
-    
-        }
-        setTimeout(type, 150);
-    })();
-    
-    /* (function type(){})(); - self invoked function*/
-
-});
 
 /*Function for google translation of site*/
 function googleTranslateElementInit() {
