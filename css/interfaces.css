@@ -1,17 +1,4 @@
-.example{
-    background-color: rgb(226, 23, 5);
-    font-size: 1.2rem;
-    color: white;
-    border: 3px solid black;
-}
-.example:hover{
-    background-color: rgb(151, 28, 17);
-    color: white;
-    transition-duration: 500ms;
-}
-.example .code-container p span{
-    color: blue;
-}
+
 .example-title{
     font-style: italic;
     color: rgb(46, 45, 45);
@@ -21,64 +8,26 @@
     font-style: bold;
     color:purple
 }
-.example-1{
-    background-color: rgb(156, 19, 19);
+.example{
+    background-color: rgb(251, 143, 2);
     font-size: 1.2rem;
-    color: rgb(199, 194, 194);
+    color: rgb(233, 223, 223);
     margin-bottom: 1.5rem;
     border: 2px solid white;
 }
-.example-1 .code-container span{
+.example .code-container span{
     color: blue;
 }
-.example-1:hover{
-    background-color: rgb(102, 20, 20);
+.example:hover{
+    background-color: rgb(143, 58, 32);
     color: white;
     transition-duration: 500ms;
 }
-.example-1-paragraph p span{
+.example-paragraph span{
     text-decoration: underline;
     color: crimson;
     padding: 0.1rem;
     font-style: italic;
-}
-.example-2{
-    background-color: rgb(255, 0, 0);
-    font-size: 1.2rem;
-    color: white;
-    border: 3px solid black;
-}
-.example-2:hover{
-    background-color: rgb(182, 39, 39);
-    color: rgb(209, 206, 206);
-    transition-duration: 500ms;
-}
-.example-2 .code-container p span{
-    color: blue;
-}
-.example-paragraph .code-container span{
-    color:crimson;
-    font-style: italic;
-    text-decoration: underline;
-}
-.example-3{
-    background-color: rgb(194, 64, 4);
-    font-size: 1.2rem;
-    color: rgb(253, 253, 253);
-    border: 3px solid black;
-    margin-bottom: 1.2rem;
-}
-.example-3:hover{
-    background-color: rgb(179, 9, 9);
-    transition-duration: 500ms;
-}
-.example-paragraph span{
-    font-style: italic;
-    text-decoration: underline;
-    color: crimson;
-}
-.example-3 .code-container p span{
-    color: blue;
 }
 .copy{
     padding:1rem 0;
@@ -86,4 +35,7 @@
 }
 .code-container{
     padding: 2rem 0;
+}
+.video-player{
+    width: 100%;
 }

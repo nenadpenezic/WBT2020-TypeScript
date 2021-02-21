@@ -1,4 +1,4 @@
-let copy=document.getElementsByClassName('click');
+let copy=document.getElementsByClassName('example');
 
 for(let i=0;i<copy.length;i++){
     copy[i].addEventListener('click',()=>{
