@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaces</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/interfaces.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="row-wrapper">
+              <div class="col-lg-2 p-3 header-common">
+                  <i class="fab fa-facebook-f fa-lg p-1"></i>
+                  <i class="fab fa-twitter fa-lg p-1"></i>
+                  <i class="fab fa-instagram fa-lg p-1"></i>
+                  <i class="fab fa-pinterest fa-lg p-1"></i>
+              </div>
+              <div class="col-lg-8  text-center">
+                  <h1 style="color: white;">TypeScript.</h1>
+              </div>
+              <div class="col-lg-2 header-common nav-form">
+                  <form class="form-inline">
+                      <input class="form-control w-75 transparent-input"  type="search" placeholder="Search" aria-label="Search">
+                      <i class="fas fa-search"></i>
+                    </form>
+              </div>
+            </div>
+        <div class="col-12" style="padding: 0%;">
+          <div class="banner">
+            <div class="banner-color">
+                        
+        <nav>
+          <div id="navigation">
+            <i class="fas fa-bars"></i>
+        </div>
+            <ul id="" class="nav-menu hide-nav">
+                <li class="nav-li"><a href="">Home</a> </li>
+                <li class="nav-li"><a href="">Overview</a></li>
+                <li id="docs" class="nav-li"><a href="">Documentation <i class="fas fa-arrow-down"></i></a>
+                    <ul id="sub-menu">
+                        <li id="basic-syntax" class="submenu-li"><a href="">Basic Syntax <i class="fas fa-arrow-right"></i></a>
+                        <ul id="sub-sub-menu">
+                            <li><a href="">Types</a></li>
+                            <li><a href="">Variables</a></li>
+                            <li><a href="">Operators</a></li>
+                            <li><a href="">Loops</a></li>
+                            <li><a href="">Numbers</a></li>
+                            <li><a href="">Strins</a></li>
+                            <li><a href="">Arrays</a></li>
+                        </ul>
+                        </li>
+                        <li class="submenu-li"><a href="">Interfaces</a></li>
+                        <li class="submenu-li"><a href="">Functions</a></li>
+                        <li class="submenu-li"><a href="">Union and Intersection Types</a></li>
+                        <li class="submenu-li"><a href="">Classes</a></li>
+                        <li class="submenu-li"><a href="">Objects</a></li>
+                        <li class="submenu-li"><a href="">Namespaces</a></li>
+                        <li class="submenu-li"><a href="">Modules & Ambients</a></li>
+                    </ul>
+                    <li class="nav-li"><a href="">About</a></li>
+                </li>
+            </ul>
+        </nav>
+        <div class="title-wrapper">
+            <h1>Typescript's <br>Interfaces</h1>
+        </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+    <div class="container common-styles">
+        <div class="row white-background">
+            <div class="col-12">
+                <h2 class="title-padding">Interfaces</h2>
+                <p>Interface is a structure that defines the contract in your application. It defines the syntax for classes to follow. Classes that are derived from an interface must follow the structure provided by their interface.</p>
+                <p>The TypeScript compiler does not convert interface to JavaScript. It uses interface for type checking. This is also known as "duck typing" or "structural subtyping".</p>
+                <p>An interface is defined with the keyword interface and it can include properties and method declarations using a function or an arrow function.</p>
+
+                <h5 class="syntax">
+                    <span>Syntax:</span>
+                    <br>
+                    interface interface_name { <br>
+                    }
+                </h5>
+
+                <br>
+
+                <h5 class="example-title">Example:</h5>
+                <div class="example">
+                    <div class="copy">
+                        <h5>Click to copy</h5>
+                    </div>
+                    <div class="code-container">
+                    <p>
+                           <span>interface</span> IEmployee { <br>
+                            empCode: <span>number</span>;  <br>
+                            empName:<span>string</span> ;  <br>
+                            getSalary: (<span>number</span>) => <span>number</span>; <br>
+                            getManagerName(<span>number</span>): <span>string</span>; <br>
+                        }
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row blue-background">
+            <div class="col-12">
+                <h2 class="title-padding">Interface as Type</h2>
+                <p>Interface in TypeScript can be used to define a type and also to implement it in the class.</p>
+
+                <div class="example">
+                    <div class="copy">
+                        <h5>Click to copy</h5>
+                    </div>
+                    <div class="code-container">
+                    <p> <span>interface</span> KeyPair { <br>
+                        key: <span>number</span>; <br>
+                        value: <span>string</span> ; <br>
+                    } <br>
+                        <br>
+                    <span>let</span> kv1: KeyPair = { key:1, value:"Steve" }; <br>
+                    
+                    <span>let</span> kv2: KeyPair = { key:1, val:"Steve" }; <br>
+                    
+                    <span>let</span> kv3: KeyPair = { key:1, value:100 };</p>
+                </div>
+                </div>
+                <p class="example-paragraph">In the above example, an interface <span>KeyPair</span> includes two properties <span>key</span> and <span>value</span> . A variable <span>kv1</span> is declared as <span>KeyPair</span> type. 
+                    So, it must follow the same structure as <span> KeyPair</span>. It means only an object with 
+                    properties <span> key</span> of number type and <span> value</span> of string type can be assigned to a variable 
+                     <span>kv1</span>. The TypeScript compiler will show an error if there is any change in the name 
+                    of the properties or the data type is different than <span>KeyPair</span>. Another variable <span>kv2</span>
+                    is also declared as <span>KeyPair</span> type but the assigned value is val instead of value, so
+                     this will cause an error. In the same way, <span>kv3</span> assigns a number to the <span>value</span> property,
+                      so the compiler will show an error. Thus, TypeScript uses an interface to ensure the proper structure of an object.</p>
+            </div>
+        </div>
+       <div class="row white-background">
+           <div class="col-12">
+                <h2 class="title-padding">Interface for Array Type</h2>
+                <p>An interface can also define the type of an array where you can define the type of index as well as values.</p>
+           </div>
+           <div class="col-md-6">
+            <div class="example">
+                <div class="copy">
+                    <h5>Click to copy</h5>
+                </div>
+                <div class="code-container">
+                <p>
+               <span>interface</span> NumList { <br>
+                    [index:<span>number</span>]:<span>number</span> <br>
+                } <br>
+                <br>
+               <span>let</span> numArr: NumList = [1, 2, 3];<br>
+                numArr[0];<br>
+                numArr[1];<br>
+                
+                <span>interface</span> IStringList {<br>
+                    [index:<span>string</span>]:<span>string</span> <br>
+                } <br>
+                <br>
+               <span>let</span> strArr : IStringList; <br>
+                strArr["TS"] = "TypeScript"; <br>
+                strArr["JS"] = "JavaScript"; <br>
+            </p>
+        </div>
+            </div>
+           </div>
+           <div class="col-md-6">
+            <p class="example-paragraph">In the above example, interface <span>NumList</span>  defines a type of array with index as number and value as number type. In the same way, <span>IStringList</span>  defines a string array with index as string and value as string.</p> 
+           </div>
+       </div>
+       <div class="row blue-background">
+        <div class="col-md-6">
+            <h2 class="title-padding">Optional Property</h2>
+            <p>Sometimes, we may declare an interface with excess properties but may not expect all objects to define all the given interface properties. We can have optional properties, marked with a "?". In such cases, objects of the interface may or may not define these properties.</p>
+
+        </div>
+        <div class="col-md-6">
+            <h2 class="title-padding">Read only Properties</h2>
+            <p>TypeScript provides a way to mark a property as read only. This means that once a property is assigned a value, it cannot be changed!</p>
+        </div>
+       </div>
+       <div class="row white-background">
+           <div class="col-12">
+               <h2 class="title-padding">Extending Interfaces</h2>
+               <p>Interfaces can extend one or more interfaces. This makes writing interfaces flexible and reusable.</p>
+                <div class="example">
+                    <div class="copy">
+                        <h5>Click to copy</h5>
+                    </div>
+                    <div class="code-container">
+                    <p>
+                       <span>interface</span> IPerson { <br>
+                            name:<span>string</span> ; <br>
+                            gender: <span>string</span> ; <br>
+                        } <br>
+                        
+                       <span>interface</span> IEmployee extends IPerson { <br>
+                            empCode: <span>number</span>; <br>
+                        } <br>
+                        <br>
+                        <span>let</span> empObj:IEmployee = { <br>
+                            empCode:1, <br>
+                            name:"Bill", <br>
+                            gender:"Male" <br>
+                        } <br>
+                    </p>
+                    </div>
+                </div>
+                <p class="example-paragraph">In the above example, the <span>IEmployee</span> interface extends the <span>IPerson</span> interface. So, objects of <span>IEmployee</span> must include all the properties and methods of the <span>IPerson</span> interface otherwise, the compiler will show an error.</p>
+            </div>
+       </div>
+       <div class="row blue-background">
+           <div class="col-12">
+               <h2 class="title-padding">Videos for learning</h2>
+           </div>
+           <div class="col-md-4">
+            <iframe width="560" height="315" class="video-player" src="https://www.youtube.com/embed/VbW6vWTaHOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+           <div class="col-md-4">
+            <iframe width="560" height="315" class="video-player" src="https://www.youtube.com/embed/NeUrwZVi4IE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+           <div class="col-md-4">
+            <iframe width="560" height="315" class="video-player" src="https://www.youtube.com/embed/P17bFRuefjA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+       </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <section id="footersection">
+                <footer class="text-light">
+                    <div class="row p-5">
+                        <div class="col-md-4">
+                          <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="lead text-center">Quick Links</h5>
+                            <div class="row iconsfooter text-center">
+                                <div class="col-md-6">
+                                    <a href=""><i class="fas fa-home"> Home</i></a>
+                                    <a href=""><i class="fas fa-eye"> Overview</i></a>
+                                    <a href=""><i class="fas fa-file"> Documentation</i></a>
+                                    <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
+                                    <a href=""><i class="fab fa-invision"> Interfaces</i></a>
+                                    <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <a href=""><i class="far fa-circle"> U&I Types</i></a>
+                                    <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                                    <a href=""><i class="fas fa-object-group"> Objects</i></a>
+                                    <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
+                                    <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                                    <a href=""><i class="fas fa-address-card"> About</i></a>
+                                </div>
+                                
+                            </div>     
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="lead text-center">Choose Your Language!</h5>
+                            <div id="google_translate_element" class="text-center"></div>
+                        </div>
+                    </div>
+                    <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+                   
+                </footer>
+            </section>
+        </div>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="./script/copy.js"></script>
+
+  <script>
+
+    const menuButton=document.getElementById('navigation');
+      const menu=document.getElementsByClassName('nav-menu')[0];
+      
+      let isMenuOpen=true;
+
+      menuButton.addEventListener('click',()=>{
+        if(isMenuOpen){
+          menu.classList.add('display-nav');
+          menu.classList.remove('hide-nav');
+          isMenuOpen=false;
+        }
+        else{
+          menu.classList.add('hide-nav');
+          menu.classList.remove('display-nav');
+          isMenuOpen=true;
+        }
+      })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+.example-title{
+    font-style: italic;
+    color: rgb(46, 45, 45);
+}
+.syntax span{
+    font-style: italic;
+    font-style: bold;
+    color:purple
+}
+.example{
+    background-color: rgb(23, 65, 133);
+    font-size: 1.2rem;
+    color: rgb(233, 223, 223);
+    margin-bottom: 1.5rem;
+    border: 2px solid white;
+}
+.example .code-container span{
+    color: rgb(206, 16, 16);
+}
+.example:hover{
+    background-color: rgb(28, 52, 102);
+    color: white;
+    transition-duration: 500ms;
+}
+.example-paragraph span{
+    text-decoration: underline;
+    color: crimson;
+    padding: 0.1rem;
+    font-style: italic;
+}
+.copy{
+    padding:1rem 0;
+    border-bottom: 2px solid white;
+}
+.code-container{
+    padding: 2rem 0;
+}
+.video-player{
+    width: 100%;
+}

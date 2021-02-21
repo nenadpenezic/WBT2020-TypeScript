@@ -24,22 +24,10 @@
      border-bottom: 2px solid black;
      padding-bottom: 2rem;
  }
- #footersection{
-    background-color: rgb(9, 10, 4) !important;
-}
-.s1{
-    font-weight: bold !important;
-}
-.iconsfooter{
-    text-decoration: none !important;
-}
-.iconsfooter a{
-    color: white;
-}
-#syntaxpt3typescript{
-    background-color:rgb(249, 249, 249);
-}
-.card-body:hover{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+ 
+@media only screen and (max-width: 758px) {
+    .what-is-array img{
+        width: 60%;
+    }
 }
   
