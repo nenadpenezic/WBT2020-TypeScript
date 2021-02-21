@@ -96,16 +96,21 @@
                 <br>
 
                 <h5 class="example-title">Example:</h5>
-                <div class="example">
+                <div class="example click">
+                    <div class="copy">
+                        <h5>Click to copy</h5>
+                    </div>
+                    <div class="code-container">
                     <p>
                            <span>interface</span> IEmployee { <br>
                             empCode: <span>number</span>;  <br>
                             empName:<span>string</span> ;  <br>
-                            getSalary: (number) => <span>number</span>; // arrow function <br>
-                            getManagerName(number): <span>string</span>; <br>
+                            getSalary: (<span>number</span>) => <span>number</span>; // arrow function <br>
+                            getManagerName(<span>number</span>): <span>string</span>; <br>
                         }
                     </p>
                 </div>
+            </div>
             </div>
         </div>
         <div class="row blue-background">
@@ -113,7 +118,11 @@
                 <h2 class="title-padding">Interface as Type</h2>
                 <p>Interface in TypeScript can be used to define a type and also to implement it in the class.</p>
 
-                <div class="example-1">
+                <div class="example-1 click">
+                    <div class="copy">
+                        <h5>Click to copy</h5>
+                    </div>
+                    <div class="code-container">
                     <p> <span>interface</span> KeyPair { <br>
                         key: <span>number</span>; <br>
                         value: <span>string</span> ; <br>
@@ -125,7 +134,8 @@
                     
                     <span>let</span> kv3: KeyPair = { key:1, value:100 };</p>
                 </div>
-                <p class="example-1-paragraph">In the above example, an interface <span>KeyPair</span> includes two properties <span>key</span> and <span>value</span> . A variable <span>kv1</span> is declared as <span>KeyPair</span> type. 
+                </div>
+                <p class="example-paragraph">In the above example, an interface <span>KeyPair</span> includes two properties <span>key</span> and <span>value</span> . A variable <span>kv1</span> is declared as <span>KeyPair</span> type. 
                     So, it must follow the same structure as <span> KeyPair</span>. It means only an object with 
                     properties <span> key</span> of number type and <span> value</span> of string type can be assigned to a variable 
                      <span>kv1</span>. The TypeScript compiler will show an error if there is any change in the name 
@@ -141,26 +151,33 @@
                 <p>An interface can also define the type of an array where you can define the type of index as well as values.</p>
            </div>
            <div class="col-md-6">
-            <div class="example-2">
-                interface NumList { <br>
-                    [index:number]:number <br>
+            <div class="example-2 click">
+                <div class="copy">
+                    <h5>Click to copy</h5>
+                </div>
+                <div class="code-container">
+                <p>
+               <span>interface</span> NumList { <br>
+                    [index:<span>number</span>]:<span>number</span> <br>
                 } <br>
                 <br>
-                let numArr: NumList = [1, 2, 3];<br>
+               <span>let</span> numArr: NumList = [1, 2, 3];<br>
                 numArr[0];<br>
                 numArr[1];<br>
                 
-                interface IStringList {<br>
-                    [index:string]:string <br>
+                <span>interface</span> IStringList {<br>
+                    [index:<span>string</span>]:<span>string</span> <br>
                 } <br>
                 <br>
-                let strArr : IStringList; <br>
+               <span>let</span> strArr : IStringList; <br>
                 strArr["TS"] = "TypeScript"; <br>
                 strArr["JS"] = "JavaScript"; <br>
+            </p>
+        </div>
             </div>
            </div>
            <div class="col-md-6">
-            <p class="example-2-paragraph">In the above example, interface <span>NumList</span>  defines a type of array with index as number and value as number type. In the same way, <span>IStringList</span>  defines a string array with index as string and value as string.</p> 
+            <p class="example-paragraph">In the above example, interface <span>NumList</span>  defines a type of array with index as number and value as number type. In the same way, <span>IStringList</span>  defines a string array with index as string and value as string.</p> 
            </div>
        </div>
        <div class="row blue-background">
@@ -174,13 +191,87 @@
             <p>TypeScript provides a way to mark a property as read only. This means that once a property is assigned a value, it cannot be changed!</p>
         </div>
        </div>
+       <div class="row white-background">
+           <div class="col-12">
+               <h2 class="title-padding">Extending Interfaces</h2>
+               <p>Interfaces can extend one or more interfaces. This makes writing interfaces flexible and reusable.</p>
+                <div class="example-3 click">
+                    <div class="copy">
+                        <h5>Click to copy</h5>
+                    </div>
+                    <div class="code-container">
+                    <p>
+                       <span>interface</span> IPerson { <br>
+                            name:<span>string</span> ; <br>
+                            gender: <span>string</span> ; <br>
+                        } <br>
+                        
+                       <span>interface</span> IEmployee extends IPerson { <br>
+                            empCode: <span>number</span>; <br>
+                        } <br>
+                        <br>
+                        <span>let</span> empObj:IEmployee = { <br>
+                            empCode:1, <br>
+                            name:"Bill", <br>
+                            gender:"Male" <br>
+                        } <br>
+                    </p>
+                    </div>
+                </div>
+                <p class="example-paragraph">In the above example, the <span>IEmployee</span> interface extends the <span>IPerson</span> interface. So, objects of <span>IEmployee</span> must include all the properties and methods of the <span>IPerson</span> interface otherwise, the compiler will show an error.</p>
+            </div>
+       </div>
     </div>
-
+    <div class="container">
+        <div class="row">
+            <section id="footersection">
+                <footer class="text-light">
+                    <div class="row p-5">
+                        <div class="col-md-4">
+                          <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="lead text-center">Quick Links</h5>
+                            <div class="row iconsfooter text-center">
+                                <div class="col-md-6">
+                                    <a href=""><i class="fas fa-home"> Home</i></a>
+                                    <a href=""><i class="fas fa-eye"> Overview</i></a>
+                                    <a href=""><i class="fas fa-file"> Documentation</i></a>
+                                    <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
+                                    <a href=""><i class="fab fa-invision"> Interfaces</i></a>
+                                    <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <a href=""><i class="far fa-circle"> U&I Types</i></a>
+                                    <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                                    <a href=""><i class="fas fa-object-group"> Objects</i></a>
+                                    <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
+                                    <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                                    <a href=""><i class="fas fa-address-card"> About</i></a>
+                                </div>
+                                
+                            </div>     
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="lead text-center">Choose Your Language!</h5>
+                            <div id="google_translate_element" class="text-center"></div>
+                        </div>
+                    </div>
+                    <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+                   
+                </footer>
+            </section>
+        </div>
+        </div>
+    </div>
     <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="./script/copy.js"></script>
 </body>
 </html>
