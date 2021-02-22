@@ -1,0 +1,39 @@
+.n1{
+    border: 5px inset white;
+    width: 50%;
+}
+
+.p-w{
+    color: white;
+}
+
+.b-a{
+    border: 3px dotted rgb(181, 97, 230);
+}
+
+.c5{
+    background-color:  rgba(188, 158, 206, 0.9);
+    color: black;
+    border-top: 5px solid rgb(181, 97, 230);
+    border-bottom: 5px solid rgb(181, 97, 230);
+}
+
+.div-dot2:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: rgb(188, 158, 206);
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+
+}
+
+.t1{
+    background-color: rgb(188, 158, 206);
+    color:black
+}

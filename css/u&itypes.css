@@ -4,43 +4,7 @@ body{
 
 }
 
-input.transparent-input{
-    background-color:rgba(0,0,0,0) !important;
-    border:none !important;
- }
 
-.inner-nav{
-    list-style: none;
-    position: absolute;
-    left: 225px;
-    top: 10px;
-    display: none;
-    border-radius: 10px;
-
-}
-.inner-nav a{
-    background-color: white;
-    
-}
-
-.inner-nav a:hover{
-    background-color: black;
-    color: white;
-}
-
-
-.basic-syntax:hover~.inner-nav{
-    display: block;
-}
-.inner-nav:hover{
-    display: block;
-
-}
-
-.hov:hover{
-    background-color: black;
-    color: white;
-}
 
 .c1{
     color: white;
