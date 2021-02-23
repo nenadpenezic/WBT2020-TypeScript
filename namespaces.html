@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/namespaces.css">
     <link rel="stylesheet" href="css/u&itypes.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
@@ -15,72 +17,70 @@
 </head>
 <body>
     <div class="container">
-        <div class="row p-3 d-flex justify-content-center" style="border-bottom: 1px solid grey;">
-            <div class="col-lg-2 d-flex align-items-center text-white">
-                <i class="fab fa-facebook-f fa-lg p-1"></i>
-                <i class="fab fa-twitter fa-lg p-1"></i>
-                <i class="fab fa-instagram fa-lg p-1"></i>
-                <i class="fab fa-pinterest fa-lg p-1"></i>
+        <div class="row">
+            <div class="row-wrapper">
+              <div class="col-lg-2 p-3 header-common">
+                  <i class="fab fa-facebook-f fa-lg p-1"></i>
+                  <i class="fab fa-twitter fa-lg p-1"></i>
+                  <i class="fab fa-instagram fa-lg p-1"></i>
+                  <i class="fab fa-pinterest fa-lg p-1"></i>
+              </div>
+              <div class="col-lg-8  text-center">
+                  <h1 style="color: white;">TypeScript.</h1>
+              </div>
+              <div class="col-lg-2 header-common nav-form">
+                  <form class="form-inline">
+                      <input class="form-control w-75 transparent-input"  type="search" placeholder="Search" aria-label="Search">
+                      <i class="fas fa-search"></i>
+                    </form>
+              </div>
             </div>
-            <div class="col-lg-8 text-center">
-                <h1 style="color: white;">TypeScript.</h1>
-            </div>
-            <div class="col-lg-2 d-flex align-items-center text-white">
-                <form class="form-inline">
-                    <input class="form-control transparent-input" style="width: 55%;" type="search" placeholder="Search" aria-label="Search">
-                    <i class="fas fa-search"></i>
-                  </form>
-            </div>
+        <div class="col-12" style="padding: 0%;">
+          <div class="banner">
+            <div class="banner-color">
+                        
+        <nav>
+          <div id="navigation">
+            <i class="fas fa-bars"></i>
         </div>
-        <div class="row p-3 d-flex justify-content-center">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">            
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Overview.html">Overview</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="Documentation.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Documentation
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item basic-syntax" href="basicSyntax.html">Basic Syntax <i class="fa fa-caret-right"></i></a>
-                            <ul  class="inner-nav">
-                              <li class="nav-item inner-nav-a"><a href="Types.html" class="dropdown-item">Types</a></li>
-                              <li class="nav-item inner-nav-a"><a href="Variables.html" class="dropdown-item">Variables</a></li>
-                              <li class="nav-item inner-nav-a"><a href="Operators.html" class="dropdown-item">Operators</a></li>
-                              <li class="nav-item inner-nav-a"><a href="Loops.html" class="dropdown-item">Loops</a></li>
-                              <li class="nav-item inner-nav-a"><a href="Numbers.html" class="dropdown-item">Numbers</a></li>
-                              <li class="nav-item inner-nav-a"><a href="Strings.html" class="dropdown-item">Strings</a></li>
-                              <li class="nav-item inner-nav-a"><a href="arrays.html" class="dropdown-item">Arrays</a></li>
-                            </ul>
-                        </li>
-                          <li><a class="dropdown-item hov" href="#">Interfaces</a></li>
-                          <li><a class="dropdown-item hov" href="#">Functions</a></li>
-                          <li><a class="dropdown-item hov" href="u&itypes.html">Unions and Intersection Types</a></li>
-                          <li><a class="dropdown-item hov" href="#">Classes</a></li>
-                          <li><a class="dropdown-item hov" href="objects.html">Objects</a></li>
-                          <li><a class="dropdown-item hov" href="namespaces.html">Namespaces</a></li>
-                          <li><a class="dropdown-item hov" href="#">Modules & Ambients</a></li>
+            <ul id="" class="nav-menu hide-nav">
+                <li class="nav-li"><a href="home.html">Home</a> </li>
+                <li class="nav-li"><a href="Overview.html">Overview</a></li>
+                <li id="docs" class="nav-li"><a href="Documentation.html">Documentation <i class="fas fa-arrow-down"></i></a>
+                    <ul id="sub-menu">
+                        <li id="basic-syntax" class="submenu-li"><a href="">Basic Syntax <i class="fas fa-arrow-right"></i></a>
+                        <ul id="sub-sub-menu">
+                            <li><a href="Types.html">Types</a></li>
+                            <li><a href="Variables.html">Variables</a></li>
+                            <li><a href="Operators.html">Operators</a></li>
+                            <li><a href="Loops.html">Loops</a></li>
+                            <li><a href="Numbers.html">Numbers</a></li>
+                            <li><a href="Strings.html">Strins</a></li>
+                            <li><a href="arrays.html">Arrays</a></li>
                         </ul>
-                      </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                      </li>
-                  </ul>       
-                </div>
-              </nav>
+                        </li>
+                        <li class="submenu-li"><a href="Interfaces.html">Interfaces</a></li>
+                        <li class="submenu-li"><a href="Functions.html">Functions</a></li>
+                        <li class="submenu-li"><a href="u&itypes.html">Union and Intersection Types</a></li>
+                        <li class="submenu-li"><a href="classes.html">Classes</a></li>
+                        <li class="submenu-li"><a href="objects.html">Objects</a></li>
+                        <li class="submenu-li"><a href="namespaces.html">Namespaces</a></li>
+                        <li class="submenu-li"><a href="modules&ambients.html">Modules & Ambients</a></li>
+                    </ul>
+                    <li class="nav-li"><a href="">About</a></li>
+                </li>
+            </ul>
+        </nav>
+        <div class="title-wrapper">
+            <h1 id="nm"></h1>
+        </div>
+            </div>
         </div>
     </div>
-
-    <div class="container mt-5 p-5 text-center c1">
-        <h1>Namespaces</h1>
+    </div>
     </div>
 
-    <div class="container mt-5 p-5 text-center c2 b1">
+    <div class="container p-5 text-center c2 b1">
         <div class="row">
             <div class="col-lg-12">
                 <p class="mt-4 p1">
@@ -93,6 +93,102 @@
                     A namespace definition begins with the keyword namespace followed by the namespace name as follows:
                 </p>
                 <img class="img-fluid img1" src="img/namespaces1.JPG">
+
+                <p class="mt-4 p1">
+                    The classes or interfaces which should be accessed outside the namespace should be marked with keyword <span class="blackWhite p1">export</span>.
+                    <br>To access the class or interface in another namespace, the syntax will be namespaceName.className.
+                </p>
+
+                <p class="mt-4 p1">
+                    If the first namespace is in separate TypeScript file, then it should be referenced using triple slash reference syntax.
+                </p>
+                <img class="img-fluid img2" src="img/namespaces2.JPG">
+
+                <p class="mt-4 p1">The following program demonstrates use of namespaces −
+                </p>
+                <div class="row p-2 b-a">
+                    <div class="col-lg-6">
+                        <img class="img-fluid img1 h-100" src="img/namespaces3.JPG">
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid img2 h-100" src="img/namespaces4.JPG">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="wrapper py-3">
+            <div class="divider div-transparent div-dot2"></div>
+        </div> 
+    </div>
+
+    <div class="container p-5 text-center c5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>-- Nested Namespaces --</h2>
+
+                <p class="mt-4 p2">You can define one namespace inside another namespace as follows −</p>
+                <img class="img-fluid img1" src="img/namespaces5.JPG">  
+
+                <p class="mt-4 p2">You can access members of nested namespace by using the dot (.) operator as follows −</p>
+                <img class="img-fluid img2" src="img/namespaces6.JPG">
+                
+                <p class="mt-4 p2">The above code can be compiled and executed using the following command −</p>
+                <img class="img-fluid img1" src="img/namespaces7.JPG">
+            </div>
+        </div>
+
+        <div class="wrapper py-3">
+            <div class="divider div-transparent div-dot1"></div>
+        </div> 
+    </div>
+
+    <div class="container p-5 text-center c2">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>-- Namespace vs Module --</h2>
+
+                <div class="col-12 mt-5">
+                    <table class="table table-bordered bg-dark text-white">
+                        <thead>
+                          <tr class="t1">
+                            <th scope="col">Namespace</th>
+                            <th scope="col">Module</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Must use the namespace keyword and the export keyword to expose namespace components.</td>
+                            <td>Uses the export keyword to expose module functionalities.</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Used for logical grouping of functionalities with local scoping.</td>
+                            <td>Used to organize the code in separate files and not pollute the global scope.</td>       
+                          </tr> 
+                          <tr>
+                            <td scope="row">To use it, it must be included using triple slash reference syntax e.g. ///reference path="path to namespace file" .</td>
+                            <td>Must import it first in order to use it elsewhere.</td>       
+                          </tr>  
+                          <tr>
+                            <td scope="row">Compile using the --outFile command.</td>
+                            <td>Compile using the --module command.</td>       
+                          </tr>  
+                          <tr>
+                            <td scope="row">Must export functions and classes to be able to access it outside the namespace.</td>
+                            <td>All the exports in a module are accessible outside the module.</td>       
+                          </tr>  
+                          <tr>
+                            <td scope="row">Namespaces cannot declare their dependencies.</td>
+                            <td>Modules can declare their dependencies.</td>       
+                          </tr>  
+                          <tr>
+                            <td scope="row">No need of module loader. Include the .js file of a namespace using the script tag in the HTML page.</td>
+                            <td>Must include the module loader API which was specified at the time of compilation e.g. CommonJS, require.js etc.</td>       
+                          </tr>  
+                        </tbody>
+                      </table>
+                </div>
             </div>
         </div>
     </div>
@@ -112,16 +208,16 @@
                                 <a href="Overview.html"><i class="fas fa-eye"> Overview</i></a>
                                 <a href="Documentation.html"><i class="fas fa-file"> Documentation</i></a>
                                 <a href="basicSyntax.html"><i class="fas fa-code"> Basic Syntax</i></a>
-                                <a href=""><i class="fab fa-invision"> Interfaces</i></a>
-                                <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                                <a href="Interfaces.html"><i class="fab fa-invision"> Interfaces</i></a>
+                                <a href="Functions.html"><i class="fab fa-foursquare"> Functions</i></a>
                                 
                             </div>
                             <div class="col-md-6">
                                 <a href="u&itypes.html"><i class="far fa-circle"> U&I Types</i></a>
-                                <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
-                                <a href=""><i class="fas fa-object-group"> Objects</i></a>
+                                <a href="classes.html"><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                                <a href="objects.html"><i class="fas fa-object-group"> Objects</i></a>
                                 <a href="namespaces.html"><i class="fas fa-file-signature"> Namespaces</i></a>
-                                <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                                <a href="modules&ambients.html"><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
                                 <a href=""><i class="fas fa-address-card"> About</i></a>
                             </div>
                             
@@ -139,5 +235,25 @@
         </section>
     </div>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+
+        const menuButton=document.getElementById('navigation');
+          const menu=document.getElementsByClassName('nav-menu')[0];
+          
+          let isMenuOpen=true;
+    
+          menuButton.addEventListener('click',()=>{
+            if(isMenuOpen){
+              menu.classList.add('display-nav');
+              menu.classList.remove('hide-nav');
+              isMenuOpen=false;
+            }
+            else{
+              menu.classList.add('hide-nav');
+              menu.classList.remove('display-nav');
+              isMenuOpen=true;
+            }
+          })
+        </script>
 </body>
 </html>

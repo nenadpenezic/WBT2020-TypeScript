@@ -4,11 +4,11 @@ function googleTranslateElementInit() {
   
 $(document).ready(function(){
     var i = 0, text;
-    text = "Objects";
+    text = "Modules & Ambients";
     
     function typing(){
         if(i < text.length){
-            document.getElementById("ob").innerHTML += text.charAt(i);
+            document.getElementById("ma").innerHTML += text.charAt(i);
             i++;
             setTimeout(typing,120); 
         }

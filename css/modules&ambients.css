@@ -1,0 +1,31 @@
+.m1{
+    border-top: 3px dashed black;
+    border-bottom: 3px dashed black;
+}
+
+.m2{
+    border: 3px ridge white;
+}
+
+.h-4{
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+
+.h-4-b{
+    border-top: 2px dashed rgb(3, 90, 139);
+    border-bottom: 2px dashed rgb(3, 90, 139);
+    background-color: rgba(3, 90, 139, 0.3);
+}
+
+.h-4-g{
+    border-top: 2px dashed rgb(20, 87, 53);
+    border-bottom: 2px dashed rgb(20, 87, 53);
+    background-color: rgba(20, 87, 53, 0.3);
+}
+
+.h-4-p{
+    border-top: 2px dashed rgb(181, 97, 230);
+    border-bottom: 2px dashed rgb(181, 97, 230);
+    background-color: rgba(181, 97, 230, 0.3);
+}
