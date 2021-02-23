@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/objects.css">
+    <link rel="stylesheet" href="css/modules&ambients.css">
     <link rel="stylesheet" href="css/u&itypes.css">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/mobile.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
-    <script src="script/objects.js"></script>
+    <script src="script/modules&ambients.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -62,17 +62,17 @@
                     <li class="submenu-li"><a href="Interfaces.html">Interfaces</a></li>
                     <li class="submenu-li"><a href="Functions.html">Functions</a></li>
                     <li class="submenu-li"><a href="u&itypes.html">Union and Intersection Types</a></li>
-                    <li class="submenu-li"><a href="">Classes</a></li>
+                    <li class="submenu-li"><a href="classes.html">Classes</a></li>
                     <li class="submenu-li"><a href="objects.html">Objects</a></li>
                     <li class="submenu-li"><a href="namespaces.html">Namespaces</a></li>
-                    <li class="submenu-li"><a href="">Modules & Ambients</a></li>
+                    <li class="submenu-li"><a href="modules&ambients.html">Modules & Ambients</a></li>
                 </ul>
                 <li class="nav-li"><a href="">About</a></li>
             </li>
         </ul>
     </nav>
     <div class="title-wrapper">
-        <h1 id="ob"></h1>
+        <h1 id="ma"></h1>
     </div>
         </div>
     </div>
@@ -83,72 +83,91 @@
     <div class="container p-5 text-center c2 b1">
         <div class="row">
             <div class="col-lg-12">
+                <h2>Modules</h2>
                 <p class="mt-4 p1">
-                    An <b>object</b> is an instance which contains set of key value pairs. The values can be scalar values or functions or even array of other objects. The syntax is given below −
+                    A <b>module</b> is designed with the idea to organize code written in TypeScript. Modules are broadly divided into −
+                    <br><br>
+                    <i class="fas fa-check"></i> Internal Modules
+                    <br>
+                    <i class="fas fa-check"></i> External Modules
                 </p>
 
-                <h3 class="mt-4">-- Syntax --</h3>
-                <img class="img-fluid img1 mt-4" src="img/objects1.JPG">
+                <h3 class="mt-4">-- Internal Module --</h3>
                 <p class="mt-4">
-                    As shown above, an object can contain scalar values, functions and structures like arrays and tuples.
+                    Internal modules came in earlier version of Typescript. This was used to logically group classes, interfaces, functions into one unit 
+                    and can be exported in another module. This logical grouping is named namespace in latest version of TypeScript. So internal modules are 
+                    obsolete instead we can use namespace. Internal modules are still supported, but its recommended to use namespace over internal modules.
                 </p>
 
-                <div class="container p-3 b2">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h3>Example: Object Literal Notation</h3>
-                        </div>   
-                    </div>
-                    <div class="row">
+                <div class="container p-3 m1">
+                    <div class="row p-2">
                         <div class="col-lg-6">
-                            <img class="img-fluid img2 mt-4" src="img/objects2.JPG">
+                            <h4 class="mt-2">Internal Module Syntax (Old)</h4>
+                            <img class="img-fluid img2 mt-4" src="img/modules1.JPG">
                         </div>
                         <div class="col-lg-6">
-                            <p class="mt-4 p1">
-                                On compiling, it will generate the same code in JavaScript.
-
-                                <br>The output of the above code is as follows −
-                            </p>
-                            <img class="img-fluid img1" src="img/objects3.JPG">
+                            <h4 class="mt-2">Namespace Syntax (New)</h4>
+                            <img class="img-fluid img1 mt-4" src="img/modules2.JPG">
                         </div>
                     </div>
                 </div>
             
                 <div class="wrapper py-3">
-                    <div class="divider div-transparent div-dot3"></div>
+                    <div class="divider div-transparent div-dot"></div>
                 </div> 
             </div>
         </div>
     </div>
 
-    <div class="container p-5 text-center b3">
+    <div class="container p-5 text-center c3">
         <div class="row">
             <div class="col-lg-12">
-                <h2>-- TypeScript Type Template --</h2>
-                <p class="mt-4 p1">
-                    Let’s say you created an object literal in JavaScript as −
-                </p>
-                <img class="img-fluid img1 mt-4" src="img/objects4.JPG">
-                <p class="mt-4 p1">
-                    In case you want to add some value to an object, <b>JavaScript</b> allows you to make the necessary modification. Suppose we need 
-                    to add a function to the person object later this is the way you can do this.
-                </p>
-                <h4 class="mt-4 p-2 b4"><b>person.sayHello = function(){ return "hello";}</b></h4>
+                <div class="container-fluid m2">
+                    <h2 class="mt-4">-- External Module --</h2>
+                    <p class="mt-4 p1">
+                        External modules in TypeScript exists to specify and load dependencies between multiple external js files. If there is only one js file used, 
+                        then external modules are not relevant. Traditionally dependency management between JavaScript files was done using browser script tags. 
+                        But that’s not extendable, as its very linear while loading modules. That means instead of loading files one after other there is no asynchronous option 
+                        to load modules. When you are programming js for the server for example NodeJs you don’t even have script tags.
+                        <br><br>
+                        There are two scenarios for loading dependents js files from a single main JavaScript file.
+                        <br><br>
+                        <i class="fas fa-check"></i> <b>Client Side - RequireJs</b>
+                        <br>
+                        <i class="fas fa-check"></i> <b>Server Side - NodeJs</b>
+                    </p>
+                </div>
+                
+
+                <div class="container-fluid m2">
+                    <h3 class="mt-4">--- Selecting a Module Loader ---</h3>
+                    <p class="mt-4 p1">
+                        To support loading external JavaScript files, we need a module loader. This will be another js library. For browser the most common library used is 
+                        RequieJS. This is an implementation of AMD (Asynchronous Module Definition) specification. Instead of loading files one after the other, AMD can load them 
+                        all separately, even when they are dependent on each other.
+                    </p>
+                </div>
+                
+                <div class="container-fluid m2">
+                    <h3 class="mt-4">--- Defining External Module ---</h3>
+                    <p class="mt-4 p1">
+                        When defining external module in TypeScript targeting CommonJS or AMD, each file is considered as a module. So it’s optional to use internal module with 
+                        in external module.
+
+                        <br><br>If you are migrating TypeScript from AMD to CommonJs module systems, then there is no additional work needed. The only thing you need to change is 
+                        just the compiler flag Unlike in JavaScript there is an overhead in migrating from CommonJs to AMD or vice versa.
+
+                        <br><br>The syntax for declaring an external module is using keyword ‘export’ and ‘import’.
+                    </p>
+                </div>
+                
+                <h3 class="mt-4">Syntax</h3>
+                <img class="img-fluid img2 mt-4" src="img/modules3.JPG">
 
                 <p class="mt-4 p1">
-                    If you use the same code in Typescript the compiler gives an error. This is because in Typescript, concrete objects should have a type template. Objects in Typescript must be an instance of a particular type.
-
-                    <br>You can solve this by using a method template in declaration.
+                    To use the declared module in another file, an import keyword is used as given below. The file name is only specified no extension used.
                 </p>
-                <h3 class="mt-4">Example: Typescript Type template</h3>
-                <img class="img-fluid img2 mt-4" src="img/objects5.JPG">
-
-                <p class="mt-4 p1">
-                    On compiling, it will generate the same code in JavaScript.
-
-                    <br><br>The output of the above code is as follows −
-                </p>
-                <h4 class="mt-4 p-2 b4"><b>hello Tom</b></h4>
+                <h4 class="mt-4 p-2 h-4"><b>import someInterfaceRef = require(“./SomeInterface”);</b></h4>
 
                 <div class="wrapper py-3">
                     <div class="divider div-transparent div-dot1"></div>
@@ -160,21 +179,31 @@
     <div class="container p-5 text-center c2">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Duck-typing</h2>
+                <h2>Ambients</h2>
 
                 <p class="mt-4 p1">
 
-                    In duck-typing, two objects are considered to be of the same type if both share the same set of properties. Duck-typing verifies the presence of 
-                    certain properties in the objects, rather than their actual type, to check their suitability. The concept is generally explained by the following phrase −
+                    Ambient declarations are a way of telling the TypeScript compiler that the actual source code exists elsewhere. When you are consuming a bunch of third 
+                    party js libraries like jquery/angularjs/nodejs you can’t rewrite it in TypeScript. Ensuring typesafety and intellisense while using these libraries will 
+                    be challenging for a TypeScript programmer. Ambient declarations help to seamlessly integrate other js libraries into TypeScript.
 
-                    <br><br>“When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck.”
-
-                    <br><br>The TypeScript compiler implements the duck-typing system that allows object creation on the fly while keeping type safety. The following example shows 
-                    how we can pass objects that don’t explicitly implement an interface but contain all of the required members to a function.
+                    
                 </p>
 
-                <h4 class="mt-4">Example</h4>
-                <img class="img-fluid img1 mt-4" src="img/objects6.JPG">
+                <h3 class="mt-4">--- Defining Ambients ---</h3>
+                <p class="mt-4 p1">Ambient declarations are by convention kept in a type declaration file with following extension (d.ts)</p>
+                <h4 class="mt-4 p-2 h-4-b"><b>Sample.d.ts</b></h4>
+
+                <p class="mt-4 p1">The above file will not be transcompiled to JavaScript. It will be used for type safety and intellisense.
+
+                    <br><br>The syntax for declaring ambient variables or modules will be as following −
+                </p>
+                <h4 class="mt-4 p-2 h-4-g"><b>declare module Module_Name {}</b></h4>
+
+                <p class="mt-4 p1">The ambient files should be referenced in the client TypeScript file as shown −</p>
+                <h4 class="mt-4 p-2 h-4-p"><b>/// reference path = " Sample.d.ts" </b></h4>
+
+                
             </div>
         </div>
     </div>

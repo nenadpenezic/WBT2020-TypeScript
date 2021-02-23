@@ -62,10 +62,10 @@
                         <li class="submenu-li"><a href="Interfaces.html">Interfaces</a></li>
                         <li class="submenu-li"><a href="Functions.html">Functions</a></li>
                         <li class="submenu-li"><a href="u&itypes.html">Union and Intersection Types</a></li>
-                        <li class="submenu-li"><a href="">Classes</a></li>
+                        <li class="submenu-li"><a href="classes.html">Classes</a></li>
                         <li class="submenu-li"><a href="objects.html">Objects</a></li>
                         <li class="submenu-li"><a href="namespaces.html">Namespaces</a></li>
-                        <li class="submenu-li"><a href="">Modules & Ambients</a></li>
+                        <li class="submenu-li"><a href="modules&ambients.html">Modules & Ambients</a></li>
                     </ul>
                     <li class="nav-li"><a href="">About</a></li>
                 </li>
@@ -208,16 +208,16 @@
                                 <a href="Overview.html"><i class="fas fa-eye"> Overview</i></a>
                                 <a href="Documentation.html"><i class="fas fa-file"> Documentation</i></a>
                                 <a href="basicSyntax.html"><i class="fas fa-code"> Basic Syntax</i></a>
-                                <a href=""><i class="fab fa-invision"> Interfaces</i></a>
-                                <a href=""><i class="fab fa-foursquare"> Functions</i></a>
+                                <a href="Interfaces.html"><i class="fab fa-invision"> Interfaces</i></a>
+                                <a href="Functions.html"><i class="fab fa-foursquare"> Functions</i></a>
                                 
                             </div>
                             <div class="col-md-6">
                                 <a href="u&itypes.html"><i class="far fa-circle"> U&I Types</i></a>
-                                <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
-                                <a href=""><i class="fas fa-object-group"> Objects</i></a>
+                                <a href="classes.html"><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                                <a href="objects.html"><i class="fas fa-object-group"> Objects</i></a>
                                 <a href="namespaces.html"><i class="fas fa-file-signature"> Namespaces</i></a>
-                                <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                                <a href="modules&ambients.html"><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
                                 <a href=""><i class="fas fa-address-card"> About</i></a>
                             </div>
                             
@@ -235,5 +235,25 @@
         </section>
     </div>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+
+        const menuButton=document.getElementById('navigation');
+          const menu=document.getElementsByClassName('nav-menu')[0];
+          
+          let isMenuOpen=true;
+    
+          menuButton.addEventListener('click',()=>{
+            if(isMenuOpen){
+              menu.classList.add('display-nav');
+              menu.classList.remove('hide-nav');
+              isMenuOpen=false;
+            }
+            else{
+              menu.classList.add('hide-nav');
+              menu.classList.remove('display-nav');
+              isMenuOpen=true;
+            }
+          })
+        </script>
 </body>
 </html>
