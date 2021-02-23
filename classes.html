@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="css/u&itypes.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
+    <script src="script/classes.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="row-wrapper">
+          <div class="col-lg-2 p-3 header-common">
+              <i class="fab fa-facebook-f fa-lg p-1"></i>
+              <i class="fab fa-twitter fa-lg p-1"></i>
+              <i class="fab fa-instagram fa-lg p-1"></i>
+              <i class="fab fa-pinterest fa-lg p-1"></i>
+          </div>
+          <div class="col-lg-8  text-center">
+              <h1 style="color: white;">TypeScript.</h1>
+          </div>
+          <div class="col-lg-2 header-common nav-form">
+              <form class="form-inline">
+                  <input class="form-control w-75 transparent-input"  type="search" placeholder="Search" aria-label="Search">
+                  <i class="fas fa-search"></i>
+                </form>
+          </div>
+        </div>
+    <div class="col-12" style="padding: 0%;">
+      <div class="banner">
+        <div class="banner-color">
+                    
+    <nav>
+      <div id="navigation">
+        <i class="fas fa-bars"></i>
+    </div>
+        <ul id="" class="nav-menu hide-nav">
+            <li class="nav-li"><a href="home.html">Home</a> </li>
+            <li class="nav-li"><a href="Overview.html">Overview</a></li>
+            <li id="docs" class="nav-li"><a href="Documentation.html">Documentation <i class="fas fa-arrow-down"></i></a>
+                <ul id="sub-menu">
+                    <li id="basic-syntax" class="submenu-li"><a href="">Basic Syntax <i class="fas fa-arrow-right"></i></a>
+                    <ul id="sub-sub-menu">
+                        <li><a href="Types.html">Types</a></li>
+                        <li><a href="Variables.html">Variables</a></li>
+                        <li><a href="Operators.html">Operators</a></li>
+                        <li><a href="Loops.html">Loops</a></li>
+                        <li><a href="Numbers.html">Numbers</a></li>
+                        <li><a href="Strings.html">Strins</a></li>
+                        <li><a href="arrays.html">Arrays</a></li>
+                    </ul>
+                    </li>
+                    <li class="submenu-li"><a href="Interfaces.html">Interfaces</a></li>
+                    <li class="submenu-li"><a href="Functions.html">Functions</a></li>
+                    <li class="submenu-li"><a href="u&itypes.html">Union and Intersection Types</a></li>
+                    <li class="submenu-li"><a href="classes.html">Classes</a></li>
+                    <li class="submenu-li"><a href="objects.html">Objects</a></li>
+                    <li class="submenu-li"><a href="namespaces.html">Namespaces</a></li>
+                    <li class="submenu-li"><a href="modules&ambients.html">Modules & Ambients</a></li>
+                </ul>
+                <li class="nav-li"><a href="">About</a></li>
+            </li>
+        </ul>
+    </nav>
+    <div class="title-wrapper">
+        <h1 id="cs"></h1>
+    </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+    <div class="container p-5 text-center c2 b1">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="mt-4 p1">
+                    TypeScript is object oriented JavaScript. TypeScript supports object-oriented programming features like classes, interfaces, etc. A 
+                    <b>class</b> in terms of OOP is a blueprint for creating objects. A class encapsulates data for the object. Typescript gives built in support for this 
+                    concept called class. JavaScript ES5 or earlier didn’t support classes. Typescript gets this feature from ES6.
+                </p>
+
+                <h3 class="mt-4">-- Creating classes --</h3>
+                <p class="mt-4">
+                    Use the class keyword to declare a class in TypeScript. The syntax for the same is given below −
+                </p>
+                <h4 class="mt-4 p-2 c-1"><b>class class_name { //class scope }</b></h4>
+                
+                <p class="mt-4 p1">
+                    The class keyword is followed by the class name. The rules for identifiers must be considered while naming a class.
+
+                    <br><br>A class definition can include the following −
+                </p>
+                <p class="mt-4 p1">
+                    <i class="fas fa-check"></i> <b>Fields</b> − A field is any variable declared in a class. Fields represent data pertaining to objects
+                    <br><i class="fas fa-check"></i> <b>Constructors</b> − Responsible for allocating memory for the objects of the class
+                    <br><i class="fas fa-check"></i> <b>Functions</b> − Functions represent actions an object can take. They are also at times referred to as methods
+                </p>
+                
+                <p class="mt-4 p1">
+                    These components put together are termed as the data members of the class.
+                </p>
+
+                <h3 class="mt-4">Example: Declaring a class</h3>
+                <img class="img-fluid img2 mt-4" src="img/classes1.JPG">
+                
+                <p class="mt-4 p1">
+                    The example declares a class Car. The class has a field named engine. The <b>var</b> keyword is not used while declaring a field. The example above declares a 
+                    constructor for the class.
+
+                    <br><br>
+                    A constructor is a special function of the class that is responsible for initializing the variables of the class. TypeScript defines a constructor using 
+                    the constructor keyword. A constructor is a function and hence can be parameterized.
+
+                    <br><br>
+                    The <b>this</b> keyword refers to the current instance of the class. Here, the parameter name and the name of the class’s field are the same. Hence to avoid 
+                    ambiguity, the class’s field is prefixed with the <b>this</b> keyword.
+
+                    <br><br>
+                    disp() is a simple function definition. Note that the function keyword is not used here.
+                </p>
+
+                <div class="wrapper py-3">
+                    <div class="divider div-transparent div-dot3"></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-5 text-center c-3">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <h2>-- Creating Instance objects --</h2>
+                <p class="mt-4 p1">
+                    To create an instance of the class, use the new keyword followed by the class name. The syntax for the same is given below −
+                </p>
+                <h4 class="mt-4 p-2 c-4"><b>var object_name = new class_name([ arguments ])</b></h4>
+
+                <p class="mt-4 p1">
+                    <i class="fas fa-check"></i> The <b>new</b> keyword is responsible for instantiation.
+                    <br><i class="fas fa-check"></i> The right-hand side of the expression invokes the constructor. The constructor should be passed values if it is parameterized.
+
+                </p>
+                
+
+                <h2 class="mt-5">-- Accessing Attributes and Functions --</h2>
+                <p class="mt-4 p1">
+                    A class’s attributes and functions can be accessed through the object. Use the ‘ . ’ dot notation (called as the period) to access the data members of a class.
+                </p>
+                <h4 class="mt-4 py-4 c-4"><b>
+                    //accessing an attribute 
+                    <br>obj.field_name 
+                    <br><br>
+                    <br>//accessing a function 
+                    <br>obj.function_name()</b>
+                </h4>
+
+                <div class="wrapper py-3">
+                    <div class="divider div-transparent div-dot1"></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-5 text-center c2">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>-- Class Inheritance --</h2>
+
+                <p class="mt-4 p1">
+
+                    TypeScript supports the concept of Inheritance. Inheritance is the ability of a program to create new classes from an existing class. 
+                    The class that is extended to create newer classes is called the parent class/super class. The newly created classes are called the child/sub classes.
+
+                    <br><br>
+                    A class inherits from another class using the <b>‘extends’</b> keyword. Child classes inherit all properties and methods except private members and constructors 
+                    from the parent class.
+
+                    <br><br>However, TypeScript doesn’t support multiple inheritance.
+                </p>
+                <h4 class="mt-4 p-2 c-1"><b>class child_class_name extends parent_class_name</b></h4>
+                
+                <h3 class="mt-5">--- Method Overriding ---</h3>
+                <p class="mt-4 p1">
+                    Method Overriding is a mechanism by which the child class redefines the superclass’s method. The following example illustrates the same −
+
+                    <br><img class="img-fluid img2" src="img/classes2.JPG">
+
+                    <br>The super keyword is used to refer to the immediate parent of a class. The keyword can be used to refer to the super class version of a variable, 
+                    property or method. Line 13 invokes the super class version of the doWork() function.
+                </p>
+
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container f">
+        <section id="footersection">
+            <footer class="text-light">
+                <div class="row p-5">
+                    <div class="col-md-4">
+                      <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="lead text-center">Quick Links</h5>
+                        <div class="row iconsfooter text-center">
+                            <div class="col-md-6">
+                                <a href="home.html"><i class="fas fa-home"> Home</i></a>
+                                <a href="Overview.html"><i class="fas fa-eye"> Overview</i></a>
+                                <a href="Documentation.html"><i class="fas fa-file"> Documentation</i></a>
+                                <a href="basicSyntax.html"><i class="fas fa-code"> Basic Syntax</i></a>
+                                <a href="Interfaces.html"><i class="fab fa-invision"> Interfaces</i></a>
+                                <a href="Functions.html"><i class="fab fa-foursquare"> Functions</i></a>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <a href="u&itypes.html"><i class="far fa-circle"> U&I Types</i></a>
+                                <a href="classes.html"><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                                <a href="objects.html"><i class="fas fa-object-group"> Objects</i></a>
+                                <a href="namespaces.html"><i class="fas fa-file-signature"> Namespaces</i></a>
+                                <a href="modules&ambients.html"><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+                                <a href=""><i class="fas fa-address-card"> About</i></a>
+                            </div>
+                            
+                        </div>     
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="lead text-center">Choose Your Language!</h5>
+                        <div id="google_translate_element" class="text-center"></div>
+                    </div>
+                </div>
+                <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+               
+            </footer>
+        </section>
+    </div>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+
+        const menuButton=document.getElementById('navigation');
+          const menu=document.getElementsByClassName('nav-menu')[0];
+          
+          let isMenuOpen=true;
+    
+          menuButton.addEventListener('click',()=>{
+            if(isMenuOpen){
+              menu.classList.add('display-nav');
+              menu.classList.remove('hide-nav');
+              isMenuOpen=false;
+            }
+            else{
+              menu.classList.add('hide-nav');
+              menu.classList.remove('display-nav');
+              isMenuOpen=true;
+            }
+          })
+        </script>
+</body>
+</html>
