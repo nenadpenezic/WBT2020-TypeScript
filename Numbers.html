@@ -34,8 +34,11 @@
               </div>
               <div class="col-lg-2 header-common nav-form">
                   <form class="form-inline">
-                      <input class="form-control w-75 transparent-input"  type="search" placeholder="Search" aria-label="Search">
+                      <input id="search" class="form-control w-75 transparent-input"  type="search" placeholder="Search" aria-label="Search" onkeyup="searchFunction()">
                       <i class="fas fa-search"></i>
+                      <ul class="search-list">
+
+                      </ul>
                     </form>
               </div>
             </div>
@@ -48,35 +51,35 @@
             <i class="fas fa-bars"></i>
         </div>
             <ul id="" class="nav-menu hide-nav">
-                <li class="nav-li"><a href="">Home</a> </li>
-                <li class="nav-li"><a href="">Overview</a></li>
-                <li id="docs" class="nav-li"><a href="">Documentation <i class="fas fa-arrow-down"></i></a>
+                <li class="nav-li"><a href="./home.html">Home</a> </li>
+                <li class="nav-li"><a href="./Overview.html">Overview</a></li>
+                <li id="docs" class="nav-li"><a href="./Documentation.html">Documentation </a><i class="fas fa-arrow-down mobile-sub-menu"></i>
                     <ul id="sub-menu">
-                        <li id="basic-syntax" class="submenu-li"><a href="">Basic Syntax <i class="fas fa-arrow-right"></i></a>
+                        <li id="basic-syntax" class="submenu-li"><a href="./basicSyntax.html">Basic Syntax </a> <i class="fas fa-arrow-down mobile-sub-sub-menu"></i>
                         <ul id="sub-sub-menu">
-                            <li><a href="">Types</a></li>
-                            <li><a href="">Variables</a></li>
-                            <li><a href="">Operators</a></li>
-                            <li><a href="">Loops</a></li>
-                            <li><a href="">Numbers</a></li>
-                            <li><a href="">Strins</a></li>
-                            <li><a href="">Arrays</a></li>
+                            <li><a href="./Types.html">Types</a></li>
+                            <li><a href="./Variables.html">Variables</a></li>
+                            <li><a href="./Operators.html">Operators</a></li>
+                            <li><a href="./Loops.html">Loops</a></li>
+                            <li><a href="./Numbers.html">Numbers</a></li>
+                            <li><a href="./Strings.html">Strins</a></li>
+                            <li><a href="./arrays.html">Arrays</a></li>
                         </ul>
                         </li>
-                        <li class="submenu-li"><a href="">Interfaces</a></li>
-                        <li class="submenu-li"><a href="">Functions</a></li>
-                        <li class="submenu-li"><a href="">Union and Intersection Types</a></li>
-                        <li class="submenu-li"><a href="">Classes</a></li>
-                        <li class="submenu-li"><a href="">Objects</a></li>
-                        <li class="submenu-li"><a href="">Namespaces</a></li>
-                        <li class="submenu-li"><a href="">Modules & Ambients</a></li>
+                        <li class="submenu-li"><a href="./Interfaces.html">Interfaces</a></li>
+                        <li class="submenu-li"><a href="./Functions.html">Functions</a></li>
+                        <li class="submenu-li"><a href="./u&itypes.html">Union and Intersection Types</a></li>
+                        <li class="submenu-li"><a href="./classes.html">Classes</a></li>
+                        <li class="submenu-li"><a href="./objects.html">Objects</a></li>
+                        <li class="submenu-li"><a href="./namespaces.html">Namespaces</a></li>
+                        <li class="submenu-li"><a href="./modules&ambients.html">Modules & Ambients</a></li>
                     </ul>
                     <li class="nav-li"><a href="">About</a></li>
                 </li>
             </ul>
         </nav>
         <div class="title-wrapper">
-            <h1>Typescript's <br>Numbers</h1>
+            <h1>Typescript<br>Numbers</h1>
         </div>
             </div>
         </div>
@@ -306,25 +309,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script>
-
-    const menuButton=document.getElementById('navigation');
-      const menu=document.getElementsByClassName('nav-menu')[0];
-      
-      let isMenuOpen=true;
-
-      menuButton.addEventListener('click',()=>{
-        if(isMenuOpen){
-          menu.classList.add('display-nav');
-          menu.classList.remove('hide-nav');
-          isMenuOpen=false;
-        }
-        else{
-          menu.classList.add('hide-nav');
-          menu.classList.remove('display-nav');
-          isMenuOpen=true;
-        }
-      })
-    </script>
+    <script src="./script/mobile.js"></script>
+    <script src="./script/search.js"></script>
 </body>
 </html>
