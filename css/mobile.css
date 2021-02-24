@@ -19,6 +19,12 @@
         margin-top: 5px;
         margin-bottom: 5px;
       }
+      .search-list{
+        width: 80%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%,0);
+       }
       #docs:hover #sub-menu{
         display: none;
       }
@@ -45,10 +51,6 @@
         left:50px;
         background-color: unset;
         }
-        .search-list{
-         width: 100%;
-         text-align: center;
-        }
         .row-wrapper{
           flex-direction: column;
         }
@@ -58,7 +60,5 @@
             padding-bottom: 55px;
             text-align: center;
         }
-        .features ul{
-            width: 90%;
-        }
+
   }

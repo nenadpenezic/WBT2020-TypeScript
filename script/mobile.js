@@ -5,19 +5,20 @@ const arrowRight=document.getElementsByClassName('mobile-sub-sub-menu')[0];
 const subMenu=document.getElementById('sub-menu');
 const subSubMenu=document.getElementById('sub-sub-menu');
 
-      let isMenuOpen=true;
+      let isMenuOpen=false;
       let isSubMenuOpen=false;
       let isSubSubMenuOpen=false;
+
       menuButton.addEventListener('click',function(){
-        if(isMenuOpen){
+        if(!isMenuOpen){
           menu.classList.add('display-nav');
           menu.classList.remove('hide-nav');
-          isMenuOpen=false;
+          isMenuOpen=true;
         }
         else{
           menu.classList.add('hide-nav');
           menu.classList.remove('display-nav');
-          isMenuOpen=true;
+          isMenuOpen=false;
         }
       })
 
@@ -30,6 +31,7 @@ const subSubMenu=document.getElementById('sub-sub-menu');
        isSubMenuOpen=false;
       }
       })
+      
 
       arrowRight.addEventListener('click',function(){
         if(!isSubSubMenuOpen){

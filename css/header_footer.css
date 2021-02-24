@@ -33,6 +33,10 @@ input.transparent-input{
   #navigation{
     display: none;
   }
+  .link-icon{
+    text-decoration: none;
+    color: white;
+  }
   nav{
     display: flex;
     justify-content: center;
