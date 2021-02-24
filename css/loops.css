@@ -40,20 +40,11 @@
   opacity: 1;
   transition-duration: 900ms;
 }
-.contmain{
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-#footersection{
-  background-color: rgb(9, 10, 4) !important;
-  
-}
-.s1{
-  font-weight: bold !important;
-}
-.iconsfooter{
-  text-decoration: none !important;
-}
-.iconsfooter a{
-  color: white;
+@media only screen and (max-width: 758px) {
+  .bottom-div ul {
+    flex-direction: column;
+  }
+  .bottom-div ul li{
+    width: 100%;
+  }
 }

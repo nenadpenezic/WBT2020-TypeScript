@@ -81,6 +81,21 @@ input.transparent-input{
     display: flex;
     border-bottom: 2px solid white;
   }
+  .mobile-sub-menu, .mobile-sub-sub-menu{
+    color: white;
+  }
+
+  .search-list{
+    position: absolute;
+    width: 200px;
+    background-color: gray;
+    z-index: 2;
+    top: 50px;
+    left: -20px;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+  }
   /*------------------------------------*/
   .banner{
       width: 100%;

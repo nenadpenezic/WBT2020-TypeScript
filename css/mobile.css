@@ -19,7 +19,12 @@
         margin-top: 5px;
         margin-bottom: 5px;
       }
-       
+      #docs:hover #sub-menu{
+        display: none;
+      }
+      #basic-syntax:hover #sub-sub-menu{
+        display: none;
+      }
       .display-nav{
         display: block;
       }
@@ -39,6 +44,10 @@
         top: 0;
         left:50px;
         background-color: unset;
+        }
+        .search-list{
+         width: 100%;
+         text-align: center;
         }
         .row-wrapper{
           flex-direction: column;
