@@ -1,433 +1,469 @@
 <html lang="en">
-  <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <script src="script/variablesJS.js"></script>
-    <title>Variables</title>
-  </head>
-  <body>
-      <div class="container contmain">
-        <section id="nav-section">
-          <div class="row">
-            <div class="row-wrapper">
-              <div class="col-lg-2 p-3 header-common">
-                  <i class="fab fa-facebook-f fa-lg p-1"></i>
-                  <i class="fab fa-twitter fa-lg p-1"></i>
-                  <i class="fab fa-instagram fa-lg p-1"></i>
-                  <i class="fab fa-pinterest fa-lg p-1"></i>
-              </div>
-              <div class="col-lg-8  text-center">
-                  <h1 style="color: white;">TypeScript.</h1>
-              </div>
-              <div class="col-lg-2 header-common nav-form">
-                  <form class="form-inline">
-                      <input class="form-control w-75 transparent-input"  type="search" placeholder="Search" aria-label="Search">
-                      <i class="fas fa-search"></i>
-                    </form>
-              </div>
-            </div>
-            <div class="col-12" style="padding: 0%;">
-              <div class="banner">
-                <div class="banner-color">
-                            
-            <nav>
-              <div id="navigation">
-                <i class="fas fa-bars"></i>
-            </div>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="script/variablesJS.js"></script>
+  <title>Variables</title>
+</head>
+
+<body>
+  <div class="container contmain">
+    <section id="nav-section">
+      <div class="row">
+        <div class="row-wrapper">
+          <div class="col-lg-2 p-3 header-common">
+            <a style="color: white;" href="https://github.com/nenadpenezic/WBT2020-TypeScript/tree/Development"
+              class="link-icon"><i class="fab fa-github-square fa-lg p-1"></i></a>
+            <a style="color: white;" href="https://en.wikipedia.org/wiki/TypeScript" class="link-icon"><i
+                class="fab fa-wikipedia-w fa-lg p-1"></i></a>
+            <a style="color: white;" href="https://www.youtube.com/watch?v=BwuLxPH8IDs" class="link-icon"><i
+                class="fab fa-youtube fa-lg p-1"></i></a>
+            <a style="color: white;" href="https://www.typescriptlang.org/" class="link-icon"><i
+                class="fas fa-file-code fa-lg p-1"></i></a>
+          </div>
+          <div class="col-lg-8  text-center">
+            <h1 style="color: white;">TypeScript.</h1>
+          </div>
+          <div class="col-lg-2 header-common nav-form">
+            <form class="form-inline">
+              <input id="search" class="form-control w-75 transparent-input" type="search" placeholder="Search"
+                aria-label="Search" onkeyup="searchFunction()">
+              <i class="fas fa-search"></i>
+              <ul class="search-list">
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div class="col-12" style="padding: 0%;">
+          <div class="banner">
+            <div class="banner-color">
+
+              <nav>
+                <div id="navigation">
+                  <i class="fas fa-bars"></i>
+                </div>
                 <ul id="" class="nav-menu hide-nav">
-                    <li class="nav-li"><a href="">Home</a> </li>
-                    <li class="nav-li"><a href="">Overview</a></li>
-                    <li id="docs" class="nav-li"><a href="">Documentation <i class="fas fa-arrow-down"></i></a>
-                        <ul id="sub-menu">
-                            <li id="basic-syntax" class="submenu-li"><a href="">Basic Syntax <i class="fas fa-arrow-right"></i></a>
-                            <ul id="sub-sub-menu">
-                                <li><a href="">Types</a></li>
-                                <li><a href="">Variables</a></li>
-                                <li><a href="">Operators</a></li>
-                                <li><a href="">Loops</a></li>
-                                <li><a href="">Numbers</a></li>
-                                <li><a href="">Strins</a></li>
-                                <li><a href="">Arrays</a></li>
-                            </ul>
-                            </li>
-                            <li class="submenu-li"><a href="">Interfaces</a></li>
-                            <li class="submenu-li"><a href="">Functions</a></li>
-                            <li class="submenu-li"><a href="">Union and Intersection Types</a></li>
-                            <li class="submenu-li"><a href="">Classes</a></li>
-                            <li class="submenu-li"><a href="">Objects</a></li>
-                            <li class="submenu-li"><a href="">Namespaces</a></li>
-                            <li class="submenu-li"><a href="">Modules & Ambients</a></li>
+                  <li class="nav-li"><a href="home.html">Home</a> </li>
+                  <li class="nav-li"><a href="Overview.html">Overview</a></li>
+                  <li id="docs" class="nav-li"><a href="Documentation.html">Documentation</a>
+                    <i class="fas fa-arrow-down  mobile-sub-menu" style="color: white;"></i>
+                    <ul id="sub-menu">
+                      <li id="basic-syntax" class="submenu-li"><a href="basicSyntax.html">Basic Syntax </a>
+                        <i class="fas fa-arrow-right mobile-sub-sub-menu" style="color: white;"></i>
+                        <ul id="sub-sub-menu">
+                          <li><a href="Types.html">Types</a></li>
+                          <li><a href="Variables.html">Variables</a></li>
+                          <li><a href="Operators.html">Operators</a></li>
+                          <li><a href="Loops.html">Loops</a></li>
+                          <li><a href="Numbers.html">Numbers</a></li>
+                          <li><a href="Strings.html">Strins</a></li>
+                          <li><a href="arrays.html">Arrays</a></li>
                         </ul>
-                        <li class="nav-li"><a href="">About</a></li>
-                    </li>
+                      </li>
+                      <li class="submenu-li"><a href="Interfaces.html">Interfaces</a></li>
+                      <li class="submenu-li"><a href="Functions.html">Functions</a></li>
+                      <li class="submenu-li"><a href="u&itypes.html">Union and Intersection Types</a></li>
+                      <li class="submenu-li"><a href="classes.html">Classes</a></li>
+                      <li class="submenu-li"><a href="objects.html">Objects</a></li>
+                      <li class="submenu-li"><a href="namespaces.html">Namespaces</a></li>
+                      <li class="submenu-li"><a href="modules&ambients.html">Modules & Ambients</a></li>
+                    </ul>
+                  </li>
                 </ul>
-            </nav>
-         </section>
-           <section id="introductionofvariables" class=" p-5">
-            <div class="row">
-              <div class="col-md-12 reveal pb-3">
-                <p class="lead text-center font-weight-bold" style="font-size: 30px;">
-                  Introduction to Variables
-                </p>
-              </div>
-                <div class="col-md-12 mt-4 typescriptdef">
-                    <p class="lead text-center  reveal">A variable, by definition, is “a named space in the memory” that stores values. 
-                      In other words, it acts as a container for values in a program. TypeScript variables must follow the JavaScript naming rules −
-
-                   </p>
-                </div>
-                <div class="lead col-md-12 text-center reveal">
-                  <i class="far fa-arrow-alt-circle-right pt-2"> Variable names can contain alphabets and numeric digits.</i> <br>
-                  <i class="far fa-arrow-alt-circle-right pt-2"> They cannot contain spaces and special characters, except the underscore
-                  (_) and the dollar ($) sign.</i> <br>
-                  <i class="far fa-arrow-alt-circle-right pt-2"> Variable names cannot begin with a digit.</i> 
-                </div>
-                <p class="lead col-md-12 pt-5 reveal">
-                  A variable must be declared before it is used. Use the <b class="font-weight-bold">var</b> keyword to declare variables.
-                </p>
-                <div class="col-md-12 pt-5 reveal">
-                  <p class="lead text-left font-weight-bold">
-                    Declaration of Variables in Typescript
-                  </p>
-                  <p class="lead text-left reveal">
-                    The type syntax for declaring a variable in TypeScript is to include a colon (:) after the variable name, followed by its type. Just as in JavaScript, we use the var keyword to declare a variable.
-                      <br>
-                    When you declare a variable, you have four options −
-                  </p>
-                </div>
-                <div class="lead col-md-12 text-center reveal">
-                  <i class="far fa-arrow-alt-circle-right pt-2 pb-3"> Declare neither value not type. 
-                  In this case, the data type of the variable will be any and will be initialized to undefined.</i> <br>
-                  
-                </div>
-                <div class="col-md-12 text-center reveal">
-                  <button type="button" class="btn btn-danger disabled">var</button>
-                  <button type="button" class="btn btn-danger disabled">[identifier]</button>
-                  <button type="button" class="btn btn-danger disabled">;</button>
-                </div>
-                <div class="lead col-md-12 text-center reveal">
-                  <i class="far fa-arrow-alt-circle-right pt-2 pb-3"> Declare its value but no type. The variable type
-                    will be set to the data type of the assigned value.</i> <br>
-                  
-                </div>
-                <div class="col-md-12 text-center reveal">
-                  <button type="button" class="btn btn-primary disabled">var</button>
-                  <button type="button" class="btn btn-primary disabled">[identifier]</button>
-                  <button type="button" class="btn btn-primary disabled">:</button>
-                  <button type="button" class="btn btn-primary disabled">[type-annotation]</button>
-                  <button type="button" class="btn btn-primary disabled">;</button>
-                </div>
-                <div class="lead col-md-12 text-center reveal">
-                  <i class="far fa-arrow-alt-circle-right pt-2 pb-3"> Declare its type and value in one statement.</i> <br>
-                  
-                </div>
-                <div class="col-md-12 text-center reveal">
-                  <button type="button" class="btn btn-secondary disabled">var</button>
-                  <button type="button" class="btn btn-secondary disabled">[identifier]</button>
-                  <button type="button" class="btn btn-secondary disabled">:</button>
-                  <button type="button" class="btn btn-secondary disabled">[type-annotation]</button>
-                  <button type="button" class="btn btn-secondary disabled">=</button>
-                  <button type="button" class="btn btn-secondary disabled">value</button>
-                  <button type="button" class="btn btn-secondary disabled">;</button>
-                </div>
-                <p class="lead col-md-12 pt-5 reveal font-weight-bold">
-                  The following table illustrates the valid syntax for variable declaration as discussed above −
-                </p>
-                <div class="col-md-2">
-
-                </div>  
-                <div class="col-md-8 table-responsive text-center reveal">
-                  <table class="table table-striped table-dark table-bordered">
-                    <thead>
-                      <tr>
-                        <th scope="col">S.No</th>
-                        <th scope="col" class="text-center">Variable Declaration</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1.</th>
-                        <td>vvar name:string = ”mary”
-                          <br>
-                          The variable stores a value of type string
-                      </tr>
-                      <tr>
-                        <th scope="row">2.</th>
-                        <td>var name:string;
-                          <br>
-                          The variable is a string variable. The variable’s value is set to undefined by default</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3.</th>
-                        <td>var name = ”mary”
-                          <br>
-                          The variable’s type is inferred from the data type of the value. Here, the variable is of the type string</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4.</th>
-                        <td>var name;
-                          <br>
-                          The variable’s data type is any. Its value is set to undefined by default.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="col-md-2">
-                  
-                </div>
-              </div>
-
-           </section>
-           <section class="fixedbg1">
-            <figure>
-                <div class="fixed-wrap">
-                    <div id="fixed1">
-                        
-                    </div>
-                </div>
-            </figure>
-            <section id="variablesmainpart">
-              <div class="row p-5">
-                <div class="col-md-12">
-                  <p class="lead text-center font-weight-bold pb-4 reveal" style="font-size: 30px;">
-                    Problem with <b class="font-weight-bold">var</b> variable
-                  </p>
-                  <p class="lead text-left reveal">
-                    To solve problems with var declarations, ES6 introduced two new types of variable declarations in JavaScript, 
-                    using the keywords <b class="font-weight-bold">let </b> and <b class="font-weight-bold">const</b>. TypeScript, being a superset
-                    of JavaScript, also supports these new types of variable declarations. Example of <b class="font-weight-bold">let </b> 
-                    variable is given below -
-                  </p>
-                </div>
-                <div class="col-md-8 reveal">
-                  <img src="img/typescriptexample16.jpg" alt="#" class="img-fluid">
-                </div>
-                <div class="col-md-2">
-
-                </div>
-                <p class="lead col-md-12 text-left pt-3 reveal">
-                  The let declarations follow the same syntax as var declarations. Unlike variables declared with <b class="font-weight-bold">var</b>, 
-                  variables declared with <b class="font-weight-bold">let</b> have a block-scope. This means that the scope of let variables is limited 
-                  to their containing block, e.g. function, if else block or loop block. Consider the following example.
-                </p>
-                <div class="col-md-8 reveal">
-                  <img src="img/typescriptexample17.jpg" alt="#" class="img-fluid">
-                </div>
-                <div class="col-md-2">
-
-                </div>
-                <p class="lead col-md-12 text-left pt-3 reveal">
-                  In the above example, all the variables are declared using let. num3 is declared in the if block so its scope
-                  is limited to the if block and cannot be accessed out of the if block. In the same way, num4 is declared in the
-                  while block so it cannot be accessed out of while block. Thus, when accessing num3 and num4 else where will give 
-                  a compiler error. <br>
-                  <b class="font-weight-bold">Important: The same example with the var declaration is compiled without an error!</b>
-                </p>
-                <br>
-                <div class="col-md-12">
-                  <p class="lead text-left font-weight-bold pt-3 reveal">
-                    Const Variable
-                  </p>
-                  <p class="lead text-left reveal">
-                    Variables can be declared using <b class="font-weight-bold">const</b> similar to var or let declarations. 
-                    The const makes a variable a constant where its value cannot be changed. 
-                    Const variables have the same scoping rules as let variables. Example is given below -
-                  </p>
-                </div>
-                <div class="col-md-8 reveal">
-                  <img src="img/typescriptexample18.jpg" alt="#" class="img-fluid">
-                </div>
-                <div class="col-md-2"> 
-
-                </div>
-                <p class="lead col-md-12 text-left reveal">
-                  <b class="font-weight-bold">
-                  Important: Const variables must be declared and initialized in a single statement. 
-                  Separate declaration and initialization is not supported.
-                  </b>
-                </p>
+              </nav>
+              <div id="text" class="display-4 d-none d-sm-block pt-5 pb-3"> Variables
 
               </div>
-              <div class="wrapper pb-3 reveal">
-                <div class="divider div-transparent div-dot"></div>
+              <div class="col-md-12 d-flex text-center intro">
+                  <h3 class="lead d-none d-sm-block lett">var</h3>
+                   <h3 class="lead d-none d-sm-block typing">hi</h3>
               </div>
-              <div class="row p-5">
-                <div class="col-md-12 reveal pb-5">
-                  <p class="lead text-center font-weight-bold" style="font-size: 30px;">
-                    Additional Variable Features
-                  </p>
-                </div>
-                <div class="col-md-12 reveal">
-                  <p class="lead text-left font-weight-bold">
-                    Type Assertion in TypeScript
-                  </p>
+    </section>
+    <section id="introductionofvariables" class=" p-5">
+      <div class="row">
+        <div class="col-md-12 reveal pb-3">
+          <p class="lead text-center font-weight-bold" style="font-size: 30px;">
+            Introduction to Variables
+          </p>
+        </div>
+        <div class="col-md-12 mt-4 typescriptdef">
+          <p class="lead text-center  reveal">A variable, by definition, is “a named space in the memory” that stores
+            values.
+            In other words, it acts as a container for values in a program. TypeScript variables must follow the
+            JavaScript naming rules −
 
-                  <p class="lead text-left reveal">
-                    TypeScript allows changing a variable from one type to another. 
-                    TypeScript refers to this process as Type Assertion. The syntax is to put the target type between < > symbols
-                    and place it in front of the variable or expression. The following example explains this concept −
-                  </p>
-                </div>
-                <div class="col-md-8 reveal">
-                  <img src="img/typescriptexample19.jpg" alt="#" class="img-fluid">
-                </div>
-                <div class="col-md-2"> 
-
-                </div>
-                <p class="lead col-md-12 text-left pt-3 reveal">
-                  If you hover the mouse pointer over the type assertion statement in Visual Studio Code, 
-                  it displays the change in the variable’s data type. Basically it allows the assertion from 
-                  type S to T succeed if either S is a subtype of T or T is a subtype of S.
-                  <br>
-                  <br>
-                  The reason why it's not called "type casting" is that casting generally implies some sort of 
-                  runtime support while, “type assertions” are purely a compile time construct and a way for you 
-                  to provide hints to the compiler on how you want your code to be analyzed.
-                </p>
-                <div class="col-md-12 pt-5 reveal">
-                  <p class="lead text-left font-weight-bold">
-                    Inferred Typing in TypeScript
-                  </p>
-
-                  <p class="lead text-left reveal">
-                    Given the fact that, Typescript is strongly typed, this feature is optional. 
-                    TypeScript also encourages dynamic typing of variables. This means that, TypeScript encourages 
-                    declaring a variable without a type. In such cases, the compiler will determine the type of the 
-                    variable on the basis of the value assigned to it. TypeScript will find the first usage of the 
-                    variable within the code, determine the type to which it has been initially set and then assume 
-                    the same type for this variable in the rest of your code block.
-                    <br>
-                    The same is explained in the following code snippet −
-                  </p>
-                </div>
-                <div class="col-md-8 reveal">
-                  <img src="img/typescriptexample20.jpg" alt="#" class="img-fluid">
-                </div>
-                <div class="col-md-2"> 
-
-                </div>
-                <p class="lead col-md-12 text-left pt-3 reveal">
-                  In the above code snippet −
-                </p>
-                <div class="lead col-md-12 text-left reveal">
-                  <i class="far fa-arrow-alt-circle-right pt-1 pl-3"> The code declares a variable and sets its value to 2.
-                     Note that the variable declaration doesn’t specify the data type. Hence, the program uses inferred
-                    typing to determine the data type of the variable, i.e., it assigns the type of the first value that 
-                    the variable is set to. In this case, num is set to the type number.</i> <br>
-                  <i class="far fa-arrow-alt-circle-right pt-2 pl-3"> When the code tries to set the variable’s value to string. 
-                    The compiler throws an error as the variable’s type is already set to number.</i> <br>
-                </div>
-                <div class="col-md-12 pt-5 reveal">
-                  <p class="lead text-left font-weight-bold">
-                    TypeScript Variable Scope
-                  </p>
-
-                  <p class="lead text-left reveal">
-                    The scope of a variable specifies where the variable is defined. 
-                    The availability of a variable within a program is determined by its scope. 
-                    TypeScript variables can be of the following scopes −
-                  </p>
-                </div>
-                <div class="lead col-md-12 text-left reveal pb-3">
-                  <i class="far fa-arrow-alt-circle-right pt-1 pl-3"> <b class="font-weight-bold"> Global Scope</b> − Global variables are 
-                    declared outside the programming constructs. These variables can be accessed from anywhere within your code.</i> <br>
-                  <i class="far fa-arrow-alt-circle-right pt-1 pl-3"> <b class="font-weight-bold"> Class Scope</b> − These variables are
-                      also called fields. Fields or class variables are declared within the class but outside the methods. These variables 
-                      can be accessed using the object of the class. Fields can also be static. Static fields can be accessed using the 
-                      class name.</i> <br>
-                  <i class="far fa-arrow-alt-circle-right pt-1 pl-3"> <b class="font-weight-bold"> Local Scope</b> − Local variables, 
-                    as the name suggests, are declared within the constructs like methods, loops etc. Local variables are accessible only
-                     within the construct where they are declared.</i> <br>
-                     <br>
-                     The following example illustrates variable scopes in TypeScript
-                     
-                </div>
-                <br>
-                <div class="col-md-8 reveal">
-                  <img src="img/typescriptexample21.jpg" alt="#" class="img-fluid">
-                </div>
-                <div class="col-md-2"> 
-
-                </div>
-                <p class="lead col-md-12 text-left font-weight-bold pt-1 pb-3 reveal">Important: If you try accessing the local variable outside the method, 
-                  it results in a compilation error!</p>
-                  <p class="lead col-md-12 text-center pt-5 pb-3 reveal">In the next chapter we will learn something more about operators in
-                    TypeScript, and how are they used.
-                  </p>
-
-
-              </div>
-            </section>
-           </section>
-           <section id="footersection">
-            <footer class="text-light">
-                <div class="row p-5">
-                    <div class="col-md-4">
-                      <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="lead text-center">Quick Links</h5>
-                        <div class="row iconsfooter text-center">
-                            <div class="col-md-6">
-                                <a href=""><i class="fas fa-home"> Home</i></a>
-                                <a href=""><i class="fas fa-eye"> Overview</i></a>
-                                <a href=""><i class="fas fa-file"> Documentation</i></a>
-                                <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
-                                <a href=""><i class="fab fa-invision"> Interfaces</i></a>
-                                <a href=""><i class="fab fa-foursquare"> Functions</i></a>
-                                
-                            </div>
-                            <div class="col-md-6">
-                                <a href=""><i class="far fa-circle"> U&I Types</i></a>
-                                <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
-                                <a href=""><i class="fas fa-object-group"> Objects</i></a>
-                                <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
-                                <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
-                                <a href=""><i class="fas fa-address-card"> About</i></a>
-                            </div>
-                            
-                        </div>     
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="lead text-center">Choose Your Language!</h5>
-                        <div id="google_translate_element" class="text-center"></div>
-                    </div>
-                </div>
-                <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
-               
-            </footer>
-        </section>
+          </p>
+        </div>
+        <div class="lead col-md-12 text-center reveal">
+          <i class="far fa-arrow-alt-circle-right pt-2"> Variable names can contain alphabets and numeric digits.</i>
+          <br>
+          <i class="far fa-arrow-alt-circle-right pt-2"> They cannot contain spaces and special characters, except the
+            underscore
+            (_) and the dollar ($) sign.</i> <br>
+          <i class="far fa-arrow-alt-circle-right pt-2"> Variable names cannot begin with a digit.</i>
+        </div>
+        <p class="lead col-md-12 pt-5 reveal">
+          A variable must be declared before it is used. Use the <b class="font-weight-bold">var</b> keyword to declare
+          variables.
+        </p>
+        <div class="col-md-12 pt-5 reveal">
+          <p class="lead text-left font-weight-bold">
+            Declaration of Variables in Typescript
+          </p>
+          <p class="lead text-left reveal">
+            The type syntax for declaring a variable in TypeScript is to include a colon (:) after the variable name,
+            followed by its type. Just as in JavaScript, we use the var keyword to declare a variable.
+            <br>
+            When you declare a variable, you have four options −
+          </p>
+        </div>
+        <div class="lead col-md-12 text-center reveal">
+          <i class="far fa-arrow-alt-circle-right pt-2 pb-3"> Declare neither value not type.
+            In this case, the data type of the variable will be any and will be initialized to undefined.</i> <br>
 
         </div>
+        <div class="col-md-12 text-center reveal">
+          <button type="button" class="btn btn-danger disabled">var</button>
+          <button type="button" class="btn btn-danger disabled">[identifier]</button>
+          <button type="button" class="btn btn-danger disabled">;</button>
+        </div>
+        <div class="lead col-md-12 text-center reveal">
+          <i class="far fa-arrow-alt-circle-right pt-2 pb-3"> Declare its value but no type. The variable type
+            will be set to the data type of the assigned value.</i> <br>
 
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        <script>
+        </div>
+        <div class="col-md-12 text-center reveal">
+          <button type="button" class="btn btn-primary disabled">var</button>
+          <button type="button" class="btn btn-primary disabled">[identifier]</button>
+          <button type="button" class="btn btn-primary disabled">:</button>
+          <button type="button" class="btn btn-primary disabled">[type-annotation]</button>
+          <button type="button" class="btn btn-primary disabled">;</button>
+        </div>
+        <div class="lead col-md-12 text-center reveal">
+          <i class="far fa-arrow-alt-circle-right pt-2 pb-3"> Declare its type and value in one statement.</i> <br>
 
-          const menuButton=document.getElementById('navigation');
-            const menu=document.getElementsByClassName('nav-menu')[0];
-            
-            let isMenuOpen=true;
-      
-            menuButton.addEventListener('click',()=>{
-              if(isMenuOpen){
-                menu.classList.add('display-nav');
-                menu.classList.remove('hide-nav');
-                isMenuOpen=false;
-              }
-              else{
-                menu.classList.add('hide-nav');
-                menu.classList.remove('display-nav');
-                isMenuOpen=true;
-              }
-            })
-         </script>
-  </body>
+        </div>
+        <div class="col-md-12 text-center reveal">
+          <button type="button" class="btn btn-secondary disabled">var</button>
+          <button type="button" class="btn btn-secondary disabled">[identifier]</button>
+          <button type="button" class="btn btn-secondary disabled">:</button>
+          <button type="button" class="btn btn-secondary disabled">[type-annotation]</button>
+          <button type="button" class="btn btn-secondary disabled">=</button>
+          <button type="button" class="btn btn-secondary disabled">value</button>
+          <button type="button" class="btn btn-secondary disabled">;</button>
+        </div>
+        <p class="lead col-md-12 pt-5 reveal font-weight-bold">
+          The following table illustrates the valid syntax for variable declaration as discussed above −
+        </p>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8 table-responsive text-center reveal">
+          <table class="table table-striped table-dark table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">S.No</th>
+                <th scope="col" class="text-center">Variable Declaration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1.</th>
+                <td>vvar name:string = ”mary”
+                  <br>
+                  The variable stores a value of type string
+              </tr>
+              <tr>
+                <th scope="row">2.</th>
+                <td>var name:string;
+                  <br>
+                  The variable is a string variable. The variable’s value is set to undefined by default
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3.</th>
+                <td>var name = ”mary”
+                  <br>
+                  The variable’s type is inferred from the data type of the value. Here, the variable is of the type
+                  string
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4.</th>
+                <td>var name;
+                  <br>
+                  The variable’s data type is any. Its value is set to undefined by default.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+      </div>
+
+    </section>
+    <section class="fixedbg1">
+      <figure>
+        <div class="fixed-wrap">
+          <div id="fixed1">
+
+          </div>
+        </div>
+      </figure>
+      <section id="variablesmainpart">
+        <div class="row p-5">
+          <div class="col-md-12">
+            <p class="lead text-center font-weight-bold pb-4 reveal" style="font-size: 30px;">
+              Problem with <b class="font-weight-bold">var</b> variable
+            </p>
+            <p class="lead text-left reveal">
+              To solve problems with var declarations, ES6 introduced two new types of variable declarations in
+              JavaScript,
+              using the keywords <b class="font-weight-bold">let </b> and <b class="font-weight-bold">const</b>.
+              TypeScript, being a superset
+              of JavaScript, also supports these new types of variable declarations. Example of <b
+                class="font-weight-bold">let </b>
+              variable is given below -
+            </p>
+          </div>
+          <div class="col-md-8 reveal">
+            <img src="img/typescriptexample16.jpg" alt="#" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+
+          </div>
+          <p class="lead col-md-12 text-left pt-3 reveal">
+            The let declarations follow the same syntax as var declarations. Unlike variables declared with <b
+              class="font-weight-bold">var</b>,
+            variables declared with <b class="font-weight-bold">let</b> have a block-scope. This means that the scope of
+            let variables is limited
+            to their containing block, e.g. function, if else block or loop block. Consider the following example.
+          </p>
+          <div class="col-md-8 reveal">
+            <img src="img/typescriptexample17.jpg" alt="#" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+
+          </div>
+          <p class="lead col-md-12 text-left pt-3 reveal">
+            In the above example, all the variables are declared using let. num3 is declared in the if block so its
+            scope
+            is limited to the if block and cannot be accessed out of the if block. In the same way, num4 is declared in
+            the
+            while block so it cannot be accessed out of while block. Thus, when accessing num3 and num4 else where will
+            give
+            a compiler error. <br>
+            <b class="font-weight-bold">Important: The same example with the var declaration is compiled without an
+              error!</b>
+          </p>
+          <br>
+          <div class="col-md-12">
+            <p class="lead text-left font-weight-bold pt-3 reveal">
+              Const Variable
+            </p>
+            <p class="lead text-left reveal">
+              Variables can be declared using <b class="font-weight-bold">const</b> similar to var or let declarations.
+              The const makes a variable a constant where its value cannot be changed.
+              Const variables have the same scoping rules as let variables. Example is given below -
+            </p>
+          </div>
+          <div class="col-md-8 reveal">
+            <img src="img/typescriptexample18.jpg" alt="#" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+
+          </div>
+          <p class="lead col-md-12 text-left reveal">
+            <b class="font-weight-bold">
+              Important: Const variables must be declared and initialized in a single statement.
+              Separate declaration and initialization is not supported.
+            </b>
+          </p>
+
+        </div>
+        <div class="wrapper pb-3 reveal">
+          <div class="divider div-transparent div-dot"></div>
+        </div>
+        <div class="row p-5">
+          <div class="col-md-12 reveal pb-5">
+            <p class="lead text-center font-weight-bold" style="font-size: 30px;">
+              Additional Variable Features
+            </p>
+          </div>
+          <div class="col-md-12 reveal">
+            <p class="lead text-left font-weight-bold">
+              Type Assertion in TypeScript
+            </p>
+
+            <p class="lead text-left reveal">
+              TypeScript allows changing a variable from one type to another.
+              TypeScript refers to this process as Type Assertion. The syntax is to put the target type between <>
+                symbols
+                and place it in front of the variable or expression. The following example explains this concept −
+            </p>
+          </div>
+          <div class="col-md-8 reveal">
+            <img src="img/typescriptexample19.jpg" alt="#" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+
+          </div>
+          <p class="lead col-md-12 text-left pt-3 reveal">
+            If you hover the mouse pointer over the type assertion statement in Visual Studio Code,
+            it displays the change in the variable’s data type. Basically it allows the assertion from
+            type S to T succeed if either S is a subtype of T or T is a subtype of S.
+            <br>
+            <br>
+            The reason why it's not called "type casting" is that casting generally implies some sort of
+            runtime support while, “type assertions” are purely a compile time construct and a way for you
+            to provide hints to the compiler on how you want your code to be analyzed.
+          </p>
+          <div class="col-md-12 pt-5 reveal">
+            <p class="lead text-left font-weight-bold">
+              Inferred Typing in TypeScript
+            </p>
+
+            <p class="lead text-left reveal">
+              Given the fact that, Typescript is strongly typed, this feature is optional.
+              TypeScript also encourages dynamic typing of variables. This means that, TypeScript encourages
+              declaring a variable without a type. In such cases, the compiler will determine the type of the
+              variable on the basis of the value assigned to it. TypeScript will find the first usage of the
+              variable within the code, determine the type to which it has been initially set and then assume
+              the same type for this variable in the rest of your code block.
+              <br>
+              The same is explained in the following code snippet −
+            </p>
+          </div>
+          <div class="col-md-8 reveal">
+            <img src="img/typescriptexample20.jpg" alt="#" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+
+          </div>
+          <p class="lead col-md-12 text-left pt-3 reveal">
+            In the above code snippet −
+          </p>
+          <div class="lead col-md-12 text-left reveal">
+            <i class="far fa-arrow-alt-circle-right pt-1 pl-3"> The code declares a variable and sets its value to 2.
+              Note that the variable declaration doesn’t specify the data type. Hence, the program uses inferred
+              typing to determine the data type of the variable, i.e., it assigns the type of the first value that
+              the variable is set to. In this case, num is set to the type number.</i> <br>
+            <i class="far fa-arrow-alt-circle-right pt-2 pl-3"> When the code tries to set the variable’s value to
+              string.
+              The compiler throws an error as the variable’s type is already set to number.</i> <br>
+          </div>
+          <div class="col-md-12 pt-5 reveal">
+            <p class="lead text-left font-weight-bold">
+              TypeScript Variable Scope
+            </p>
+
+            <p class="lead text-left reveal">
+              The scope of a variable specifies where the variable is defined.
+              The availability of a variable within a program is determined by its scope.
+              TypeScript variables can be of the following scopes −
+            </p>
+          </div>
+          <div class="lead col-md-12 text-left reveal pb-3">
+            <i class="far fa-arrow-alt-circle-right pt-1 pl-3"> <b class="font-weight-bold"> Global Scope</b> − Global
+              variables are
+              declared outside the programming constructs. These variables can be accessed from anywhere within your
+              code.</i> <br>
+            <i class="far fa-arrow-alt-circle-right pt-1 pl-3"> <b class="font-weight-bold"> Class Scope</b> − These
+              variables are
+              also called fields. Fields or class variables are declared within the class but outside the methods. These
+              variables
+              can be accessed using the object of the class. Fields can also be static. Static fields can be accessed
+              using the
+              class name.</i> <br>
+            <i class="far fa-arrow-alt-circle-right pt-1 pl-3"> <b class="font-weight-bold"> Local Scope</b> − Local
+              variables,
+              as the name suggests, are declared within the constructs like methods, loops etc. Local variables are
+              accessible only
+              within the construct where they are declared.</i> <br>
+            <br>
+            The following example illustrates variable scopes in TypeScript
+
+          </div>
+          <br>
+          <div class="col-md-8 reveal">
+            <img src="img/typescriptexample21.jpg" alt="#" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+
+          </div>
+          <p class="lead col-md-12 text-left font-weight-bold pt-1 pb-3 reveal">Important: If you try accessing the
+            local variable outside the method,
+            it results in a compilation error!</p>
+          <p class="lead col-md-12 text-center pt-5 pb-3 reveal">In the next chapter we will learn something more about
+            operators in
+            TypeScript, and how are they used.
+          </p>
+
+
+        </div>
+      </section>
+    </section>
+    <section id="footersection">
+      <footer class="text-light">
+        <div class="row p-5">
+          <div class="col-md-4">
+            <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span
+                class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+          </div>
+          <div class="col-md-4">
+            <h5 class="lead text-center">Quick Links</h5>
+            <div class="row iconsfooter text-center">
+              <div class="col-md-6">
+                <a href="home.html"><i class="fas fa-home"> Home</i></a>
+                <a href="Overview.html"><i class="fas fa-eye"> Overview</i></a>
+                <a href="Documentation.html"><i class="fas fa-file"> Documentation</i></a>
+                <a href="basicSyntax.html"><i class="fas fa-code"> Basic Syntax</i></a>
+                <a href="Interfaces.html"><i class="fab fa-invision"> Interfaces</i></a>
+                <a href="Functions.html"><i class="fab fa-foursquare"> Functions</i></a>
+
+              </div>
+              <div class="col-md-6">
+                <a href="u&itypes.html"><i class="far fa-circle"> U&I Types</i></a>
+                <a href="classes.html"><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                <a href="objects.html"><i class="fas fa-object-group"> Objects</i></a>
+                <a href="namespaces.html"><i class="fas fa-file-signature"> Namespaces</i></a>
+                <a href="modules&ambients.html"><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <h5 class="lead text-center">Choose Your Language!</h5>
+            <div id="google_translate_element" class="text-center"></div>
+          </div>
+        </div>
+        <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+
+      </footer>
+    </section>
+
+  </div>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="script/mobile.js"></script>
+  <script src="script/search.js"></script>
+</body>
+
 </html>

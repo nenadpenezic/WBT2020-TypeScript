@@ -25,18 +25,25 @@
       <div class="row">
         <div class="row-wrapper">
           <div class="col-lg-2 p-3 header-common">
-            <i class="fab fa-facebook-f fa-lg p-1"></i>
-            <i class="fab fa-twitter fa-lg p-1"></i>
-            <i class="fab fa-instagram fa-lg p-1"></i>
-            <i class="fab fa-pinterest fa-lg p-1"></i>
+            <a style="color: white;" href="https://github.com/nenadpenezic/WBT2020-TypeScript/tree/Development"
+              class="link-icon"><i class="fab fa-github-square fa-lg p-1"></i></a>
+            <a style="color: white;" href="https://en.wikipedia.org/wiki/TypeScript" class="link-icon"><i
+                class="fab fa-wikipedia-w fa-lg p-1"></i></a>
+            <a style="color: white;" href="https://www.youtube.com/watch?v=BwuLxPH8IDs" class="link-icon"><i
+                class="fab fa-youtube fa-lg p-1"></i></a>
+            <a style="color: white;" href="https://www.typescriptlang.org/" class="link-icon"><i
+                class="fas fa-file-code fa-lg p-1"></i></a>
           </div>
           <div class="col-lg-8  text-center">
             <h1 style="color: white;">TypeScript.</h1>
           </div>
           <div class="col-lg-2 header-common nav-form">
             <form class="form-inline">
-              <input class="form-control w-75 transparent-input" type="search" placeholder="Search" aria-label="Search">
+              <input id="search" class="form-control w-75 transparent-input" type="search" placeholder="Search"
+                aria-label="Search" onkeyup="searchFunction()">
               <i class="fas fa-search"></i>
+              <ul class="search-list">
+              </ul>
             </form>
           </div>
         </div>
@@ -49,36 +56,36 @@
                   <i class="fas fa-bars"></i>
                 </div>
                 <ul id="" class="nav-menu hide-nav">
-                  <li class="nav-li"><a href="">Home</a> </li>
-                  <li class="nav-li"><a href="">Overview</a></li>
-                  <li id="docs" class="nav-li"><a href="">Documentation <i class="fas fa-arrow-down"></i></a>
+                  <li class="nav-li"><a href="home.html">Home</a> </li>
+                  <li class="nav-li"><a href="Overview.html">Overview</a></li>
+                  <li id="docs" class="nav-li"><a href="Documentation.html">Documentation</a>
+                    <i class="fas fa-arrow-down  mobile-sub-menu" style="color: white;"></i>
                     <ul id="sub-menu">
-                      <li id="basic-syntax" class="submenu-li"><a href="">Basic Syntax <i
-                            class="fas fa-arrow-right"></i></a>
+                      <li id="basic-syntax" class="submenu-li"><a href="basicSyntax.html">Basic Syntax </a>
+                        <i class="fas fa-arrow-right mobile-sub-sub-menu" style="color: white;"></i>
                         <ul id="sub-sub-menu">
-                          <li><a href="">Types</a></li>
-                          <li><a href="">Variables</a></li>
-                          <li><a href="">Operators</a></li>
-                          <li><a href="">Loops</a></li>
-                          <li><a href="">Numbers</a></li>
-                          <li><a href="">Strins</a></li>
-                          <li><a href="">Arrays</a></li>
+                          <li><a href="Types.html">Types</a></li>
+                          <li><a href="Variables.html">Variables</a></li>
+                          <li><a href="Operators.html">Operators</a></li>
+                          <li><a href="Loops.html">Loops</a></li>
+                          <li><a href="Numbers.html">Numbers</a></li>
+                          <li><a href="Strings.html">Strins</a></li>
+                          <li><a href="arrays.html">Arrays</a></li>
                         </ul>
                       </li>
-                      <li class="submenu-li"><a href="">Interfaces</a></li>
-                      <li class="submenu-li"><a href="">Functions</a></li>
-                      <li class="submenu-li"><a href="">Union and Intersection Types</a></li>
-                      <li class="submenu-li"><a href="">Classes</a></li>
-                      <li class="submenu-li"><a href="">Objects</a></li>
-                      <li class="submenu-li"><a href="">Namespaces</a></li>
-                      <li class="submenu-li"><a href="">Modules & Ambients</a></li>
+                      <li class="submenu-li"><a href="Interfaces.html">Interfaces</a></li>
+                      <li class="submenu-li"><a href="Functions.html">Functions</a></li>
+                      <li class="submenu-li"><a href="u&itypes.html">Union and Intersection Types</a></li>
+                      <li class="submenu-li"><a href="classes.html">Classes</a></li>
+                      <li class="submenu-li"><a href="objects.html">Objects</a></li>
+                      <li class="submenu-li"><a href="namespaces.html">Namespaces</a></li>
+                      <li class="submenu-li"><a href="modules&ambients.html">Modules & Ambients</a></li>
                     </ul>
-                  <li class="nav-li"><a href="">About</a></li>
                   </li>
                 </ul>
               </nav>
-              <div id="text" class="display-4 d-none d-sm-block pt-5 pb-3"> Operators
-
+              <div id="text" class="display-4 d-none d-sm-block p-5">
+                Operators
               </div>
     </section>
 
@@ -709,74 +716,55 @@
         </div>
       </div>
 
-  
 
-  </section>
-  <section id="footersection">
-    <footer class="text-light">
-      <div class="row p-5">
-        <div class="col-md-4">
-          <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span
-              class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
-        </div>
-        <div class="col-md-4">
-          <h5 class="lead text-center">Quick Links</h5>
-          <div class="row iconsfooter text-center">
-            <div class="col-md-6">
-              <a href=""><i class="fas fa-home"> Home</i></a>
-              <a href=""><i class="fas fa-eye"> Overview</i></a>
-              <a href=""><i class="fas fa-file"> Documentation</i></a>
-              <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
-              <a href=""><i class="fab fa-invision"> Interfaces</i></a>
-              <a href=""><i class="fab fa-foursquare"> Functions</i></a>
 
-            </div>
-            <div class="col-md-6">
-              <a href=""><i class="far fa-circle"> U&I Types</i></a>
-              <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
-              <a href=""><i class="fas fa-object-group"> Objects</i></a>
-              <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
-              <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
-              <a href=""><i class="fas fa-address-card"> About</i></a>
+    </section>
+    <section id="footersection">
+      <footer class="text-light">
+        <div class="row p-5">
+          <div class="col-md-4">
+            <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span
+                class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+          </div>
+          <div class="col-md-4">
+            <h5 class="lead text-center">Quick Links</h5>
+            <div class="row iconsfooter text-center">
+              <div class="col-md-6">
+                <a href="home.html"><i class="fas fa-home"> Home</i></a>
+                <a href="Overview.html"><i class="fas fa-eye"> Overview</i></a>
+                <a href="Documentation.html"><i class="fas fa-file"> Documentation</i></a>
+                <a href="basicSyntax.html"><i class="fas fa-code"> Basic Syntax</i></a>
+                <a href="Interfaces.html"><i class="fab fa-invision"> Interfaces</i></a>
+                <a href="Functions.html"><i class="fab fa-foursquare"> Functions</i></a>
+
+              </div>
+              <div class="col-md-6">
+                <a href="u&itypes.html"><i class="far fa-circle"> U&I Types</i></a>
+                <a href="classes.html"><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                <a href="objects.html"><i class="fas fa-object-group"> Objects</i></a>
+                <a href="namespaces.html"><i class="fas fa-file-signature"> Namespaces</i></a>
+                <a href="modules&ambients.html"><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+              </div>
+
             </div>
 
           </div>
-
+          <div class="col-md-4">
+            <h5 class="lead text-center">Choose Your Language!</h5>
+            <div id="google_translate_element" class="text-center"></div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h5 class="lead text-center">Choose Your Language!</h5>
-          <div id="google_translate_element" class="text-center"></div>
-        </div>
-      </div>
-      <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+        <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
 
-    </footer>
-  </section>
-</div>
-  
+      </footer>
+    </section>
+  </div>
+
 
   <script type="text/javascript"
     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script>
-
-    const menuButton = document.getElementById('navigation');
-    const menu = document.getElementsByClassName('nav-menu')[0];
-
-    let isMenuOpen = true;
-
-    menuButton.addEventListener('click', () => {
-      if (isMenuOpen) {
-        menu.classList.add('display-nav');
-        menu.classList.remove('hide-nav');
-        isMenuOpen = false;
-      }
-      else {
-        menu.classList.add('hide-nav');
-        menu.classList.remove('display-nav');
-        isMenuOpen = true;
-      }
-    })
-  </script>
+  <script src="script/mobile.js"></script>
+  <script src="script/search.js"></script>
 </body>
 
 </html>

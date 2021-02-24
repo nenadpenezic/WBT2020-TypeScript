@@ -1,577 +1,603 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/basicSyntax.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <script src="script/basicSyntax.js"></script>
-    <title>Basic Syntax</title>
-  </head>
-  <body>
-      <div class="container contmain">
-        <section id="nav-section">
-          <div class="row">
-            <div class="row-wrapper">
-              <div class="col-lg-2 p-3 header-common">
-                  <i class="fab fa-facebook-f fa-lg p-1"></i>
-                  <i class="fab fa-twitter fa-lg p-1"></i>
-                  <i class="fab fa-instagram fa-lg p-1"></i>
-                  <i class="fab fa-pinterest fa-lg p-1"></i>
-              </div>
-              <div class="col-lg-8  text-center">
-                  <h1 style="color: white;">TypeScript.</h1>
-              </div>
-              <div class="col-lg-2 header-common nav-form">
-                  <form class="form-inline">
-                      <input class="form-control w-75 transparent-input"  type="search" placeholder="Search" aria-label="Search">
-                      <i class="fas fa-search"></i>
-                    </form>
-              </div>
-            </div>
-            <div class="col-12" style="padding: 0%;">
-              <div class="banner">
-                <div class="banner-color">
-                            
-            <nav>
-              <div id="navigation">
-                <i class="fas fa-bars"></i>
-            </div>
-                <ul id="" class="nav-menu hide-nav">
-                    <li class="nav-li"><a href="">Home</a> </li>
-                    <li class="nav-li"><a href="">Overview</a></li>
-                    <li id="docs" class="nav-li"><a href="">Documentation <i class="fas fa-arrow-down"></i></a>
-                        <ul id="sub-menu">
-                            <li id="basic-syntax" class="submenu-li"><a href="">Basic Syntax <i class="fas fa-arrow-right"></i></a>
-                            <ul id="sub-sub-menu">
-                                <li><a href="">Types</a></li>
-                                <li><a href="">Variables</a></li>
-                                <li><a href="">Operators</a></li>
-                                <li><a href="">Loops</a></li>
-                                <li><a href="">Numbers</a></li>
-                                <li><a href="">Strins</a></li>
-                                <li><a href="">Arrays</a></li>
-                            </ul>
-                            </li>
-                            <li class="submenu-li"><a href="">Interfaces</a></li>
-                            <li class="submenu-li"><a href="">Functions</a></li>
-                            <li class="submenu-li"><a href="">Union and Intersection Types</a></li>
-                            <li class="submenu-li"><a href="">Classes</a></li>
-                            <li class="submenu-li"><a href="">Objects</a></li>
-                            <li class="submenu-li"><a href="">Namespaces</a></li>
-                            <li class="submenu-li"><a href="">Modules & Ambients</a></li>
-                        </ul>
-                        <li class="nav-li"><a href="">About</a></li>
-                    </li>
-                </ul>
-            </nav>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9008e960be.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/basicSyntax.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="script/basicSyntax.js"></script>
+  <title>Basic Syntax</title>
+</head>
+
+<body>
+  <div class="container contmain">
+    <section id="nav-section">
+      <div class="row">
+        <div class="row-wrapper">
+          <div class="col-lg-2 p-3 header-common">
+            <a style="color: white;" href="https://github.com/nenadpenezic/WBT2020-TypeScript/tree/Development"
+              class="link-icon"><i class="fab fa-github-square fa-lg p-1"></i></a>
+            <a style="color: white;" href="https://en.wikipedia.org/wiki/TypeScript" class="link-icon"><i
+                class="fab fa-wikipedia-w fa-lg p-1"></i></a>
+            <a style="color: white;" href="https://www.youtube.com/watch?v=BwuLxPH8IDs" class="link-icon"><i
+                class="fab fa-youtube fa-lg p-1"></i></a>
+            <a style="color: white;" href="https://www.typescriptlang.org/" class="link-icon"><i
+                class="fas fa-file-code fa-lg p-1"></i></a>
           </div>
-         </section>
-          <section id="introductionofsyntax" class=" p-5">
-            <div class="row">
-                <div class="col-md-12 mt-4 typescriptdef reveal">
-                    <p class="lead text-center">Syntax defines a set of rules for writing programs. Every language specification defines its own syntax. A TypeScript program is composed of −</p>
-                </div>
-                
-                <div class="col-md-12 pb-5 text-center reveal">
-                    <i class="fas fa-check"> Modules</i> <br>
-                    <i class="fas fa-check"> Functions</i> <br>
-                    <i class="fas fa-check"> Variables</i> <br>
-                    <i class="fas fa-check"> Statements and Expressions</i> <br>
-                    <i class="fas fa-check"> Comments</i>
-                </div>
+          <div class="col-lg-8  text-center">
+            <h1 style="color: white;">TypeScript.</h1>
+          </div>
+          <div class="col-lg-2 header-common nav-form">
+            <form class="form-inline">
+              <input id="search" class="form-control w-75 transparent-input" type="search" placeholder="Search"
+                aria-label="Search" onkeyup="searchFunction()">
+              <i class="fas fa-search"></i>
+              <ul class="search-list">
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div class="col-12" style="padding: 0%;">
+          <div class="banner">
+            <div class="banner-color">
 
-                <div class="display-5 pt-5 reveal" id="text1">
+              <nav>
+                <div id="navigation">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <ul id="" class="nav-menu hide-nav">
+                  <li class="nav-li"><a href="home.html">Home</a> </li>
+                  <li class="nav-li"><a href="Overview.html">Overview</a></li>
+                  <li id="docs" class="nav-li"><a href="Documentation.html">Documentation</a>
+                    <i class="fas fa-arrow-down  mobile-sub-menu" style="color: white;"></i>
+                    <ul id="sub-menu">
+                      <li id="basic-syntax" class="submenu-li"><a href="basicSyntax.html">Basic Syntax </a>
+                        <i class="fas fa-arrow-right mobile-sub-sub-menu" style="color: white;"></i>
+                        <ul id="sub-sub-menu">
+                          <li><a href="Types.html">Types</a></li>
+                          <li><a href="Variables.html">Variables</a></li>
+                          <li><a href="Operators.html">Operators</a></li>
+                          <li><a href="Loops.html">Loops</a></li>
+                          <li><a href="Numbers.html">Numbers</a></li>
+                          <li><a href="Strings.html">Strins</a></li>
+                          <li><a href="arrays.html">Arrays</a></li>
+                        </ul>
+                      </li>
+                      <li class="submenu-li"><a href="Interfaces.html">Interfaces</a></li>
+                      <li class="submenu-li"><a href="Functions.html">Functions</a></li>
+                      <li class="submenu-li"><a href="u&itypes.html">Union and Intersection Types</a></li>
+                      <li class="submenu-li"><a href="classes.html">Classes</a></li>
+                      <li class="submenu-li"><a href="objects.html">Objects</a></li>
+                      <li class="submenu-li"><a href="namespaces.html">Namespaces</a></li>
+                      <li class="submenu-li"><a href="modules&ambients.html">Modules & Ambients</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div id="text" class="display-4 d-none d-sm-block p-5">
+                
+              </div>
+    </section>
+    <section id="introductionofsyntax" class=" p-5">
+      <div class="row">
+        <div class="col-md-12 mt-4 typescriptdef reveal">
+          <p class="lead text-center">Syntax defines a set of rules for writing programs. Every language specification
+            defines its own syntax. A TypeScript program is composed of −</p>
+        </div>
 
-                </div>
-                <div class="col-12">
-                  <p class="lead reveal">
-                    For example, let's start with the typical example of every programming language, which is "Hello World!"
-                  </p>
-                </div>
-                <div class="col-md-8 reveal">
-                    <img src="img/typescriptexample1.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                  
-                </div>
-                <div class="col-12 pt-2">
-                  <p class="lead reveal">
-                    On compiling, it will generate following JavaScript code.
-                  </p>
-                </div>
-                <div class="col-md-8 reveal">
-                  <img src="img/typescriptexample3.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="col-md-4">
-                
-              </div>
-                <div class="col-md-8 reveal">
-                  <p class="lead"><i class="far fa-square px-3 py-3"> Line 1 declares a variable by the name message. Variables are a mechanism to store values in a program.</i></p>
-                  <p class="lead"><i class="far fa-square px-3 pb-3"> Line 2 prints the variable’s value to the prompt. Here, console refers to the terminal window. The function log () is used to display text on the screen.</i></p>
-                </div>
-                
-              </div>
-          </section>
-          <section class="fixedbg">
-            <figure>
-                <div class="fixed-wrap">
-                    <div id="fixed">
-                        
-                    </div>
-                </div>
-            </figure>
-          </section>
-          <section id="syntaxpt1typescript" class=" p-5">
-            <div class="row">
-              <div class="col-12">
-                <h1 class="text-center reveal">Identifiers of TypeScript</h1>
-              </div>
-              <div class="col-md-12 mt-4">
-                <p class="lead text-center reveal">Identifiers are names given to elements in a program like variables, functions etc. The rules for identifiers are −</p>
-              </div>
-              <div class="col-md-12 reveal">
-                <p class="lead"><i class="far fa-square px-4 "> Identifiers can include both, characters and digits. However, the identifier cannot begin with a digit.</i></p>
-                <p class="lead"><i class="far fa-square px-4 "> Identifiers cannot include special symbols except for underscore (_) or a dollar sign ($).</i></p>
-                <p class="lead"><i class="far fa-square px-4 "> Identifiers cannot be keywords.</i></p>
-                <p class="lead"><i class="far fa-square px-4 "> They must be unique.</i></p>
-                <p class="lead"><i class="far fa-square px-4 "> Identifiers are case-sensitive.</i></p>
-                <p class="lead"><i class="far fa-square px-4 "> Identifiers cannot contain spaces.</i></p>
-              </div>
-              <div class="col-md-12">
-                <p class="lead text-left  reveal">
-                  The following tables lists a few examples of valid and invalid identifiers −
-                </p>
-              </div>
-              <div class="col-lg-3">
-  
-              </div>
-              <div class="col-lg-6 reveal">
-                <table class="table table-striped table-dark table-bordered">
-                  <tbody>
-                    <thead>
-                      <tr>
-                        <th scope="col">Valid Identifiers</th>
-                        <th scope="col">Invalid Identifiers</th>
-                      </tr>
-                    </thead>
-                    <tr>
-                      <td>lastName</td>
-                      <td>Let</td>
-                    </tr>
-                    <tr>
-                      <td>thisIsString</td>
-                      <td>last name</td> 
-                    </tr>
-                    <tr>
-                      <td>numberv1</td>
-                      <td>number-one</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>$tring</td>
-                      <td>1stString</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="col-lg-3">
-                
-              </div>
-              <div class="col-md-12 pt-5">
-                <h1 class="text-center reveal">Keywords of TypeScript</h1>
-              </div>
-              <div class="col-md-12">
-                <p class="lead text-left  reveal">
-                  Keywords have a special meaning in the context of a language. The following table lists some keywords in TypeScript.
-                </p>
-              </div>
-              <div class="col-mg-12 table-responsive reveal tabletwo">
-                <table class="table table-striped table-dark table-bordered">
-                  <tbody>
-                    <tr>
-                      <td>as</td>
-                      <td>break</td>
-                      <td>any</td>
-                      <td>switch</td>
-                    </tr>
-                    <tr>
-                      <td>if</td>
-                      <td>else</td>
-                      <td>case</td>
-                      <td>throw</td>
-                    </tr>
-                    <tr>
-                      <td>var</td>
-                      <td>string</td>
-                      <td>number</td>
-                      <td>get</td>
-                    </tr>
-                    <tr>
-                      <td>module</td>
-                      <td>type</td>
-                      <td>typeof</td>
-                      <td>instanceof</td>
-                    </tr>
-                    <tr>
-                      <td>private</td>
-                      <td>public</td>
-                      <td>enum</td>
-                      <td>export</td>
-                    </tr>
-                    <tr>
-                      <td>while</td>
-                      <td>for</td>
-                      <td>finally</td>
-                      <td>void</td>
-                    </tr>
-                    <tr>
-                      <td>this</td>
-                      <td>super</td>
-                      <td>new</td>
-                      <td>null</td>
-                    </tr>
-                    <tr>
-                      <td>let</td>
-                      <td>static</td>
-                      <td>any</td>
-                      <td>extends</td>
-                    </tr>
-                    <tr>
-                      <td>true</td>
-                      <td>false</td>
-                      <td>return</td>
-                      <td>in</td>
-                    </tr>
-                    <tr>
-                      <td>new</td>
-                      <td>try</td>
-                      <td>const</td>
-                      <td>yield</td>
-                    </tr>
-                    <tr>
-                      <td>package</td>
-                      <td>interface</td>
-                      <td>function</td>
-                      <td>implements</td>
-                    </tr>
-                    <tr>
-                      <td>do</td>
-                      <td>catch</td>
-                      <td>continue</td>
-                      <td>...</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="col-md-12">
-                <h3 class="text-left reveal">Whitespaces and Linebreaks</h3>
-              </div>
-              <div class="col-md-12">
-                <p class="lead text-left  reveal">
-                  TypeScript ignores spaces, tabs, and newlines that appear in programs. You can use spaces, tabs, and newlines freely in your program and you are free to format and indent your programs in a neat and consistent way that makes the code easy to read and understand.
-                </p>
-              </div>
-              <div class="col-md-12">
-                <h3 class="text-left reveal">Case sensitivity of TypeScript</h3>
-              </div>
-              <div class="col-md-12">
-                <p class="lead text-left  reveal">
-                  TypeScript is case-sensitive. This means that TypeScript differentiates between uppercase and lowercase characters.
-                </p>
-              </div>
-            </div>
-          </section>
-          <section class="fixedbg1">
-            <figure>
-                <div class="fixed-wrap">
-                    <div id="fixed1">
-                        
-                    </div>
-                </div>
-            </figure>
-          </section>
-          <section id="syntaxpt2typescript" class="p-5">
-            <div class="row">
-              <div class="col-md-12">
-                <h3 class="text-left reveal">Comments in TypeScript</h3>
-              </div>
-              <div class="col-md-12  reveal">
-                <p class="lead text-left ">
-                  Comments are a way to improve the readability of a program. Comments can be used to include additional information about a program like author of the code, hints about a function/ construct etc. Comments are ignored by the compiler.
-                </p>
-              </div>
-              <div class="col-md-12 reveal">
-                <p class="lead text-left">
-                  TypeScript supports the following types of comments −
-                </p>
-              </div>
-              <div class="col-md-1">
+        <div class="col-md-12 pb-5 text-center reveal">
+          <i class="fas fa-check"> Modules</i> <br>
+          <i class="fas fa-check"> Functions</i> <br>
+          <i class="fas fa-check"> Variables</i> <br>
+          <i class="fas fa-check"> Statements and Expressions</i> <br>
+          <i class="fas fa-check"> Comments</i>
+        </div>
 
-              </div>
-              <div class="col-md-11 reveal">
-                <p class="lead"><i class="far fa-square"> Single-line comments ( // ) − Any text between a // and the end of a line is treated as a comment</i></p>
-                <p class="lead"><i class="far fa-square "> Multi-line comments (/* */) − These comments may span multiple lines.</i></p>
-              </div>
-              <div class="col-md-12 pt-3 reveal">
-                <p class="lead font-weight-bold">Previously said is shown on next photo.</p>
-              </div>
-              <div class="col-md-9 reveal">
-                <img src="img/typescriptexample2.jpg" alt="#" class="img-fluid">
-              </div>
-              <div class="col-md-3">
+        <div class="display-5 pt-5 reveal" id="text1">
 
-              </div>
-              <div class="col-md-12 pt-5">
-                <h3 class="text-left reveal">TypeScript and Object Orientation</h3>
-              </div>
-              <div class="col-md-12 reveal">
-                <p class="lead text-left ">
-                  TypeScript is Object-Oriented JavaScript. Object Orientation is a software development paradigm that follows real-world modelling.
-                   Object Orientation considers a program as a collection of objects that communicate with each other via mechanism called methods. 
-                   TypeScript supports these object oriented components too.
-                </p>
-              </div>
-              <div class="col-md-12 reveal">
-                <div class="media">
-                  <img class="mr-3" src="img/cube.png" alt="Generic placeholder image">
-                  <div class="media-body">
-                    <h5 class="mt-0">Object</h5>
-                    An object is a real time representation of any entity. According to Grady Brooch, every object must have three features 
-                
-                    <div class="media mt-3">
-                      <a class="pr-3" href="#">
-                        <img src="img/sketch.png" alt="Generic placeholder image">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="mt-0">State</h5>
-                        Described by the attributes of an object.
-                      </div>
-                    </div>
-                    <div class="media mt-3">
-                      <a class="pr-3" href="#">
-                        <img src="img/feedback.png" alt="Generic placeholder image">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="mt-0">Behavoir</h5>
-                        Describes how the object will act,
-                      </div>
-                    </div>
-                    <div class="media mt-3">
-                      <a class="pr-3" href="#">
-                        <img src="img/pass.png" alt="Generic placeholder image">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="mt-0">Identity</h5>
-                        A unique value that distinguishes an object from a set of similar such objects.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 reveal pt-3">
-                <div class="media">
-                  <img class="mr-3" src="img/presentation.png" alt="Generic placeholder image">
-                  <div class="media-body">
-                    <h5 class="mt-0">Classes</h5>
-                    A class in terms of OOP is a blueprint for creating objects. A class encapsulates data for the object.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 reveal py-3">
-                <div class="media">
-                  <img class="mr-3" src="img/workflow.png" alt="Generic placeholder image">
-                  <div class="media-body">
-                    <h5 class="mt-0">Methods</h5>
-                    Methods facilitate communication between objects.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 pt-3 reveal">
-                <p class="lead font-weight-bold">Example of TypeScript and Object Orientation is shown in next photo</p>
-              </div>
-              <div class="col-md-9 reveal">
-                <img src="img/typescriptexample4.jpg" alt="#" class="img-fluid">
-              </div>
-              <div class="col-md-12 reveal pt-2">
-                <p class="lead text-left ">
-                  The above example defines a class Greeting. The class has a method greet (). The method prints the string “Hello World” on the
-                   terminal. The new keyword creates an object of the class (obj). The object invokes the method greet ().
-                  <br>
-                  <br>
-                  On compiling, it will generate following JavaScript code.
-                </p>
-              </div>
-              <div class="col-md-9 reveal">
-                <img src="img/typescriptexample5.jpg" alt="#" class="img-fluid">
-              </div>
-              <div class="col-md-9 reveal pt-4">
-                <p class="lead text-left">
-                  The output of the above program is given below −
-                </p>
-              </div>
-              <div class="col-md-9 mx-3 pt-2 mb-3 reveal" style="background-color: rgb(30, 30, 30); color: white;">
-                <p class="lead text-white">
-                  Hello World!!!
-                </p>
-              </div>
-       
-            </div>
-          </section>
-          <section id="syntaxpt3typescript">
-            <div class="row mb-5">
-              <div class="col-12">
-                <h1 class="text-center reveal">Quick links to more details about Basic Syntax </h1>
-              </div>
-              <div class="col-md-2">
-                
-              </div>
-              <div class="col-md-8 mt-4 text-center reveal">
-                <i class="p-5">Next cards represents basic syntax (types) of TypeScript, and with the click on their button you can learn a lot more about each one of them! </i>
-              </div>
-              <div class="col-md-2">
-                
-              </div>
-            </div>
-            <div class="row px-5 pt-5 text-center reveal">
-              <div class="col-md-4 mb-5 ">
-                <div class="card w-100 h-100 bg-dark text-white">
-                  <div class="card-body">
-                    <h5 class="card-title">Types</h5>
-                    <p class="card-text">The Type System represents the different types of values supported by the language...</p>
-                    <a href="#" class="btn btn-outline-light">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="card w-100 h-100 bg-dark text-white">
-                  <div class="card-body">
-                    <h5 class="card-title">Variables</h5>
-                    <p class="card-text">A variable, by definition, is “a named space in the memory” that stores values. In other words, it acts as a container for values in a program...</p>
-                    <a href="#" class="btn btn-outline-light">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="card w-100 h-100 bg-dark text-white">
-                  <div class="card-body">
-                    <h5 class="card-title">Operators</h5>
-                    <p class="card-text">An operator defines some function that will be performed on the data. The data on which operators work are called operands...</p>
-                    <a href="#" class="btn btn-outline-light">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="card w-100 h-100 bg-dark text-white">
-                  <div class="card-body">
-                    <h5 class="card-title">Loops</h5>
-                    <p class="card-text">A loop statement allows us to execute a statement or group of statements multiple times...</p>
-                    <a href="#" class="btn btn-outline-light">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="card w-100 h-100 bg-dark text-white">
-                  <div class="card-body">
-                    <h5 class="card-title">Numbers</h5>
-                    <p class="card-text">TypeScript like JavaScript supports numeric values as Number objects. A number object converts numeric literal to an instance of the number class...</p>
-                    <a href="#" class="btn btn-outline-light">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="card w-100 h-100 bg-dark text-white">
-                  <div class="card-body">
-                    <h5 class="card-title">Strings</h5>
-                    <p class="card-text">The String object lets you work with a series of characters. It wraps the string primitive data type with a number of helper methods...</p>
-                    <a href="#" class="btn btn-outline-light">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="card w-100 h-100 bg-dark text-white">
-                  <div class="card-body">
-                    <h5 class="card-title">Arrays</h5>
-                    <p class="card-text">An array is a homogenous collection of values. To simplify, an array is a collection of values of the same data type. It is a user defined type...</p>
-                    <a href="#" class="btn btn-outline-light">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-              </div>
+        </div>
+        <div class="col-12">
+          <p class="lead reveal">
+            For example, let's start with the typical example of every programming language, which is "Hello World!"
+          </p>
+        </div>
+        <div class="col-md-8 reveal">
+          <img src="img/typescriptexample1.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-4">
 
+        </div>
+        <div class="col-12 pt-2">
+          <p class="lead reveal">
+            On compiling, it will generate following JavaScript code.
+          </p>
+        </div>
+        <div class="col-md-8 reveal">
+          <img src="img/typescriptexample3.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-4">
 
-            </div>
-          </section>
-          <section id="footersection">
-            <footer class="text-light">
-                <div class="row p-5">
-                    <div class="col-md-4">
-                      <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="lead text-center">Quick Links</h5>
-                        <div class="row iconsfooter text-center">
-                            <div class="col-md-6">
-                                <a href=""><i class="fas fa-home"> Home</i></a>
-                                <a href=""><i class="fas fa-eye"> Overview</i></a>
-                                <a href=""><i class="fas fa-file"> Documentation</i></a>
-                                <a href=""><i class="fas fa-code"> Basic Syntax</i></a>
-                                <a href=""><i class="fab fa-invision"> Interfaces</i></a>
-                                <a href=""><i class="fab fa-foursquare"> Functions</i></a>
-                                
-                            </div>
-                            <div class="col-md-6">
-                                <a href=""><i class="far fa-circle"> U&I Types</i></a>
-                                <a href=""><i class="fab fa-odnoklassniki"> Classes</i></a><br>
-                                <a href=""><i class="fas fa-object-group"> Objects</i></a>
-                                <a href=""><i class="fas fa-file-signature"> Namespaces</i></a>
-                                <a href=""><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
-                                <a href=""><i class="fas fa-address-card"> About</i></a>
-                            </div>
-                            
-                        </div>     
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="lead text-center">Choose Your Language!</h5>
-                        <div id="google_translate_element" class="text-center"></div>
-                    </div>
-                </div>
-                <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
-               
-            </footer>
-        </section>
+        </div>
+        <div class="col-md-8 reveal">
+          <p class="lead"><i class="far fa-square px-3 py-3"> Line 1 declares a variable by the name message. Variables
+              are a mechanism to store values in a program.</i></p>
+          <p class="lead"><i class="far fa-square px-3 pb-3"> Line 2 prints the variable’s value to the prompt. Here,
+              console refers to the terminal window. The function log () is used to display text on the screen.</i></p>
+        </div>
+
       </div>
-      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-      <script>
+    </section>
+    <section class="fixedbg">
+      <figure>
+        <div class="fixed-wrap">
+          <div id="fixed">
 
-        const menuButton=document.getElementById('navigation');
-          const menu=document.getElementsByClassName('nav-menu')[0];
-          
-          let isMenuOpen=true;
-    
-          menuButton.addEventListener('click',()=>{
-            if(isMenuOpen){
-              menu.classList.add('display-nav');
-              menu.classList.remove('hide-nav');
-              isMenuOpen=false;
-            }
-            else{
-              menu.classList.add('hide-nav');
-              menu.classList.remove('display-nav');
-              isMenuOpen=true;
-            }
-          })
-        </script>
-    
-  </body>
+          </div>
+        </div>
+      </figure>
+    </section>
+    <section id="syntaxpt1typescript" class=" p-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center reveal">Identifiers of TypeScript</h1>
+        </div>
+        <div class="col-md-12 mt-4">
+          <p class="lead text-center reveal">Identifiers are names given to elements in a program like variables,
+            functions etc. The rules for identifiers are −</p>
+        </div>
+        <div class="col-md-12 reveal">
+          <p class="lead"><i class="far fa-square px-4 "> Identifiers can include both, characters and digits. However,
+              the identifier cannot begin with a digit.</i></p>
+          <p class="lead"><i class="far fa-square px-4 "> Identifiers cannot include special symbols except for
+              underscore (_) or a dollar sign ($).</i></p>
+          <p class="lead"><i class="far fa-square px-4 "> Identifiers cannot be keywords.</i></p>
+          <p class="lead"><i class="far fa-square px-4 "> They must be unique.</i></p>
+          <p class="lead"><i class="far fa-square px-4 "> Identifiers are case-sensitive.</i></p>
+          <p class="lead"><i class="far fa-square px-4 "> Identifiers cannot contain spaces.</i></p>
+        </div>
+        <div class="col-md-12">
+          <p class="lead text-left  reveal">
+            The following tables lists a few examples of valid and invalid identifiers −
+          </p>
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-6 reveal">
+          <table class="table table-striped table-dark table-bordered">
+            <tbody>
+              <thead>
+                <tr>
+                  <th scope="col">Valid Identifiers</th>
+                  <th scope="col">Invalid Identifiers</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>lastName</td>
+                <td>Let</td>
+              </tr>
+              <tr>
+                <td>thisIsString</td>
+                <td>last name</td>
+              </tr>
+              <tr>
+                <td>numberv1</td>
+                <td>number-one</td>
+
+              </tr>
+              <tr>
+                <td>$tring</td>
+                <td>1stString</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-md-12 pt-5">
+          <h1 class="text-center reveal">Keywords of TypeScript</h1>
+        </div>
+        <div class="col-md-12">
+          <p class="lead text-left  reveal">
+            Keywords have a special meaning in the context of a language. The following table lists some keywords in
+            TypeScript.
+          </p>
+        </div>
+        <div class="col-mg-12 table-responsive reveal tabletwo">
+          <table class="table table-striped table-dark table-bordered">
+            <tbody>
+              <tr>
+                <td>as</td>
+                <td>break</td>
+                <td>any</td>
+                <td>switch</td>
+              </tr>
+              <tr>
+                <td>if</td>
+                <td>else</td>
+                <td>case</td>
+                <td>throw</td>
+              </tr>
+              <tr>
+                <td>var</td>
+                <td>string</td>
+                <td>number</td>
+                <td>get</td>
+              </tr>
+              <tr>
+                <td>module</td>
+                <td>type</td>
+                <td>typeof</td>
+                <td>instanceof</td>
+              </tr>
+              <tr>
+                <td>private</td>
+                <td>public</td>
+                <td>enum</td>
+                <td>export</td>
+              </tr>
+              <tr>
+                <td>while</td>
+                <td>for</td>
+                <td>finally</td>
+                <td>void</td>
+              </tr>
+              <tr>
+                <td>this</td>
+                <td>super</td>
+                <td>new</td>
+                <td>null</td>
+              </tr>
+              <tr>
+                <td>let</td>
+                <td>static</td>
+                <td>any</td>
+                <td>extends</td>
+              </tr>
+              <tr>
+                <td>true</td>
+                <td>false</td>
+                <td>return</td>
+                <td>in</td>
+              </tr>
+              <tr>
+                <td>new</td>
+                <td>try</td>
+                <td>const</td>
+                <td>yield</td>
+              </tr>
+              <tr>
+                <td>package</td>
+                <td>interface</td>
+                <td>function</td>
+                <td>implements</td>
+              </tr>
+              <tr>
+                <td>do</td>
+                <td>catch</td>
+                <td>continue</td>
+                <td>...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-12">
+          <h3 class="text-left reveal">Whitespaces and Linebreaks</h3>
+        </div>
+        <div class="col-md-12">
+          <p class="lead text-left  reveal">
+            TypeScript ignores spaces, tabs, and newlines that appear in programs. You can use spaces, tabs, and
+            newlines freely in your program and you are free to format and indent your programs in a neat and consistent
+            way that makes the code easy to read and understand.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <h3 class="text-left reveal">Case sensitivity of TypeScript</h3>
+        </div>
+        <div class="col-md-12">
+          <p class="lead text-left  reveal">
+            TypeScript is case-sensitive. This means that TypeScript differentiates between uppercase and lowercase
+            characters.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="fixedbg1">
+      <figure>
+        <div class="fixed-wrap">
+          <div id="fixed1">
+
+          </div>
+        </div>
+      </figure>
+    </section>
+    <section id="syntaxpt2typescript" class="p-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-left reveal">Comments in TypeScript</h3>
+        </div>
+        <div class="col-md-12  reveal">
+          <p class="lead text-left ">
+            Comments are a way to improve the readability of a program. Comments can be used to include additional
+            information about a program like author of the code, hints about a function/ construct etc. Comments are
+            ignored by the compiler.
+          </p>
+        </div>
+        <div class="col-md-12 reveal">
+          <p class="lead text-left">
+            TypeScript supports the following types of comments −
+          </p>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-11 reveal">
+          <p class="lead"><i class="far fa-square"> Single-line comments ( // ) − Any text between a // and the end of a
+              line is treated as a comment</i></p>
+          <p class="lead"><i class="far fa-square "> Multi-line comments (/* */) − These comments may span multiple
+              lines.</i></p>
+        </div>
+        <div class="col-md-12 pt-3 reveal">
+          <p class="lead font-weight-bold">Previously said is shown on next photo.</p>
+        </div>
+        <div class="col-md-9 reveal">
+          <img src="img/typescriptexample2.jpg" alt="#" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-12 pt-5">
+          <h3 class="text-left reveal">TypeScript and Object Orientation</h3>
+        </div>
+        <div class="col-md-12 reveal">
+          <p class="lead text-left ">
+            TypeScript is Object-Oriented JavaScript. Object Orientation is a software development paradigm that follows
+            real-world modelling.
+            Object Orientation considers a program as a collection of objects that communicate with each other via
+            mechanism called methods.
+            TypeScript supports these object oriented components too.
+          </p>
+        </div>
+        <div class="col-md-12 reveal">
+          <div class="media">
+            <img class="mr-3" src="img/cube.png" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">Object</h5>
+              An object is a real time representation of any entity. According to Grady Brooch, every object must have
+              three features
+
+              <div class="media mt-3">
+                <a class="pr-3" href="#">
+                  <img src="img/sketch.png" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                  <h5 class="mt-0">State</h5>
+                  Described by the attributes of an object.
+                </div>
+              </div>
+              <div class="media mt-3">
+                <a class="pr-3" href="#">
+                  <img src="img/feedback.png" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                  <h5 class="mt-0">Behavoir</h5>
+                  Describes how the object will act,
+                </div>
+              </div>
+              <div class="media mt-3">
+                <a class="pr-3" href="#">
+                  <img src="img/pass.png" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                  <h5 class="mt-0">Identity</h5>
+                  A unique value that distinguishes an object from a set of similar such objects.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 reveal pt-3">
+          <div class="media">
+            <img class="mr-3" src="img/presentation.png" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">Classes</h5>
+              A class in terms of OOP is a blueprint for creating objects. A class encapsulates data for the object.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 reveal py-3">
+          <div class="media">
+            <img class="mr-3" src="img/workflow.png" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">Methods</h5>
+              Methods facilitate communication between objects.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 pt-3 reveal">
+          <p class="lead font-weight-bold">Example of TypeScript and Object Orientation is shown in next photo</p>
+        </div>
+        <div class="col-md-9 reveal">
+          <img src="img/typescriptexample4.jpg" alt="#" class="img-fluid">
+        </div>
+        <div class="col-md-12 reveal pt-2">
+          <p class="lead text-left ">
+            The above example defines a class Greeting. The class has a method greet (). The method prints the string
+            “Hello World” on the
+            terminal. The new keyword creates an object of the class (obj). The object invokes the method greet ().
+            <br>
+            <br>
+            On compiling, it will generate following JavaScript code.
+          </p>
+        </div>
+        <div class="col-md-9 reveal">
+          <img src="img/typescriptexample5.jpg" alt="#" class="img-fluid">
+        </div>
+        <div class="col-md-9 reveal pt-4">
+          <p class="lead text-left">
+            The output of the above program is given below −
+          </p>
+        </div>
+        <div class="col-md-9 mx-3 pt-2 mb-3 reveal" style="background-color: rgb(30, 30, 30); color: white;">
+          <p class="lead text-white">
+            Hello World!!!
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <section id="syntaxpt3typescript">
+      <div class="row mb-5">
+        <div class="col-12">
+          <h1 class="text-center reveal">Quick links to more details about Basic Syntax </h1>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8 mt-4 text-center reveal">
+          <i class="p-5">Next cards represents basic syntax (types) of TypeScript, and with the click on their button
+            you can learn a lot more about each one of them! </i>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+      </div>
+      <div class="row px-5 pt-5 text-center reveal">
+        <div class="col-md-4 mb-5 ">
+          <div class="card w-100 h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Types</h5>
+              <p class="card-text">The Type System represents the different types of values supported by the language...
+              </p>
+              <a href="Types.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card w-100 h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Variables</h5>
+              <p class="card-text">A variable, by definition, is “a named space in the memory” that stores values. In
+                other words, it acts as a container for values in a program...</p>
+              <a href="Variables.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card w-100 h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Operators</h5>
+              <p class="card-text">An operator defines some function that will be performed on the data. The data on
+                which operators work are called operands...</p>
+              <a href="Operators.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card w-100 h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Loops</h5>
+              <p class="card-text">A loop statement allows us to execute a statement or group of statements multiple
+                times...</p>
+              <a href="Loops.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card w-100 h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Numbers</h5>
+              <p class="card-text">TypeScript like JavaScript supports numeric values as Number objects. A number object
+                converts numeric literal to an instance of the number class...</p>
+              <a href="Numbers.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card w-100 h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Strings</h5>
+              <p class="card-text">The String object lets you work with a series of characters. It wraps the string
+                primitive data type with a number of helper methods...</p>
+              <a href="Strings.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card w-100 h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Arrays</h5>
+              <p class="card-text">An array is a homogenous collection of values. To simplify, an array is a collection
+                of values of the same data type. It is a user defined type...</p>
+              <a href="arrays.html" class="btn btn-outline-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+
+
+      </div>
+    </section>
+    <section id="footersection">
+      <footer class="text-light">
+        <div class="row p-5">
+          <div class="col-md-4">
+            <h5 class="lead text-center"><img src="img/ts-logo-128.png" alt="#" width="32px" height="32px"> <span
+                class="s1">Type</span>Script<br>Made with &hearts; in Čačak.</h5>
+          </div>
+          <div class="col-md-4">
+            <h5 class="lead text-center">Quick Links</h5>
+            <div class="row iconsfooter text-center">
+              <div class="col-md-6">
+                <a href="home.html"><i class="fas fa-home"> Home</i></a>
+                <a href="Overview.html"><i class="fas fa-eye"> Overview</i></a>
+                <a href="Documentation.html"><i class="fas fa-file"> Documentation</i></a>
+                <a href="basicSyntax.html"><i class="fas fa-code"> Basic Syntax</i></a>
+                <a href="Interfaces.html"><i class="fab fa-invision"> Interfaces</i></a>
+                <a href="Functions.html"><i class="fab fa-foursquare"> Functions</i></a>
+
+              </div>
+              <div class="col-md-6">
+                <a href="u&itypes.html"><i class="far fa-circle"> U&I Types</i></a>
+                <a href="classes.html"><i class="fab fa-odnoklassniki"> Classes</i></a><br>
+                <a href="objects.html"><i class="fas fa-object-group"> Objects</i></a>
+                <a href="namespaces.html"><i class="fas fa-file-signature"> Namespaces</i></a>
+                <a href="modules&ambients.html"><i class="fas fa-theater-masks"> Mods&Ambs</i></a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <h5 class="lead text-center">Choose Your Language!</h5>
+            <div id="google_translate_element" class="text-center"></div>
+          </div>
+        </div>
+        <h5 class="text-center col-12 m-0">&copy Copyright 2021. All Rights Reserverd. </h5>
+
+      </footer>
+    </section>
+  </div>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="script/mobile.js"></script>
+  <script src="script/search.js"></script>
+
+</body>
+
 </html>

@@ -215,3 +215,15 @@ th{
 .iconsfooter a{
     color: white;
 }
+/*Search proporties css*/
+.search-list{
+  position: absolute;
+  width: 200px;
+  background-color: gray;
+  z-index: 2;
+  top: 50px;
+  left: -20px;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
